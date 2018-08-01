@@ -23,13 +23,16 @@
 				{ name: 'Tabla centrada', element: 'table', type: 'bck-stack-class', attributes: { 'class': 'bck-table-center'} },
 				{ name: 'Celda encabezado', element: 'td', attributes: { 'class': 'bck-td' } },
 
+				{ name: 'Lista Desordenada', element: 'ul', attributes: { 'class': 'bck-ul' } },
+				{ name: 'Lista Desordenada', element: 'ul', ttributes: { 'class': 'ul.bck-ul-2' } },
+
 				{ name: 'Caja 1', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-1' } },
 				{ name: 'Caja 2', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-2' } },
 				{ name: 'Caja 3', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-3' } },
 				{ name: 'Caja Materiales', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-4' } },
 				{ name: 'Caja Integración', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-5' } },
 				{ name: 'Caja Diccionario', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-6' } },
-				{ name: 'Imágenes', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-7' } },
+				{ name: 'Caja Imágenes', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-7' } },
 			]
 		},
 
