@@ -598,7 +598,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 		border-top: 2px solid #85b426;
 	}
 
-/*lista desordenada*/
+/*lista ordenada*/
 
 	.content ol,
 	.cke_contents ol {
@@ -626,6 +626,66 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 		margin-top: -2px;
 	}
 
+#actividad .cke_contents .texto_curso .bck-ol l
+#actividad .content .texto_curso .bck-ol li,
+#actividad .content .workspace ul li .bck-ol li {
+    list-style-type: none;
+    counter-increment: bck-li-counter 1;
+    position: relative;
+    padding-left: 0px;
+}
+
+#actividad .cke_contents .texto_curso .bck-ol li:before,
+#actividad .content .texto_curso .bck-ol li:before,
+#actividad .content .workspace ul li .bck-ol li:before {
+	content: counter(bck-li-counter)'';
+	position: absolute;
+	left: -46px;
+	width: 38px;
+	text-align: right;
+    font-size: 2.0rem; 
+    color: #0095DA;
+}
+
+#actividad .cke_contents .texto_curso .bck-ol-2 li
+#actividad .content .texto_curso .bck-ol-2 li,
+#actividad .content .workspace ul li .bck-ol-2 li {
+    list-style-type: none;
+    counter-increment: bck-li-counter 1;
+    position: relative;
+    padding-left: 0px;
+}
+
+#actividad .cke_contents .texto_curso .bck-ol-2 li:before,
+#actividad .content .texto_curso .bck-ol-2 li:before,
+#actividad .content .workspace ul li .bck-ol-2 li:before {
+	content: counter(bck-li-counter)'';
+	position: absolute;
+	left: -46px;
+	width: 38px;
+	text-align: right;
+    font-size: 2.0rem; 
+    color: #000;
+}
+
+
+
+/*lista desordenada*/
+
+	.texto_curso ul li,
+	.workspace ul li ul li,
+	.cke_contents ul li {
+		position: relative;
+		padding-left: 18px;
+		margin-bottom: 20px;
+	}
+
+	.texto_curso ul li:before,
+	.workspace ul li ul li:before,
+	.cke_contents ul li:before {
+		background-color: #000;
+		margin-top: 10px;
+	}
 
 
 #actividad .content .cke_contents .bck-ul li:before,
@@ -662,29 +722,6 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 
 /*fin desordenada*/	
 
-
-
-/*lista ordenada*/
-
-
-	.texto_curso ul li,
-	.workspace ul li ul li,
-	.cke_contents ul li {
-		position: relative;
-		padding-left: 18px;
-		margin-bottom: 20px;
-	}
-
-	.texto_curso ul li:before,
-	.workspace ul li ul li:before,
-	.cke_contents ul li:before {
-		background-color: #ffffff;
-		border: 3px solid #85b426;
-		height: 12px;
-		width: 12px;
-		margin-top: 5px;
-		margin-left: -18px;
-	}
 
 	.content figure:first-child:last-child,
 	.content .js--row figure,
@@ -956,6 +993,15 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 	border: 3px dotted #7BC14D;
     padding: 8px 14px 0px;
     border-radius: 13px;
+}
+
+
+
+.bck-box.box-4 .bck-title{
+	margin-top: -15%;
+    background-color: #fff;
+    padding: 0px 10px;
+    width: fit-content;
 }
 
 
