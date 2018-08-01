@@ -1015,6 +1015,22 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 }
 
 
+.bck-box.box-5:before {
+    content".";
+    padding:15px;
+}
+
+.bck-box.box-5 .bck-title{
+  	display: block;
+    padding: 0px 40px;
+    color: #612b80;
+    font-weight: bold;
+    margin-top: -3.5%;
+    background-color: #fff;
+    width: fit-content;
+}
+
+
 .bck-box.box-6 {
     border: 3px dotted #f25a22;
     border-radius: 15px;
