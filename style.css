@@ -1,4 +1,4 @@
-# eduvision
+# eduvision 
 
 /* General */
 
@@ -37,10 +37,10 @@
 
 	#actividad .carousel-inner .item-container {
 		background-image: none;
-		margin: 20px auto 30px;
-		padding: 0px;
-		padding-bottom: 90px;
-		position: relative;
+   	 	margin: 20px auto 30px;
+    	padding: 0px;
+    	padding-bottom: 90px;
+    	position: relative;
 	}
 
 	.content_type_clase_eduvision #actividad .content .header .title img,
