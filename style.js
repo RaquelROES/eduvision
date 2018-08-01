@@ -23,9 +23,10 @@
 				{ name: 'Tabla centrada', element: 'table', type: 'bck-stack-class', attributes: { 'class': 'bck-table-center'} },
 				{ name: 'Celda encabezado', element: 'td', attributes: { 'class': 'bck-td' } },
 
-				{ name: 'Lista Desordenada', element: 'ul', attributes: { 'class': 'bck-ul' } },
-				{ name: 'Lista Desordenada', element: 'ul', ttributes: { 'class': 'ul.bck-ul-2' } },
+				{ name: 'Lista Desordenada', element: 'ul', attributes: { 'class': 'bck-ul'} },
+				{ name: 'Lista Desordenada 2', element: 'ul', attributes: { 'class': 'bck-ul-2'} },
 
+				
 				{ name: 'Caja 1', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-1' } },
 				{ name: 'Caja 2', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-2' } },
 				{ name: 'Caja 3', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-3' } },
