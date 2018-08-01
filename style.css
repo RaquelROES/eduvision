@@ -930,7 +930,10 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 
 
 .bck-box.box-7 {
-    border: 1px solid #f25a22;
+    margin-top: -20px;
+    position: relative;
+    left: -13%;
+    width: 126%;
 }
 
 
@@ -1113,4 +1116,3 @@ div.calculo table.marco * {
 body.print-mode .title *, body.print-mode .title {
     background-color: #e94442;
 }
-
