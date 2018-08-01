@@ -681,6 +681,9 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 		background: #dcdcdc;
 	}
 
+
+	/*cajas*/
+
 	.bck-box {
 		margin-bottom: 30px;
 	}
@@ -923,6 +926,12 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     border-radius: 15px;
     padding: 0px 10px;
 }
+
+
+.bck-box.box-7 {
+    border: 1px solid #f25a22;
+}
+
 
 
 /*pistas*/
