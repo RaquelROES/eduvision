@@ -7,10 +7,10 @@
 		page = blink.currentPage;
 
 	eduvisionStyle.prototype = {
-		bodyClassName: 'content_type_clase_fancy',
+		bodyClassName: 'content_type_clase_eduvision',
 		extraPlugins: ['image2'],
 		ckEditorStyles: {
-			name: 'fancy',
+			name: 'eduvision',
 			styles: [
 
 				{ name: 'Título 1', element: 'h4', attributes: { 'class': 'bck-title1'} },
@@ -25,7 +25,10 @@
 
 				{ name: 'Caja 1', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-1' } },
 				{ name: 'Caja 2', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-2' } },
-				{ name: 'Caja 3', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-3' } }
+				{ name: 'Caja 3', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-3' } },
+				{ name: 'Caja Materiales', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-4' } },
+				{ name: 'Caja Integración', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-5' } },
+				{ name: 'Caja Diccionario', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-6' } }
 			]
 		},
 
@@ -118,7 +121,7 @@
 
 	eduvisionStyle.prototype = _.extend({}, new blink.theme.styles.basic(), eduvisionStyle.prototype);
 
-	blink.theme.styles.fancy = eduvisionStyle;
+	blink.theme.styles.eduvision = eduvisionStyle;
 
 })( blink );
 
@@ -139,9 +142,9 @@ $(document).ready(function () {
 		});
 
 	// BK-8433 cambiamos el logo de las slides por el del dominio
-	var src_logo = $('.content_type_clase_fancy').find('.logo_slide').attr('logo_dominio');
+	var src_logo = $('.content_type_clase_eduvision').find('.logo_slide').attr('logo_dominio');
 	if (typeof(src_logo) != 'undefined' && src_logo && src_logo != '' && src_logo.indexOf('gif1x1.gif') == -1) {
-		$('.content_type_clase_fancy').find('.logo-publisher').css('background-image', "url('"+src_logo+"')");
+		$('.content_type_clase_eduvision').find('.logo-publisher').css('background-image', "url('"+src_logo+"')");
 	}
 
 });
