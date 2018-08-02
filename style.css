@@ -1007,6 +1007,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     font-weight: bold;
 }
 
+/*caja valores*/
 
 .bck-box.box-5 {
     border: 4px dotted #6d348b;
@@ -1035,12 +1036,34 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     background-size: contain;
 }
 
+/*caja diccionario*/
+
 .bck-box.box-6 {
     border: 3px dotted #f25a22;
     border-radius: 15px;
     padding: 0px 10px;
 }
 
+
+.bck-box.box-6 .bck-title{
+  	display: block;
+    padding: 0px 40px;
+    color: #cc6204;
+    font-weight: bold;
+    margin-top: -3.5%;
+    background-color: #fff;
+    width: fit-content;
+}
+
+.bck-box.box-6 .bck-title:before {
+    content: " ";
+    left: 0px;
+    top: -45px;
+    position: absolute;
+    background: url(images/diccionarioicon.png);
+    padding: 30px;
+    background-size: contain;
+}
 
 .bck-box.box-7 {
     margin-top: -2.6%;
