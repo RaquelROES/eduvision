@@ -1027,10 +1027,13 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 
 .bck-box.box-5 .bck-title:before {
     content: " ";
-    left: 28px;
+    left: 0px;
+    top: -45px;
     position: absolute;
     background: url(images/integracionyvaloresicon.png);
-    }
+    padding: 30px;
+    background-size: contain;
+}
 
 .bck-box.box-6 {
     border: 3px dotted #f25a22;
