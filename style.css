@@ -764,8 +764,26 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 		background: #dcdcdc;
 	}
     
-    /*iconos*/
+   /* Icons */
 
+	#actividad .player.audio {
+		background: url(images/Icon_audio.png) center center / cover;
+	}
+
+	.item-container .icon:before {
+		content: "";
+		background-repeat: no-repeat;
+		-webkit-background-size: auto 100%;
+		   -moz-background-size: auto 100%;
+		     -o-background-size: auto 100%;
+		        background-size: auto 100%;
+		background-position: center center;
+		display: inline-block;
+		vertical-align: middle;
+		height: 40px;
+		width: 54px;
+		margin-top: -16px;
+	}
     .item-container .icon-aplico:before {
 	background-image: url(images/aplicoloaprendido.png);
 	}
