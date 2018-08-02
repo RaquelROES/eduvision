@@ -799,8 +799,8 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 		background-image: url(images/aprendamosconelmapaconceptual.png);
 	}
 
-	.item-container .icon-quimica:before {
-		background-image: url(images/icono0007072018.png);
+	.item-container .icon-taller:before {
+		background-image: url(images/tallerambiental.png);
 	}
 
 	.item-container .icon-birrete:before {
