@@ -660,13 +660,10 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 #actividad .cke_contents.texto_curso .bck-ol-2 li:before,
 #actividad .content .texto_curso .bck-ol-2 li:before,
 #actividad .content .workspace ul li .bck-ol-2 li:before {
-	content: counter(bck-li-counter)'';
-	position: absolute;
-	left: -46px;
-	width: 38px;
-	text-align: right;
-    font-size: 2.0rem; 
-    color: #000;
+	content: counter(bck-li-counter)'.';
+    font-size: 2.0rem;
+    top: 1px;
+    color: #de9d3c;
 }
 
 
@@ -791,6 +788,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     height: 100px;
     width: 280px;
     margin-top: 2%;
+    margin-bottom: 3%;
 	}
 
 	.item-container .icon-bombilla:before {
