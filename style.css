@@ -832,13 +832,18 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 /*caja aplico lo aprendido*/
 
 	.bck-box.box-1 {
-		background: #85b426;
-		padding: 40px;
-		position: relative;
-		margin-top: 60px;
+		background: #f7ebd6;
+	    position: relative;
+	    padding: 15px;
+	    border-radius: 10px;
 	}
 
-	
+.bck-box.box-1 .bck-content{
+	border: dashed #000 2px;
+    padding: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
 
 	.bck-box.box-2 {
 		background: #ed8da1;
