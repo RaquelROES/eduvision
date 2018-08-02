@@ -394,7 +394,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 	}
 
 	.content_type_clase_eduvision .logo-publisher {
-	      content: " ";
+	 content: " ";
     background-image: url(images/eduvison-logo.png) !important;
     height: 50px;
     background-repeat: no-repeat;
@@ -1015,11 +1015,6 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 }
 
 
-.bck-box.box-5:before {
-    content".";
-    padding:15px;
-}
-
 .bck-box.box-5 .bck-title{
   	display: block;
     padding: 0px 40px;
@@ -1030,6 +1025,12 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     width: fit-content;
 }
 
+.bck-box.box-5 .bck-title:before {
+    content: " ";
+    left: 28px;
+    position: absolute;
+    background: url(images/integracionyvaloresicon.png);
+    }
 
 .bck-box.box-6 {
     border: 3px dotted #f25a22;
@@ -1225,4 +1226,3 @@ div.calculo table.marco * {
 body.print-mode .title *, body.print-mode .title {
     background-color: #e94442;
 }
-
