@@ -28,6 +28,14 @@
 				{ name: 'Lista Desordenada', element: 'ul', attributes: { 'class': 'bck-ul'} },
 				{ name: 'Lista Desordenada 2', element: 'ul', attributes: { 'class': 'bck-ul-2'} },
 
+
+				{ name: 'Icono Aplico', element: 'span', attributes: { 'class': 'icon icon-aplico' } },
+				{ name: 'Icono Bombilla', element: 'span', attributes: { 'class': 'icon icon-bombilla' } },
+				{ name: 'Icono Química', element: 'span', attributes: { 'class': 'icon icon-quimica' } },
+				{ name: 'Icono Birrete', element: 'span', attributes: { 'class': 'icon icon-birrete' } },
+				{ name: 'Icono libro', element: 'span', attributes: { 'class': 'icon icon-libro' } },
+				{ name: 'Icono Lápiz', element: 'span', attributes: { 'class': 'icon icon-lapiz' } },
+
 				
 				{ name: 'Caja 1', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-1' } },
 				{ name: 'Caja 2', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-2' } },
@@ -58,6 +66,10 @@
 			$('.libro-left').find('.title').html(function () {
 				return $(this).html() + ' > ' + blink.courseInfo.unit;
 			})
+		},
+
+		configEditor: function (editor) {
+			editor.dtd.$removeEmpty['span'] = false;
 		},
 
 		addPageNumber: function() {
