@@ -31,7 +31,7 @@
 
 				{ name: 'Icono Aplico', element: 'span', attributes: { 'class': 'icon icon-aplico' } },
 				{ name: 'Icono Mapa conceptual', element: 'span', attributes: { 'class': 'icon icon-aprendamosconelmapaconceptual' } },
-				{ name: 'Icono Química', element: 'span', attributes: { 'class': 'icon icon-quimica' } },
+				{ name: 'Icono Química', element: 'span', attributes: { 'class': 'icon-taller' } },
 				{ name: 'Icono Birrete', element: 'span', attributes: { 'class': 'icon icon-birrete' } },
 				{ name: 'Icono libro', element: 'span', attributes: { 'class': 'icon icon-libro' } },
 				{ name: 'Icono Lápiz', element: 'span', attributes: { 'class': 'icon icon-lapiz' } },
