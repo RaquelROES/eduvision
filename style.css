@@ -784,8 +784,13 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 		width: 54px;
 		margin-top: -16px;
 	}
-    .item-container .icon-aplico:before {
-	background-image: url(images/aplicoloaprendido.png);
+   
+
+   .item-container .icon-aplico:before {
+    background-image: url(images/aplicoloaprendido.png);
+    height: 100px;
+    width: 280px;
+    margin-top: 2%;
 	}
 
 	.item-container .icon-bombilla:before {
