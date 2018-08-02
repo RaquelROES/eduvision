@@ -30,7 +30,7 @@
 
 
 				{ name: 'Icono Aplico', element: 'span', attributes: { 'class': 'icon icon-aplico' } },
-				{ name: 'Icono Bombilla', element: 'span', attributes: { 'class': 'icon icon-bombilla' } },
+				{ name: 'Icono Mapa conceptual', element: 'span', attributes: { 'class': 'icon icon-aprendamosconelmapaconceptual' } },
 				{ name: 'Icono Química', element: 'span', attributes: { 'class': 'icon icon-quimica' } },
 				{ name: 'Icono Birrete', element: 'span', attributes: { 'class': 'icon icon-birrete' } },
 				{ name: 'Icono libro', element: 'span', attributes: { 'class': 'icon icon-libro' } },
