@@ -578,7 +578,13 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 
 
 	.bck-title3 {
-		font-size: 2.5rem;
+    font-size: 2.5rem;
+    color: #54828b;
+	}
+
+ 	.bck-title4 {
+ 	    font-weight: bold;
+	    color: #54828b;
 	}
 
 	.bck-enfasis {
@@ -810,9 +816,14 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 		background-image: url(images/evaluacion.png);
 	}
 
-	.item-container .icon-cineforoicon:before {
-		background-image: url(images/cineforoicon-compressor.png);
-	}
+	
+    .item-container .icon-cineforoicon:before {
+    height: 100px;
+    width: 282px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/cineforoicon-compressor.png);
+}
 
 	.item-container .icon-lapiz:before {
 		background-image: url(images/icono0005072018.png);
