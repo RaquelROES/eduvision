@@ -890,6 +890,18 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     border-radius: 13px;
 }
 
+
+.bck-box.box-4 .bck-title{
+  	display: block;
+    padding: 0px 40px;
+    color: #7BC14D;
+    font-weight: bold;
+    margin-top: -3.5%;
+    background-color: #fff;
+    width: fit-content;
+}
+
+
 /*caja valores*/
 
 .bck-box.box-5 {
