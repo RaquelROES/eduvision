@@ -32,13 +32,13 @@
 				{ name: 'Icono Aplico', element: 'span', attributes: { 'class': 'icon icon-aplico' } },
 				{ name: 'Icono Mapa conceptual', element: 'span', attributes: { 'class': 'icon icon-aprendamosconelmapaconceptual' } },
 				{ name: 'Icono Taller', element: 'span', attributes: { 'class': 'icon icon-taller' } },
-				{ name: 'Icono Birrete', element: 'span', attributes: { 'class': 'icon icon-birrete' } },
-				{ name: 'Icono libro', element: 'span', attributes: { 'class': 'icon icon-libro' } },
+				{ name: 'Icono Evaluacion', element: 'span', attributes: { 'class': 'icon icon-evaluacion' } },
+				{ name: 'Icono Cine Foro', element: 'span', attributes: { 'class': 'icon icon-cineforoicon' } },
 				{ name: 'Icono Lápiz', element: 'span', attributes: { 'class': 'icon icon-lapiz' } },
 
 				
 				{ name: 'Caja Aplico', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-1' } },
-				{ name: 'Caja 2', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-2' } },
+				{ name: 'Caja Taller ambiental', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-2' } },
 				{ name: 'Caja 3', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-3' } },
 				{ name: 'Caja Materiales', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-4' } },
 				{ name: 'Caja Integración', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-5' } },
@@ -167,4 +167,3 @@ $(document).ready(function () {
 	}
 
 });
-
