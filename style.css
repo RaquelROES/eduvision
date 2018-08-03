@@ -947,7 +947,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 }
 
 .bck-box.box-6 .bck-title:before {
-    ontent: " ";
+    content: " ";
     left: -18px;
     top: 70px;
     position: absolute;
