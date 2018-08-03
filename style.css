@@ -893,10 +893,10 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 
 .bck-box.box-4 .bck-title{
   	display: block;
-    padding: 0px 40px;
+    padding: 0px 14px;
     color: #7BC14D;
     font-weight: bold;
-    margin-top: -3.5%;
+    margin-top: -16%;
     background-color: #fff;
     width: fit-content;
 }
