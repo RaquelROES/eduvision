@@ -811,12 +811,12 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 		background-image: url(images/tallerambiental.png);
 	}
 
-	.item-container .icon-birrete:before {
-		background-image: url(images/icono0006072018.png);
+	.item-container .icon-evaluacion:before {
+		background-image: url(images/evaluacion.png);
 	}
 
-	.item-container .icon-libro:before {
-		background-image: url(images/icono0004072018.png);
+	.item-container .icon-cineforoicon:before {
+		background-image: url(images/cineforoicon-compressor.png);
 	}
 
 	.item-container .icon-lapiz:before {
