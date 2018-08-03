@@ -882,7 +882,13 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 		position: relative;
 	}
 
+/*caja materiales*/
 
+.bck-box.box-4 {
+   border: 3px dotted #7BC14D;
+    padding: 8px 14px 0px;
+    border-radius: 13px;
+}
 
 /*caja valores*/
 
