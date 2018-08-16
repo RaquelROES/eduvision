@@ -34,7 +34,7 @@
 				{ name: 'Icono Taller', element: 'span', attributes: { 'class': 'icon icon-taller' } },
 				{ name: 'Icono Evaluacion', element: 'span', attributes: { 'class': 'icon icon-evaluacion' } },
 				{ name: 'Icono Cine Foro', element: 'span', attributes: { 'class': 'icon icon-cineforoicon' } },
-				{ name: 'Icono Lápiz', element: 'span', attributes: { 'class': 'icon icon-lapiz' } },
+				
 
 				
 				{ name: 'Caja Aplico', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-1' } },
