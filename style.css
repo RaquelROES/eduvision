@@ -958,6 +958,9 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     top: -30px;
 }
 
+.bck-box.box-4 .bck-content{
+    margin-top: -40px;
+    }
 
 /*caja valores*/
 
