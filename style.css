@@ -952,9 +952,10 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     padding: 0px 14px;
     color: #7BC14D;
     font-weight: bold;
-    margin-top: -16%;
+    position: relative;
     background-color: #fff;
     width: fit-content;
+    top: -30px;
 }
 
 
@@ -980,7 +981,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 .bck-box.box-5 .bck-title:before {
     content: " ";
     left: 0px;
-    top: -45px;
+    margin-top: -30px;
     position: absolute;
     background: url(images/integracionyvaloresicon.png);
     padding: 30px;
