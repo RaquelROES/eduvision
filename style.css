@@ -636,7 +636,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 		margin-top: -2px;
 	}
 
-#actividad .content  .cke_contents .texto_curso .bck-ol l
+#actividad .content .cke_contents .texto_curso .bck-ol li
 #actividad .content .texto_curso .bck-ol li,
 #actividad .content .workspace ul li .bck-ol li {
     list-style-type: none;
@@ -662,7 +662,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     padding-left: 0px;
 }
 
-#actividad .content .cke_contents.texto_curso .bck-ol-2 li:before,
+#actividad .content .cke_contents .bck-ol-2 li:before,
 #actividad .content .texto_curso .bck-ol-2 li:before,
 #actividad .content .workspace ul li .bck-ol-2 li:before {
 	content: counter(bck-li-counter)'.';
@@ -682,7 +682,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     padding-left: 0px;
 }
 
-#actividad .content .cke_contents.texto_curso .bck-ol-3 li:before,
+#actividad .content .cke_contents .texto_curso .bck-ol-3 li:before,
 #actividad .content .texto_curso .bck-ol-3 li:before,
 #actividad .content .workspace ul li .bck-ol-3 li:before {
 		content: counter(bck-li-counter)'. ';
@@ -704,7 +704,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     padding-left: 0px;
 }
 
-#actividad .content .cke_contents.texto_curso .bck-ol-4 li:before,
+#actividad .content .cke_contents .texto_curso .bck-ol-4 li:before,
 #actividad .content .texto_curso .bck-ol-4 li:before,
 #actividad .content .workspace ul li .bck-ol-4 li:before {
 		content: counter(bck-li-counter)'. ';
