@@ -188,6 +188,7 @@
 	table {
 		margin-bottom: 20px;
 	}
+
 /**/
 
 
@@ -700,6 +701,8 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     margin-top: -2px;
 }
 
+/*lista fucsia*/
+
 #actividad .content .cke_contents .texto_curso .bck-ol-4 li
 #actividad .content .texto_curso .bck-ol-4 li,
 #actividad .content .workspace ul li .bck-ol-4 li {
@@ -712,14 +715,14 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 #actividad .content .cke_contents .texto_curso .bck-ol-4 li:before,
 #actividad .content .texto_curso .bck-ol-4 li:before,
 #actividad .content .workspace ul li .bck-ol-4 li:before {
-		content: counter(bck-li-counter)'. ';
-		position: absolute;
-		margin-left: -30px;
-		font-weight: bold;
-		font-size: 2.0rem;
-		text-align: right;
-		color: #97b833;
-		margin-top: -2px;
+	content: counter(bck-li-counter, lower-alpha)'.';
+	position: absolute;
+	margin-left: -30px;
+	font-weight: bold;
+	font-size: 2.0rem;
+	text-align: right;
+	color: #db4b9b;
+	margin-top: -2px;
 }
 
 
