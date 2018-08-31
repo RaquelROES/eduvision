@@ -275,6 +275,11 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 		cursor: pointer;
 	}
 
+	body:not(.android) .slider-control:not([disabled]):not(.disabled):hover {
+    opacity: .9;
+    color: #28afc8;
+}
+
 	.navigator .slider-control.left:before,
 	.navigator .slider-control.right:after {
 		font-family: 'FontAwesome';
