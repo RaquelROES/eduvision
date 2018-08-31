@@ -1072,12 +1072,13 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 
 .bck-box.box-9 .bck-title{
   	display: block;
-    padding: 0px 40px;
+    padding: 0px 25px;
     color: #00a29a;
     font-weight: bold;
     margin-top: -3.5%;
     background-color: #fff;
     width: fit-content;
+    margin-top: -2%;
 }
 
 .bck-box.box-9 .bck-title:before {
