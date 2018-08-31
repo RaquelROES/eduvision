@@ -1064,7 +1064,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 /*Datos curiosos*/
 
 .bck-box.box-9 {
-    border: 3px dotted #f25a22;
+    border: 3px dotted #00a29a;
     border-radius: 15px;
     padding: 0px 10px;
 }
@@ -1073,7 +1073,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 .bck-box.box-9 .bck-title{
   	display: block;
     padding: 0px 40px;
-    color: #cc6204;
+    color: #00a29a;
     font-weight: bold;
     margin-top: -3.5%;
     background-color: #fff;
@@ -1084,7 +1084,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     content: " ";
     left: -10px;
     position: absolute;
-    background: url(images/Aprenda_icon.png);
+    background: url(images/datos_icon.png);
     padding: 30px;
     background-size: contain;
     background-repeat: no-repeat;
