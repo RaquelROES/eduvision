@@ -1020,11 +1020,44 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     background-repeat: no-repeat;
 }
 
+
+/*Caja imágenes*/
+
 .bck-box.box-7 {
     margin-top: -2.6%;
     position: relative;
     left: -12.6%;
     width: 125.3%;
+}
+
+
+/*Aprenda a...*/
+
+.bck-box.box-8 {
+    border: 3px dotted #f25a22;
+    border-radius: 15px;
+    padding: 0px 10px;
+}
+
+
+.bck-box.box-8 .bck-title{
+  	display: block;
+    padding: 0px 40px;
+    color: #cc6204;
+    font-weight: bold;
+    margin-top: -3.5%;
+    background-color: #fff;
+    width: fit-content;
+}
+
+.bck-box.box-8 .bck-title:before {
+    content: " ";
+    left: -10px;
+    position: absolute;
+    background: url(images/Aprenda_icon.png);
+    padding: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
