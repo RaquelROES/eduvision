@@ -685,14 +685,14 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 #actividad .content .cke_contents .texto_curso .bck-ol-3 li:before,
 #actividad .content .texto_curso .bck-ol-3 li:before,
 #actividad .content .workspace ul li .bck-ol-3 li:before {
-		content: counter(bck-li-counter)'. ';
-		position: absolute;
-		margin-left: -30px;
-		font-weight: bold;
-		font-size: 2.0rem;
-		text-align: right;
-		color: #54828b;
-		margin-top: -2px;
+	content: counter(bck-li-counter)'. ';
+    position: absolute;
+    margin-left: -30px;
+    font-weight: normal;
+    font-size: 2.0rem;
+    text-align: right;
+    color: #000;
+    margin-top: -2px;
 }
 
 #actividad .content .cke_contents .texto_curso .bck-ol-4 li
