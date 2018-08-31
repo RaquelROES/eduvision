@@ -1034,13 +1034,44 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 /*Aprenda a...*/
 
 .bck-box.box-8 {
-    border: 3px dotted #f25a22;
+    border: 3px dotted #1c4985;
     border-radius: 15px;
     padding: 0px 10px;
 }
 
 
 .bck-box.box-8 .bck-title{
+  	display: block;
+    padding: 0px 15px 0px 50px;
+    color: #1c4985;
+    font-weight: bold;
+    margin-top: -3.5%;
+    background-color: #fff;
+    width: fit-content;
+}
+
+.bck-box.box-8 .bck-title:before {
+    content: " ";
+    left: -15px;
+    top: 5px;
+    position: absolute;
+    background: url(images/Aprenda_icon.png);
+    padding: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/*Datos curiosos*/
+
+.bck-box.box-9 {
+    border: 3px dotted #f25a22;
+    border-radius: 15px;
+    padding: 0px 10px;
+}
+
+
+.bck-box.box-9 .bck-title{
   	display: block;
     padding: 0px 40px;
     color: #cc6204;
@@ -1050,7 +1081,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     width: fit-content;
 }
 
-.bck-box.box-8 .bck-title:before {
+.bck-box.box-9 .bck-title:before {
     content: " ";
     left: -10px;
     position: absolute;
