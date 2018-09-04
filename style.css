@@ -701,7 +701,7 @@ ol.bck-ol {
     padding-left: 0px;
 }
 
-#actividad .content .cke_contents .texto_curso .bck-ol-3 li:before,
+#actividad .content .cke_contents .bck-ol-3 li:before,
 #actividad .content .texto_curso .bck-ol-3 li:before,
 #actividad .content .workspace ul li .bck-ol-3 li:before {
 	content: counter(bck-li-counter)'. ';
@@ -726,7 +726,7 @@ ol.bck-ol {
 }
 
 
-#actividad .content .cke_contents .texto_curso .bck-ol-4 li:before,
+#actividad .content .cke_contents .bck-ol-4 li:before,
 #actividad .content .texto_curso .bck-ol-4 li:before,
 #actividad .content .workspace ul li .bck-ol-4 li:before {
 	content: counter(bck-li-counter, lower-alpha)'.';
@@ -1350,4 +1350,3 @@ div.calculo table.marco * {
 body.print-mode .title *, body.print-mode .title {
     background-color: #e94442;
 }
-
