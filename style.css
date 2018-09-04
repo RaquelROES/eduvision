@@ -645,7 +645,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 
 /*lista ordenada*/
 
-.cke_contents ol .bck-ol {
+.cke_contents ol.bck-ol {
     padding-left: 0px;
 }
 
