@@ -642,6 +642,14 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 		margin-top: -2px;
 	}
 
+
+/*lista ordenada*/
+
+
+ol.bck-ol {
+    padding-left: 32px;
+}
+
 #actividad .content .cke_contents .texto_curso .bck-ol li,
 #actividad .content .texto_curso .bck-ol li,
 #actividad .content .workspace ul li .bck-ol li {
