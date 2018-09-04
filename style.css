@@ -1140,7 +1140,7 @@ ol.bck-ol {
 }
 
 
-/*Datos Plantemos*/
+/*Plantemos*/
 
 .bck-box.box-10 {
     border: 3px dotted #a3bf4f;
@@ -1200,6 +1200,42 @@ ol.bck-ol {
     color: #fff;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+
+/*Datos Plantemos*/
+
+.bck-box.box-12 {
+    border: 3px dotted #83bfe3;
+    border-radius: 15px;
+    padding: 0px 10px;
+}
+
+
+.bck-box.box-12 .bck-title{
+  	display: block;
+    padding: 0px 25px;
+    color: #83bfe3;
+    font-weight: bold;
+    margin-top: -3.5%;
+    background-color: #fff;
+    width: fit-content;
+    margin-top: -2%;
+}
+
+.bck-box.box-12 .bck-title:before {
+    content: " ";
+    left: -10px;
+    position: absolute;
+    background: url(images/todos_vivimos.png);
+    padding: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+}
+
+.bck-box.box-12 .bck-content{
+    padding: 10px;
 }
 
 
