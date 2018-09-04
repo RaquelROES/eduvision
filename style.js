@@ -36,8 +36,7 @@
 				{ name: 'Icono Taller', element: 'span', attributes: { 'class': 'icon icon-taller' } },
 				{ name: 'Icono Evaluacion', element: 'span', attributes: { 'class': 'icon icon-evaluacion' } },
 				{ name: 'Icono Cine Foro', element: 'span', attributes: { 'class': 'icon icon-cineforoicon' } },
-				
-
+				{ name: 'Icono Trabajo Extra', element: 'span', attributes: { 'class': 'icon trabajo_extra' } },
 				
 				{ name: 'Caja Aplico', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-1' } },
 				{ name: 'Caja Taller ambiental', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-2' } },
