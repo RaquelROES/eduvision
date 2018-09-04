@@ -1113,6 +1113,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     padding: 30px;
     background-size: contain;
     background-repeat: no-repeat;
+    margin-top: -10px;
 }
 
 .bck-box.box-9 .bck-content{
