@@ -629,6 +629,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 		padding-left: 32px;
 	}
 
+
 	.content ol li:before,
 	.cke_contents ol li:before {
 		content: counter(bck-li-counter)'. ';
@@ -644,6 +645,9 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 
 /*lista ordenada*/
 
+.cke_contents ol .bck-ol {
+    padding-left: 0px;
+}
 
 ol.bck-ol {
     padding-left: 32px;
