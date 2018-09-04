@@ -1115,6 +1115,9 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     background-repeat: no-repeat;
 }
 
+.bck-box.box-9 .bck-content{
+    padding: 10px;
+}
 
 
 /*pistas*/
@@ -1295,4 +1298,3 @@ div.calculo table.marco * {
 body.print-mode .title *, body.print-mode .title {
     background-color: #e94442;
 }
-
