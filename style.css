@@ -1121,6 +1121,43 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 }
 
 
+/*Datos Plantemos*/
+
+.bck-box.box-10 {
+    border: 3px dotted #a3bf4f;
+    border-radius: 15px;
+    padding: 0px 10px;
+}
+
+
+.bck-box.box-10 .bck-title{
+  	display: block;
+    padding: 0px 25px;
+    color: #a3bf4f;
+    font-weight: bold;
+    margin-top: -3.5%;
+    background-color: #fff;
+    width: fit-content;
+    margin-top: -2%;
+}
+
+.bck-box.box-10 .bck-title:before {
+    content: " ";
+    left: -10px;
+    position: absolute;
+    background: url(images/plantemosicon.png);
+    padding: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+}
+
+.bck-box.box-10 .bck-content{
+    padding: 10px;
+}
+
+
+
 /*pistas*/
 .hint.solucion.decoding {
     color: deeppink;
