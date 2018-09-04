@@ -1183,11 +1183,23 @@ ol.bck-ol {
     border: 3px dotted #48c9d2;
     border-radius: 15px;
     padding: 0px 10px;
+    margin-top: 20px;
 }
 
 
 .bck-box.box-11 .bck-content {
     padding: 10px;
+}
+
+
+.bck-box.box-11 .bck-title {
+    width: fit-content;
+    background-color: #48c9d2;
+    padding: 0px 10px;
+    margin: -17px;
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 
@@ -1369,4 +1381,3 @@ div.calculo table.marco * {
 body.print-mode .title *, body.print-mode .title {
     background-color: #e94442;
 }
-
