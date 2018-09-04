@@ -1069,6 +1069,11 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 }
 
 
+.bck-box.box-8 .bck-content{
+    padding: 10px;
+}
+
+
 /*Datos curiosos*/
 
 .bck-box.box-9 {
