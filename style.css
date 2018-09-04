@@ -940,6 +940,8 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     text-align: center;
 }
 
+
+
 	.bck-box.box-3 {
 		padding: 20px;
 		background: #FFFF73;
@@ -968,6 +970,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 
 .bck-box.box-4 .bck-content{
     margin-top: -40px;
+    padding: 10px;
     }
 
 /*caja valores*/
@@ -999,6 +1002,10 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     background-size: contain;
 }
 
+.bck-box.box-5 .bck-content{
+    padding: 10px;
+}
+
 /*caja diccionario*/
 
 .bck-box.box-6 {
@@ -1026,6 +1033,10 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     padding: 30px;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.bck-box.box-6 .bck-content{
+    padding: 10px;
 }
 
 
