@@ -888,7 +888,7 @@ ol.bck-ol {
     	background-image: url(images/evaluacion.png);
 	}
 	
-    .item-container .icon-cineforoicon:before {
+.item-container .icon-cineforoicon:before {
     height: 100px;
     width: 282px;
     margin-top: 2%;
@@ -896,9 +896,14 @@ ol.bck-ol {
     background-image: url(images/cineforoicon-compressor.png);
 }
 
-	.item-container .icon-lapiz:before {
-		background-image: url(images/icono0005072018.png);
-	}
+	
+.item-container .trabajo_extra:before {
+    height: 100px;
+    width: 282px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/trabajo_extra.png);
+}
 
 
 
