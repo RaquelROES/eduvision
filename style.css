@@ -1177,6 +1177,20 @@ ol.bck-ol {
 
 
 
+/*Trabajo extraclase*/
+
+.bck-box.box-11 {
+    border: 3px dotted #48c9d2;
+    border-radius: 15px;
+    padding: 0px 10px;
+}
+
+
+.bck-box.box-11 .bck-content {
+    padding: 10px;
+}
+
+
 /*pistas*/
 .hint.solucion.decoding {
     color: deeppink;
