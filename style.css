@@ -1225,7 +1225,7 @@ ol.bck-ol {
 
 .bck-box.box-12 .bck-title:before {
     content: " ";
-    left: -10px;
+    left: -28px;
     position: absolute;
     background: url(images/todos_vivimos.png);
     padding: 30px;
