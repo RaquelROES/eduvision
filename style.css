@@ -725,6 +725,7 @@ ol.bck-ol {
     padding-left: 0px;
 }
 
+
 #actividad .content .cke_contents .texto_curso .bck-ol-4 li:before,
 #actividad .content .texto_curso .bck-ol-4 li:before,
 #actividad .content .workspace ul li .bck-ol-4 li:before {
@@ -1349,3 +1350,4 @@ div.calculo table.marco * {
 body.print-mode .title *, body.print-mode .title {
     background-color: #e94442;
 }
+
