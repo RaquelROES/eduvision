@@ -651,13 +651,15 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     padding-left: 0px;
 }
 
-#actividad .content .cke_contents .texto_curso .bck-ol li:before,
+#actividad .content .cke_contents .bck-ol li:before,
 #actividad .content .texto_curso .bck-ol li:before,
 #actividad .content .workspace ul li .bck-ol li:before {
 	content: counter(bck-li-counter, lower-alpha)'.';
     position: absolute;
     color: #7BC14D;
 }
+
+/*lista ordenada 2*/
 
 #actividad .content .cke_contents .texto_curso .bck-ol-2 li
 #actividad .content .texto_curso .bck-ol-2 li,
@@ -1155,6 +1157,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 .bck-box.box-10 .bck-content{
     padding: 10px;
 }
+
 
 
 /*pistas*/
