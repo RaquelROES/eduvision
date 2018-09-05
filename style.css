@@ -603,6 +603,13 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 }
 
 
+ 	.bck-title6 {
+    font-weight: bold;
+    color: #008fbe;
+    font-size: 30px;
+}
+
+
 	.bck-enfasis {
 		color: #dd9c3c;
 		font-weight: bold;
@@ -1563,4 +1570,3 @@ div.calculo table.marco * {
 body.print-mode .title *, body.print-mode .title {
     background-color: #e94442;
 }
-
