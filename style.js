@@ -16,7 +16,8 @@
 				{ name: 'Título 1', element: 'h4', attributes: { 'class': 'bck-title1'} },
 				{ name: 'Título 2', element: 'h4', attributes: { 'class': 'bck-title2'} },
 				{ name: 'Título 3', element: 'h4', attributes: { 'class': 'bck-title3'} },
-				{ name: 'Título 3', element: 'h4', attributes: { 'class': 'bck-title4'} },
+				{ name: 'Título 4', element: 'h4', attributes: { 'class': 'bck-title4'} },
+				{ name: 'Título 5', element: 'h4', attributes: { 'class': 'bck-title5'} },
 
 
 				{ name: 'Énfasis', element: 'span', attributes: { 'class': 'bck-enfasis' }},
