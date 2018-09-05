@@ -690,7 +690,7 @@ ol.bck-ol {
     color: #de9d3c;
 }
 
-
+/*lista ordenada 3 negra*/
 
 #actividad .content .cke_contents .texto_curso .bck-ol-3 li
 #actividad .content .texto_curso .bck-ol-3 li,
@@ -739,7 +739,49 @@ ol.bck-ol {
 	margin-top: -2px;
 }
 
+/*lista cineforo numeral*/
 
+#actividad .content .cke_contents .texto_curso .bck-ol-5 li
+#actividad .content .texto_curso .bck-ol-5 li,
+#actividad .content .workspace ul li .bck-ol-5 li {
+    list-style-type: none;
+    counter-increment: bck-li-counter 1;
+    position: relative;
+    padding-left: 0px;
+}
+
+#actividad .content .cke_contents .bck-ol-5 li:before,
+#actividad .content .texto_curso .bck-ol-5 li:before,
+#actividad .content .workspace ul li .bck-ol-5 li:before {
+	content: counter(bck-li-counter)'. ';
+    position: absolute;
+    margin-left: -30px;
+    font-weight: normal;
+    font-size: 2.0rem;
+    text-align: right;
+    color: #40969d;
+    margin-top: -2px;
+}
+
+
+/*lista cineforo alpha*/
+
+#actividad .content .cke_contents .texto_curso .bck-ol-6 li,
+#actividad .content .texto_curso .bck-ol-6 li,
+#actividad .content .workspace ul li .bck-ol-6 li {
+    list-style-type: none;
+    counter-increment: bck-li-counter 1;
+    position: relative;
+    padding-left: 0px;
+}
+
+#actividad .content .cke_contents .bck-ol-6 li:before,
+#actividad .content .texto_curso .bck-ol-6 li:before,
+#actividad .content .workspace ul li .bck-ol-6 li:before {
+	content: counter(bck-li-counter, lower-alpha)'.';
+    position: absolute;
+    color: #de9d3c;
+}
 
 /*lista desordenada*/
 
