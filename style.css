@@ -923,6 +923,7 @@ ol.bck-ol {
 		margin-top: -16px;
 	}
    
+   /*dominio de ciencias*/
 
    .item-container .icon-aplico:before {
     background-image: url(images/aplicoloaprendido.png);
@@ -973,6 +974,67 @@ ol.bck-ol {
     background-image: url(images/trabajo_extra.png);
 }
 
+
+/*viajemos por Costa Rica*/
+
+
+ .item-container .icon-yalose:before {
+    background-image: url(images/icono_yalose.png);
+    height: 100px;
+    width: 280px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+	}
+
+	.item-container .icon-refuerza:before {
+	    height: 100px;
+   	    width: 501px;
+    	margin-top: 2%;
+    	margin-bottom: 3%;
+		background-image: url(images/icono_refuerzo.png);
+	}
+
+	.item-container .icon-evaluacioncostarica:before {
+	    height: 100px;
+   	    width: 300px;
+    	margin-top: 2%;
+    	margin-bottom: 3%;
+		background-image: url(images/icono_evaluacion.png);
+	}
+
+	.item-container .icon-momentouno:before {
+   		height: 100px;
+    	width: 350px;
+    	margin-top: 2%;
+    	margin-bottom: 3%;
+    	background-image: url(images/icono_momento1.png);
+	}
+	
+.item-container .icon-momentodos:before {
+    height: 100px;
+    width: 282px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/icono_momento2.png);
+}
+
+	
+.item-container .icon-momentotres:before {
+    height: 100px;
+    width: 282px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/icono_momento3.png);
+}
+
+
+.item-container .icon-momentocuatro:before {
+    height: 100px;
+    width: 282px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/icono_momento4.png);
+}
 
 
 	/*cajas*/
