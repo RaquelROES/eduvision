@@ -594,6 +594,15 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     font-size: 30px;
     text-shadow: 5px 5px 5px #D9D9D9;
 }
+
+
+ 	.bck-title5 {
+    font-weight: bold;
+    color: #febd0e;
+    font-size: 30px;
+}
+
+
 	.bck-enfasis {
 		color: #dd9c3c;
 		font-weight: bold;
