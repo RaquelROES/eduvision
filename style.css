@@ -783,6 +783,31 @@ ol.bck-ol {
     color: #de9d3c;
 }
 
+
+/*lista evalúo */
+
+#actividad .content .cke_contents .texto_curso .bck-ol-7 li
+#actividad .content .texto_curso .bck-ol-7 li,
+#actividad .content .workspace ul li .bck-ol-7 li {
+    list-style-type: none;
+    counter-increment: bck-li-counter 1;
+    position: relative;
+    padding-left: 0px;
+}
+
+#actividad .content .cke_contents .bck-ol-7 li:before,
+#actividad .content .texto_curso .bck-ol-7 li:before,
+#actividad .content .workspace ul li .bck-ol-7 li:before {
+	content: counter(bck-li-counter)'. ';
+    position: absolute;
+    margin-left: -30px;
+    font-weight: normal;
+    font-size: 2.0rem;
+    text-align: right;
+    color: #7cc242;
+    margin-top: -2px;
+}
+
 /*lista desordenada*/
 
 	.texto_curso ul li,
