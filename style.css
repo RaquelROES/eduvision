@@ -797,9 +797,13 @@ ol.bck-ol {
 #actividad .content .workspace ul li .bck-ol-6 li:before {
 	content: counter(bck-li-counter, lower-alpha)'.';
     position: absolute;
-    color: #de9d3c;
+    margin-left: -30px;
+    font-weight: normal;
+    font-size: 2.0rem;
+    text-align: right;
+    color: #40969d;
+    margin-top: -2px;
 }
-
 
 /*lista evalúo */
 
@@ -1113,6 +1117,7 @@ ol.bck-ol {
 }
 
 
+/*caja amarilla*/
 
 	.bck-box.box-3 {
 		padding: 20px;
@@ -1390,6 +1395,28 @@ ol.bck-ol {
 .bck-box.box-12 .bck-content{
     padding: 10px;
 }
+
+
+/* caja taller ambiental*/
+
+.bck-box.box-13 {
+    background: #eaf1d6;
+    width: 125.2%;
+    margin-left: -12.5%;
+    padding: 2% 14%;
+    /* margin-top: 50px; */
+    color: #333;
+}
+
+	
+.bck-box.box-13 .bck-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #cc6204;
+    font-weight: bold;
+    text-align: center;
+}
+
 
 
 /*pistas*/
