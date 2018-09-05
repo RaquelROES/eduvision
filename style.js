@@ -18,6 +18,7 @@
 				{ name: 'Título 3', element: 'h4', attributes: { 'class': 'bck-title3'} },
 				{ name: 'Título 4', element: 'h4', attributes: { 'class': 'bck-title4'} },
 				{ name: 'Título 5', element: 'h4', attributes: { 'class': 'bck-title5'} },
+				{ name: 'Título 6', element: 'h4', attributes: { 'class': 'bck-title6'} },
 
 
 				{ name: 'Énfasis', element: 'span', attributes: { 'class': 'bck-enfasis' }},
