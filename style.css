@@ -603,12 +603,17 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 }
 
 
- 	.bck-title6 {
+ .bck-title6 {
     font-weight: bold;
     color: #008fbe;
     font-size: 30px;
 }
 
+ .bck-title7 {
+    font-weight: bold;
+    color: #000;
+    font-size: 30px;
+}
 
 	.bck-enfasis {
 		color: #dd9c3c;
