@@ -626,7 +626,8 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     background-size: contain;
     content: " ";
     padding: 30px;
-    left: 0px;
+    left: -20px;
+    margin-top: -10px;
     background-repeat: no-repeat;
     position: absolute;
     background-image: url(images/trabajo_cotidiano.png);
