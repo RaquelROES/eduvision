@@ -1441,6 +1441,33 @@ ol.bck-ol {
 }
 
 
+/*sabías qué*/
+
+.bck-box.box-14 {
+   border: 3px dotted #7BC14D;
+    padding: 8px 14px 0px;
+    border-radius: 13px;
+}
+
+
+.bck-box.box-14 .bck-title{
+  	display: block;
+    padding: 0px 14px;
+    color: #0093c0;
+    font-weight: bold;
+    position: relative;
+    background-color: #fff;
+    width: fit-content;
+    top: -30px;
+}
+
+.bck-box.box-14 .bck-content{
+    margin-top: -40px;
+    padding: 10px;
+    }
+
+
+
 
 /*pistas*/
 .hint.solucion.decoding {
