@@ -611,8 +611,25 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 
  .bck-title7 {
     font-weight: bold;
-    color: #000;
+    background: #a6ce39;
     font-size: 30px;
+    text-align: left;
+    color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    width: fit-content;
+}
+
+.bck-title7:before {
+    background-size: contain;
+    content: " ";
+    padding: 30px;
+    left: 0px;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-image: url(images/trabajo_cotidiano.png);
 }
 
 	.bck-enfasis {
