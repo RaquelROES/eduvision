@@ -1527,6 +1527,17 @@ ol.bck-ol {
     border-bottom-right-radius: 10px;
 }
 
+.bck-box.box-16 .bck-title :before {
+    background-size: contain;
+    content: " ";
+    padding: 30px;
+    left: -20px;
+    margin-top: -10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-image: url(images/diccionario.png);
+}
+
 
 /*pistas*/
 .hint.solucion.decoding {
