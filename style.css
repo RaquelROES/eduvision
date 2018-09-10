@@ -1,1684 +1,196 @@
-# eduvision 
-
-/* General */
-
-@import url(https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,400italic);
-
-	.body_clase .content-wrapper {
-		padding-top: 100px;
-		font-family: 'Raleway', Georgia, serif;
-		font-weight: 300;
-		padding-bottom: 0;
-	}
-	.body_clase.edit .content-wrapper {
-		padding-top: 40px;
-		padding-bottom: 40px;
-	}
-	body.is_app .content-wrapper,
-	body.app:not(.offline-pc) .content-wrapper,
-	body.user_demo .content-wrapper {
-	    margin-top: 60px;
-	}
-
-	.cke_contents  table {
-		margin-bottom: 10px;
-	}
-
-	.is_app.content_type_clase_eduvision {
-		padding-top: 0px;
-	}
-
-	.content_type_clase_eduvision #actividad {
-		margin-bottom: 0px;
-		-webkit-transform: none;
-		-webkit-transform-style: flat;
-	}
-
-	#actividad .carousel-inner .item-container {
-		background-image: none;
-   	 	margin: 20px auto 30px;
-    	padding: 0px;
-    	padding-bottom: 90px;
-    	position: relative;
-    	top: 50px;
-	}
-
-	.content_type_clase_eduvision #actividad .content .header .title img,
-	.content_type_clase_eduvision #actividad .content .header .chapter {
-		display: none;
-	}
-
-	#indice .units ul li a .number,
-	#indice .unit-content .header .number
-	 {
-		visibility: hidden;
-	}
-
-	.content_type_clase_eduvision #actividad .content .header:before {
-		content: '';
-		display: block;
-		position: absolute;
-		bottom: -13px;
-		left: 0;
-		width: 100%;
-		height: 13px;
-		background: url(images/trazo.png) 0 0 no-repeat;
-	}
-
-	.content_type_clase_eduvision #actividad .content .header.empty:before {
-		content: '';
-		display: none!important;
-	}
-	.content_type_clase_eduvision #actividad .content .header .title {
-		margin-top: -40px;
-		padding-top: 30px;
-		padding-bottom: 10px;
-	}
-
-	.content_type_clase_eduvision #actividad .content .header .title h3 {
-		font-family: 'Cabin Sketch', cursive;
-		font-size: 6.0rem;
-		color: #ffffff;
-		display: block;
-		padding: 0 20px 0px 20px;
-		margin-bottom: 20px;
-		margin-top: 0;
-		position: relative;
-	}
-
-	.content_type_clase_eduvision #actividad .content .header .title h3:before {
-		content: '';
-		display: block;
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 4px;
-		height: 100%;
-		background: rgba(0,0,0,.2);
-		border-radius: 0 15px 15px 0;
-	}
-	.content_type_clase_eduvision #actividad .content .header .title h3:after {
-		content: '';
-		display: block;
-		position: absolute;
-		left: -4px;
-		top: 0;
-		width: 4px;
-		height: 100%;
-		background: rgba(255,255,255,.2);
-		border-radius: 15px 0 0 15px;
-	}
-
-	.content_type_clase_eduvision #actividad .content .header .title h3 span {
-		display: block;
-		font-size:2.2rem;
-		font-weight: 400;
-	}
-	.content_type_clase_eduvision #actividad .texto_curso,
-	.content_type_clase_eduvision #actividad .slide_content_type_1 .pregunta .texto_curso {
-		font-size: 1.6rem;
-	}
-
-	.texto_curso p:last-of-type {
-		margin-bottom: 15px;
-	}
-
-	#actividad .class_slide {
-    	padding: 20px 97px 0px;
-	}
-
-	#actividad .class_slide:last-of-type {
-	    padding-bottom: 100px;
-	}
-
-	#actividad .slide-concatenate .class_slide {
-	    padding-bottom: 20px;
-	}
-
-	#actividad .slide-concatenate:last-of-type .class_slide {
-	    padding-bottom: 100px;
-	}
-
-	.content_type_clase_eduvision .slide_main input {
-		color: #555;
-		background-color: #fff;
-		background-image: none;
-		border: 1px solid #ccc;
-		border-radius: 4px;
-		-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-		box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-		-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-		transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-	}
-
-	.content_type_clase_eduvision .slide_main input:focus {
-		border-top-color: #85c939;
-		border-right-color: #85c939;
-		border-bottom-color: #85c939;
-		border-left-color: #85c939;
-		outline-width: 0px;
-		outline-style: none;
-		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(133, 200, 57, 0.6);
-	}
-
-	.content_type_clase_eduvision .slide_main input[disabled],
-	.content_type_clase_eduvision .slide_main input[readonly],
-	fieldset[disabled] .content_type_clase_eduvision .slide_main input {
-		cursor: not-allowed;
-		background-color: #eee;
-		opacity: 1;
-	}
-
-	.content_type_clase_eduvision .slide_main input.respuesta_ok {
-		border-color: #57e900;
-		background: #D1F3BD;
-	}
-
-	.content_type_clase_eduvision .slide_main input.respuesta_ko {
-		border-color: #FF3626;
-		background: #FFA49D;
-	}
-
-	.content_type_clase_eduvision .slide_main input.solucion {
-		border-color: #00BDFF;
-		background: #B6ECFF;
-	}
-
-	table {
-		margin-bottom: 20px;
-	}
-
-/**/
-
-
-
-/*TOC*/
-
-#indice .unit-content .header .title {
-    color: transparent;
-}
-
-
-#indice .units ul li.active:not(.disabled) {
-    background: #00afc8;
-    text-align: center;
-    transition: padding 1s;
-}
-
-#indice .units ul li {
-    text-align: center;
-    transition: padding 1s;
-}
-
-
-body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
-    background: #00afc8;
-    padding: 8px;
-}
-
-/*titulo slide*/
-
-.content_type_clase_eduvision #actividad .content .header {
-    display: none;
-}
-
-
-
-/* Navigators */
-	.navigator {
-		bottom: -20px;
-		left: 0;
-		position: absolute;
-		width: 100%;
-		padding: 0px 97px;
-	}
-
-	.navigator .title {
-		width: calc(100% - 20px);
-		font-size: 1.4rem;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		line-height: 4.8rem;
-		display: inline-block;
-		vertical-align: top;
-	}
-
-	.main-navigator {
-		padding: 30px 0px 50px;
-		width: 100%;
-	}
-
-	.navigator .left, .navigator .right {
-		width: 50%;
-		display: inline-block;
-	}
-
-	.navigator .right {
-		text-align: right;
-	}
-
-	.navigator .slider-control.left,
-	.navigator .slider-control.right {
-		height: auto;
-		width: 100%;
-		background-color: transparent;
-		border-radius: 0px;
-		margin: 0px;
-		opacity: 1;
-		text-shadow: none;
-		color: #878787;
-		font-size: 1.4rem;
-		position: relative;
-		top: auto;
-		left: auto;
-		cursor: pointer;
-	}
-
-	body:not(.android) .slider-control:not([disabled]):not(.disabled):hover {
-    opacity: .9;
-    color: #28afc8;
-}
-
-	.navigator .slider-control.left:before,
-	.navigator .slider-control.right:after {
-		font-family: 'FontAwesome';
-		position: absolute;
-		margin-top: 0;
-		background: none;
-		color: #878787;
-		border-radius: 120px;
-		width: 48px;
-		height: 48px;
-		line-height: 4.8rem;
-		text-align: center;
-		font-size: 4.8rem;
-	}
-
-	.navigator .slider-control.left {
-		padding-left: 46px;
-	}
-	.navigator .slider-control.right {
-		padding-right: 46px;
-		left: 0;
-	}
-	.navigator .slider-control.left:before {
-		content: "\f104";
-		left: 0;
-		padding-right: 5px;
-	}
-
-	.navigator .slider-control.right:after {
-		content: "\f105";
-		right: 0;
-		padding-left: 5px;
-	}
-
-	.navigator .slider-control span {
-		position: static;
-		margin: 0px;
-        cursor: pointer;
-	}
-/**/
-
-/* Navbar */
-	.navbar-bottom {
-		background: #ffffff;
-		display: none;
-	}
-	.edit .navbar-bottom {
-		display: block;
-	}
-
-	.slider-indicators {
-	    padding-left: 100px;
-	    padding-right: 100px;
-	}
-
-	.slider-indicators li,
-	.edit .slider-indicators li {
-		background-color: #f9bfad;
-		color: #ffffff;
-		opacity: 0.5;
-	}
-
-	#top-navigator .slider-indicators li {
-    	background-color: #28afc8;
-   		text-indent: 0;
-	}
-
-	.slider-indicators .active,
-	.slider-indicators li:hover,
-	.edit .slider-indicators li.active,
-	.edit .slider-indicators .concat.active {
-		opacity: 1;
-	}
-	.edit .slider-indicators .concat.active {
-		color: #f9bfad;
-	}
-
-/**/
-
-/* Navbar (Breadcums) */
-	.content_type_clase_eduvision .publisher-navbar {
-		position: fixed;
-		top: 44px;
-		background: #ffffff;
-		width: 100%;
-		left: 0;
-		height: 58px;
-		box-shadow: rgba(0, 0, 0, 0.3) 0px 0 9px;
-	}
-
-	.is_app.content_type_clase_eduvision .publisher-navbar {
-		position: sticky;
-		top: 0px;
-	}
-
-	#top-navigator {
-		height: 44px;
-		overflow: hidden;
-		position: relative;
-	}
-
-	#top-navigator.show_left:before {
-        background: none;
-        display: none;
-    }
-
-    #top-navigator.show_right:after {
-        background: none;
-        display: none;
-    }
-
-	.content_type_clase_eduvision .publisher-navbar .navbar-content {
-		max-width: 960px;
-		margin: 0 auto;
-		padding-left: 90px;
-		padding-right: 50px;
-	}
-
-	.content_type_clase_eduvision .logo-publisher {
-	 content: " ";
-    background-image: url(images/eduvison-logo.png) !important;
-    height: 50px;
-    background-repeat: no-repeat;
-    width: 102px;
-    margin-left: -100px;
-    margin-top: 4px;
-    margin-right: 60px;
-    float: left;
-    background-size: contain;
-}
-
-	.content_type_clase_eduvision .slider-indicators {
-		padding: 0;
-		display: inline-block;
-		text-align: left;
-		position: relative;
-		width: 5000px;
-		bottom: 0px;
-		left: 0px;
-		z-index: 0;
-		background-color: #ffffff;
-	    color: #00599C;
-	}
-
-
-	.content_type_clase_eduvision .publisher-navbar .dropdown button,
-	.content_type_clase_eduvision .publisher-navbar li {
-		border-radius: 5px;
-		border: none;
-		background-color: transparent;
-		color: #ffffff;
-		vertical-align: middle;
-		margin: 0px 5px;
-		text-indent: 0px;
-		line-height: 3.5rem;
-		font-size: 2.0rem;
-		font-weight: 400;
-		cursor: pointer;
-		background: #878787;
-		border-radius: 120px;
-	}
-
-	.content_type_clase_eduvision .slider-indicators:after {
-		content: '';
-		display: block;
-		clear: both;
-		visibility: hidden;
-		line-height: 0;
-		height: 0;
-	}
-
-	.content_type_clase_eduvision .slider-indicators li {
-		width: 14px;
-		height: 14px;
-		margin: 0 8px 0 0;
-		text-align: center;
-		opacity: 0.5;
-		position: relative;
-		float: left;
-	}
-
-	.content_type_clase_eduvision .slider-indicators li span {
-		display: none;
-	}
-
-	.content_type_clase_eduvision .slider-indicators li.active,
-	.content_type_clase_eduvision .publisher-navbar li:hover {
-		opacity: 1;
-	}
-	.content_type_clase_eduvision .publisher-navbar #top-navigator,
-	.content_type_clase_eduvision .publisher-navbar .dropdown {
-		float: left;
-		margin-top: 10px;
-		display: block;
-
-	}
-	.content_type_clase_eduvision .publisher-navbar #top-navigator {
-		margin-top: 20px;
-		height: 38px;
-	}
-	.content_type_clase_eduvision .publisher-navbar .dropdown button {
-		width: auto;
-		padding: 0px 10px;
-	}
-
-	.open > .dropdown-menu {
-		display: block;
-		max-height: 300px;
-		overflow-y: auto;
-	}
-
-	.content_type_clase_eduvision .publisher-navbar .dropdown button {
-		background: none;
-		color: #878787;
-		border: none;
-	}
-
-	.content_type_clase_eduvision .publisher-navbar .dropdown button:focus {
-		outline: none;
-	}
-
-	.content_type_clase_eduvision .publisher-navbar .dropdown li {
-		display: list-item;
-		width: auto;
-		background: none;
-	}
-
-	.content_type_clase_eduvision .publisher-navbar .dropdown li a {
-		color: #28afc8;
-	}
-
-	.content_type_clase_eduvision .publisher-navbar .dropdown .caret {
-		border-color: #878787 transparent transparent transparent;
-		margin-left: 6px;
-
-	}
-/**/
-
-/* Pagination */
-
-.js-slide-wrapper > .header .single-pagination {
-	position: absolute;
-	left: 60px;
-	bottom: 34px;
-	width: 90px;
-	height: 75px;
-	color: #ffffff;
-	font-size: 6.5rem;
-	line-height: 6.5rem;
-	padding: 2px 16px 2px 2px;
-	font-family: 'Cabin Sketch', cursive;
-	font-weight: 300;
-	text-align: right;
-}
-
-/* Iconos */
-
-#actividad .player.audio {
-	background: url(images/eduvision_audio.png) 0 0 no-repeat;
-	background-size: contain;
-	width: 36px;
-	height:24px;
-	border-radius: 0
-}
-
-#actividad .player.video {
-	background: url(images/eduvision_video.png) 0 0 no-repeat;
-	background-size: contain;
-	width: 36px;
-	height:24px;
-	border-radius: 0
-}
-
-#actividad .bck-file-attach img {
-	display: none;
-}
-
-
-/* CKEDITOR */
-
-	.bck-title1,
-	.bck-title2,
-	.bck-title3,
-	.bck-title-activity {
-		font-family: unset;
-		font-weight: bold;
-	 	position: relative;
-	}
-
-	.bck-title1 {
-    color: #194985;
-    font-size: 3rem;
-    margin: 0px;
-    padding: 0px;
-    margin-bottom: 7px;
-}
-
-	.bck-title2 {
-		border-bottom: 2px dotted;
-	}
-
-
-	.bck-title3 {
-    font-size: 2.5rem;
-    color: #54828b;
-	}
-
- 	.bck-title4 {
-    font-weight: bold;
-    color: #8fb435;
-    font-size: 30px;
-    text-shadow: 5px 5px 5px #D9D9D9;
-}
-
-
- 	.bck-title5 {
-    font-weight: bold;
-    color: #febd0e;
-    font-size: 30px;
-}
-
-
- .bck-title6 {
-    font-weight: bold;
-    color: #008fbe;
-    font-size: 30px;
-}
-
- .bck-title7 {
-    font-weight: bold;
-    background: #a6ce39;
-    font-size: 30px;
-    text-align: left;
-    color: #fff;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    width: fit-content;
-}
-
-.bck-title7:before {
-    background-size: contain;
-    content: " ";
-    padding: 30px;
-    left: -20px;
-    margin-top: -10px;
-    background-repeat: no-repeat;
-    position: absolute;
-    background-image: url(images/trabajo_cotidiano.png);
-}
-
-	.bck-enfasis {
-		color: #dd9c3c;
-		font-weight: bold;
-	}
-
-	strong {
-		color: inherit !important;
-		font-weight: bold;
-	}
-
-	.bck-tooltip, .bck-underline {
-   		 text-decoration: underline;
-    	 color: #274389;
-}
-
-	.content hr,
-	.cke_contents hr {
-		border: 0;
-		border-top: 2px solid #85b426;
-	}
-
-/*lista ordenada*/
-
-	.content ol,
-	.cke_contents ol {
-		list-style: none;
-		padding: 0;
-	}
-
-	.content ol li,
-	.cke_contents ol li {
-		counter-increment: bck-li-counter 1;
-		position: relative;
-		padding-left: 32px;
-	}
-
-
-	.content ol li:before,
-	.cke_contents ol li:before {
-		content: counter(bck-li-counter)'. ';
-		position: absolute;
-		margin-left: -30px;
-		font-weight: bold;
-		font-size: 2.0rem;
-		text-align: right;
-		color: #5bbfda;
-		margin-top: -2px;
-	}
-
-
-/*lista ordenada*/
-
-.cke_contents ol.bck-ol {
-    padding-left: 0px !important;
-}
-
-ol.bck-ol {
-    padding-left: 32px;
-}
-
-#actividad .content .cke_contents .texto_curso .bck-ol li,
-#actividad .content .texto_curso .bck-ol li,
-#actividad .content .workspace ul li .bck-ol li {
-    list-style-type: none;
-    counter-increment: bck-li-counter 1;
-    position: relative;
-    padding-left: 0px;
-}
-
-#actividad .content .cke_contents .bck-ol li:before,
-#actividad .content .texto_curso .bck-ol li:before,
-#actividad .content .workspace ul li .bck-ol li:before {
-	content: counter(bck-li-counter, lower-alpha)'.';
-    position: absolute;
-    color: #7BC14D;
-}
-
-/*lista ordenada 2*/
-
-#actividad .content .cke_contents .texto_curso .bck-ol-2 li
-#actividad .content .texto_curso .bck-ol-2 li,
-#actividad .content .workspace ul li .bck-ol-2 li {
-    list-style-type: none;
-    counter-increment: bck-li-counter 1;
-    position: relative;
-    padding-left: 0px;
-}
-
-#actividad .content .cke_contents .bck-ol-2 li:before,
-#actividad .content .texto_curso .bck-ol-2 li:before,
-#actividad .content .workspace ul li .bck-ol-2 li:before {
-	content: counter(bck-li-counter)'.';
-    font-size: 2.0rem;
-    top: 1px;
-    color: #de9d3c;
-}
-
-/*lista ordenada 3 negra*/
-
-#actividad .content .cke_contents .texto_curso .bck-ol-3 li
-#actividad .content .texto_curso .bck-ol-3 li,
-#actividad .content .workspace ul li .bck-ol-3 li {
-    list-style-type: none;
-    counter-increment: bck-li-counter 1;
-    position: relative;
-    padding-left: 0px;
-}
-
-#actividad .content .cke_contents .bck-ol-3 li:before,
-#actividad .content .texto_curso .bck-ol-3 li:before,
-#actividad .content .workspace ul li .bck-ol-3 li:before {
-	content: counter(bck-li-counter)'. ';
-    position: absolute;
-    margin-left: -30px;
-    font-weight: normal;
-    font-size: 2.0rem;
-    text-align: right;
-    color: #000;
-    margin-top: -2px;
-}
-
-/*lista fucsia*/
-
-#actividad .content .cke_contents .texto_curso .bck-ol-4 li
-#actividad .content .texto_curso .bck-ol-4 li,
-#actividad .content .workspace ul li .bck-ol-4 li {
-    list-style-type: none;
-    counter-increment: bck-li-counter 1;
-    position: relative;
-    padding-left: 0px;
-}
-
-
-#actividad .content .cke_contents .bck-ol-4 li:before,
-#actividad .content .texto_curso .bck-ol-4 li:before,
-#actividad .content .workspace ul li .bck-ol-4 li:before {
-	content: counter(bck-li-counter, lower-alpha)'.';
-	position: absolute;
-	margin-left: -30px;
-	font-weight: bold;
-	font-size: 2.0rem;
-	text-align: right;
-	color: #db4b9b;
-	margin-top: -2px;
-}
-
-/*lista cineforo numeral*/
-
-#actividad .content .cke_contents .texto_curso .bck-ol-5 li
-#actividad .content .texto_curso .bck-ol-5 li,
-#actividad .content .workspace ul li .bck-ol-5 li {
-    list-style-type: none;
-    counter-increment: bck-li-counter 1;
-    position: relative;
-    padding-left: 0px;
-}
-
-#actividad .content .cke_contents .bck-ol-5 li:before,
-#actividad .content .texto_curso .bck-ol-5 li:before,
-#actividad .content .workspace ul li .bck-ol-5 li:before {
-	content: counter(bck-li-counter)'. ';
-    position: absolute;
-    margin-left: -30px;
-    font-weight: normal;
-    font-size: 2.0rem;
-    text-align: right;
-    color: #40969d;
-    margin-top: -2px;
-}
-
-
-/*lista cineforo alpha*/
-
-#actividad .content .cke_contents .texto_curso .bck-ol-6 li,
-#actividad .content .texto_curso .bck-ol-6 li,
-#actividad .content .workspace ul li .bck-ol-6 li {
-    list-style-type: none;
-    counter-increment: bck-li-counter 1;
-    position: relative;
-    padding-left: 0px;
-}
-
-#actividad .content .cke_contents .bck-ol-6 li:before,
-#actividad .content .texto_curso .bck-ol-6 li:before,
-#actividad .content .workspace ul li .bck-ol-6 li:before {
-	content: counter(bck-li-counter, lower-alpha)'.';
-    position: absolute;
-    margin-left: -30px;
-    font-weight: normal;
-    font-size: 2.0rem;
-    text-align: right;
-    color: #40969d;
-    margin-top: -2px;
-}
-
-/*lista evalúo */
-
-#actividad .content .cke_contents .texto_curso .bck-ol-7 li
-#actividad .content .texto_curso .bck-ol-7 li,
-#actividad .content .workspace ul li .bck-ol-7 li {
-    list-style-type: none;
-    counter-increment: bck-li-counter 1;
-    position: relative;
-    padding-left: 0px;
-}
-
-#actividad .content .cke_contents .bck-ol-7 li:before,
-#actividad .content .texto_curso .bck-ol-7 li:before,
-#actividad .content .workspace ul li .bck-ol-7 li:before {
-	content: counter(bck-li-counter)'. ';
-    position: absolute;
-    margin-left: -30px;
-    font-weight: normal;
-    font-size: 2.0rem;
-    text-align: right;
-    color: #7cc242;
-    margin-top: -2px;
-}
-
-/*lista desordenada*/
-
-	.texto_curso ul li,
-	.workspace ul li ul li,
-	.cke_contents ul li {
-		position: relative;
-		padding-left: 18px;
-		margin-bottom: 20px;
-	}
-
-	.texto_curso ul li:before,
-	.workspace ul li ul li:before,
-	.cke_contents ul li:before {
-		background-color: #000;
-		margin-top: 10px;
-	}
-
-
-#actividad .content .cke_contents .bck-ul li:before,
-#actividad .content .texto_curso .bck-ul li:before,
-#actividad .content .workspace ul li .bck-ul li:before {
-	content: "";
-    height: 5px;
-    width: 5px;
-    background: #97b833;
-    margin-top: 10px;
-    border: none;
-}
-
-
-#actividad .content .texto_curso  ul.bck-ul-2 li,
-#actividad .content .workspace ul li ul.bck-ul-2 li {
-	list-style: none;
-}
-
-#actividad .content .cke_contents .bck-ul-2 li:before,
-#actividad .content .texto_curso .bck-ul-2 li:before,
-#actividad .content .workspace ul li .bck-ul-2 li:before {
-	content: " "; 
-    margin-top: 0px;
-    text-align: center;
-    margin-left: -23px;
-    font-family: 'FontAwesome';
-    content: "\f05a";
-    color: #cd1719;
-    font-size: 18px;
-    background: #fff;
-}
-
-
-/*fin desordenada*/	
-
-
-	.content figure:first-child:last-child,
-	.content .js--row figure,
-	.cke_contents figure:first-child:last-child,
-	.cke_contents .js--row figure {
-		padding-left: 0;
-		padding-right: 0;
-		padding-top: 0;
-		margin-left: 0;
-		margin-right: 0;
-		margin-top: 0;
-	}
-
-	.content figure figcaption,
-	.cke_contents figure figcaption {
-		text-align: left;
-		margin-top: 10px;
-	}
-
-	.cke_contents table:not(.rf-tablegrid),
-	.content table:not(.rf-tablegrid) {
-		border: 1px solid #CBCCCD;
-	}
-
-	.cke_contents table:not(.rf-tablegrid) td,
-	.cke_contents table:not(.rf-tablegrid) th,
-	.content table:not(.rf-tablegrid) td,
-	.content table:not(.rf-tablegrid) th {
-		border: 1px solid #CBCCCD;
-		padding: 7px;
-	}
-
-	.cke_contents table:not(.rf-tablegrid) caption,
-	.content table:not(.rf-tablegrid) caption {
-		margin-bottom: 10px;
-	}
-
-	.bck-td {
-		background: #dcdcdc;
-	}
-    
-   /* Icons */
-
-	#actividad .player.audio {
-		background: url(images/Icon_audio.png) center center / cover;
-	}
-
-	.item-container .icon:before {
-		content: "";
-		background-repeat: no-repeat;
-		-webkit-background-size: auto 100%;
-		   -moz-background-size: auto 100%;
-		     -o-background-size: auto 100%;
-		        background-size: auto 100%;
-		background-position: center center;
-		display: inline-block;
-		vertical-align: middle;
-		height: 40px;
-		width: 54px;
-		margin-top: -16px;
-	}
-   
-   /*dominio de ciencias*/
-
-   .item-container .icon-aplico:before {
-    background-image: url(images/aplicoloaprendido.png);
-    height: 100px;
-    width: 280px;
-    margin-top: 2%;
-    margin-bottom: 3%;
-	}
-
-	.item-container .icon-aprendamosconelmapaconceptual:before {
-	    height: 100px;
-   	    width: 501px;
-    	margin-top: 2%;
-    	margin-bottom: 3%;
-		background-image: url(images/aprendamosconelmapaconceptual.png);
-	}
-
-	.item-container .icon-taller:before {
-	    height: 100px;
-   	    width: 300px;
-    	margin-top: 2%;
-    	margin-bottom: 3%;
-		background-image: url(images/tallerambiental.png);
-	}
-
-	.item-container .icon-evaluacion:before {
-   		height: 100px;
-    	width: 350px;
-    	margin-top: 2%;
-    	margin-bottom: 3%;
-    	background-image: url(images/evaluacion.png);
-	}
-	
-.item-container .icon-cineforoicon:before {
-    height: 100px;
-    width: 282px;
-    margin-top: 2%;
-    margin-bottom: 3%;
-    background-image: url(images/cineforoicon-compressor.png);
-}
-
-	
-.item-container .trabajo_extra:before {
-    height: 100px;
-    width: 282px;
-    margin-top: 2%;
-    margin-bottom: 3%;
-    background-image: url(images/trabajo_extra.png);
-}
-
-
-/*viajemos por Costa Rica*/
-
-
- .item-container .icon-yalose:before {
-    background-image: url(images/icono_yalose.png);
-    height: 80px;
-    width: 260px;
-    margin-top: 2%;
-    margin-bottom: 3%;
-    background-repeat: no-repeat;
-	}
-
-	.item-container .icon-refuerza:before {
-	    height: 75px;
-   	    width: 434px;
-    	margin-top: 2%;
-    	margin-bottom: 3%;
-		background-image: url(images/icono_refuerzo.png);
-		background-repeat: no-repeat;
-	}
-
-	.item-container .icon-evaluacioncostarica:before {
-	    height: 75px;
-   	    width: 233px;
-    	margin-top: 2%;
-    	margin-bottom: 3%;
-		background-image: url(images/icono_evaluacion.png);
-		background-repeat: no-repeat;
-	}
-
-	.item-container .icon-momentouno:before {
-   		height: 70px;
-    	width: 216px;
-    	margin-top: 2%;
-    	margin-bottom: 3%;
-    	background-image: url(images/icono_momento1.png);
-    	background-repeat: no-repeat;
-	}
-	
-.item-container .icon-momentodos:before {
-    height: 70px;
-    width: 407px;
-    margin-top: 2%;
-    margin-bottom: 3%;
-    background-image: url(images/icono_momento2.png);
-    background-repeat: no-repeat;
-}
-
-	
-.item-container .icon-momentotres:before {
-    height: 70px;
-    width: 347px;
-    margin-top: 2%;
-    margin-bottom: 3%;
-    background-image: url(images/icono_momento3.png);
-    background-repeat: no-repeat;
-}
-
-
-.item-container .icon-momentocuatro:before {
-    height: 70px;
-    width: 332px;
-    margin-top: 2%;
-    margin-bottom: 3%;
-    background-image: url(images/icono_momento4.png);
-    background-repeat: no-repeat;
-}
-
-
-.item-container .icon-aprenderydivertirme:before {
-    height: 50px;
-    width: 366px;
-    margin-top: 2%;
-    margin-bottom: 3%;
-    background-image: url(images/paraaprenderydivertirme.jpg);
-    background-repeat: no-repeat;
-}
-
-	/*cajas*/
-
-	.bck-box {
-		margin-bottom: 30px;
-	}
-	.bck-box.center {
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.bck-box .bck-title {
-		font-size: 2.5rem;
-		margin-bottom: 10px;
-	}
-
-
-/*caja aplico lo aprendido*/
-
-	.bck-box.box-1 {
-		background: #f7ebd6;
-	    position: relative;
-	    padding: 15px;
-	    border-radius: 10px;
-	}
-
-.bck-box.box-1 .bck-content{
-	border: dashed #000 2px;
-    padding: 10px;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-/* caja taller ambiental*/
-
-	.bck-box.box-2 {
-    background: #eaf1d6;
-    width: 125.2%;
-    margin-left: -12.5%;
-    padding: 2% 14%;
-    /* margin-top: 50px; */
-    color: #333;
-}
-
-	
-	.bck-box.box-2 .bck-title {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #cc6204;
-    font-weight: bold;
-    text-align: center;
-}
-
-
-/*caja amarilla*/
-
-	.bck-box.box-3 {
-		padding: 20px;
-		background: #FFFF73;
-		position: relative;
-	}
-
-/*caja materiales*/
-
-.bck-box.box-4 {
-   border: 3px dotted #7BC14D;
-    padding: 8px 14px 0px;
-    border-radius: 13px;
-}
-
-
-.bck-box.box-4 .bck-title{
-  	display: block;
-    padding: 0px 14px;
-    color: #7BC14D;
-    font-weight: bold;
-    position: relative;
-    background-color: #fff;
-    width: fit-content;
-    top: -30px;
-}
-
-.bck-box.box-4 .bck-content{
-    margin-top: -40px;
-    padding: 10px;
-    }
-
-/*caja valores*/
-
-.bck-box.box-5 {
-    border: 4px dotted #6d348b;
-    border-radius: 10px;
-    padding: 9px 17px;
-}
-
-
-.bck-box.box-5 .bck-title{
-  	display: block;
-    padding: 0px 40px;
-    color: #612b80;
-    font-weight: bold;
-    margin-top: -3.5%;
-    background-color: #fff;
-    width: fit-content;
-}
-
-.bck-box.box-5 .bck-title:before {
-    content: " ";
-    left: 0px;
-    margin-top: -30px;
-    position: absolute;
-    background: url(images/integracionyvaloresicon.png);
-    padding: 30px;
-    background-size: contain;
-}
-
-.bck-box.box-5 .bck-content{
-    padding: 10px;
-}
-
-/*caja diccionario*/
-
-.bck-box.box-6 {
-    border: 3px dotted #f25a22;
-    border-radius: 15px;
-    padding: 0px 10px;
-}
-
-
-.bck-box.box-6 .bck-title{
-  	display: block;
-    padding: 0px 40px;
-    color: #cc6204;
-    font-weight: bold;
-    margin-top: -3.5%;
-    background-color: #fff;
-    width: fit-content;
-}
-
-.bck-box.box-6 .bck-title:before {
-    content: " ";
-    left: -10px;
-    position: absolute;
-    background: url(images/dictcionarioicon.png);
-    padding: 30px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.bck-box.box-6 .bck-content{
-    padding: 10px;
-}
-
-
-/*Caja imágenes*/
-
-.bck-box.box-7 {
-    margin-top: -2.6%;
-    position: relative;
-    left: -12.6%;
-    width: 125.3%;
-}
-
-
-/*Aprenda a...*/
-
-.bck-box.box-8 {
-    border: 3px dotted #1c4985;
-    border-radius: 15px;
-    padding: 0px 10px;
-}
-
-
-.bck-box.box-8 .bck-title{
-  	display: block;
-    padding: 0px 15px 0px 50px;
-    color: #1c4985;
-    font-weight: bold;
-    margin-top: -3.5%;
-    background-color: #fff;
-    width: fit-content;
-}
-
-.bck-box.box-8 .bck-title:before {
-    content: " ";
-    left: -15px;
-    position: absolute;
-    background: url(images/Aprenda_icon.png);
-    padding: 35px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-
-.bck-box.box-8 .bck-content{
-    padding: 10px;
-}
-
-
-/*Datos curiosos*/
-
-.bck-box.box-9 {
-    border: 3px dotted #00a29a;
-    border-radius: 15px;
-    padding: 0px 10px;
-}
-
-
-.bck-box.box-9 .bck-title{
-  	display: block;
-    padding: 0px 25px;
-    color: #00a29a;
-    font-weight: bold;
-    margin-top: -3.5%;
-    background-color: #fff;
-    width: fit-content;
-    margin-top: -2%;
-}
-
-.bck-box.box-9 .bck-title:before {
-    content: " ";
-    left: -10px;
-    position: absolute;
-    background: url(images/datos_icon.png);
-    padding: 30px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: -10px;
-}
-
-.bck-box.box-9 .bck-content{
-    padding: 10px;
-}
-
-
-/*Plantemos*/
-
-.bck-box.box-10 {
-    border: 3px dotted #a3bf4f;
-    border-radius: 15px;
-    padding: 0px 10px;
-}
-
-
-.bck-box.box-10 .bck-title{
-  	display: block;
-    padding: 0px 25px;
-    color: #a3bf4f;
-    font-weight: bold;
-    margin-top: -3.5%;
-    background-color: #fff;
-    width: fit-content;
-    margin-top: -2%;
-}
-
-.bck-box.box-10 .bck-title:before {
-    content: " ";
-    left: -10px;
-    position: absolute;
-    background: url(images/plantemosicon.png);
-    padding: 30px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: -10px;
-}
-
-.bck-box.box-10 .bck-content{
-    padding: 10px;
-}
-
-
-
-/*Trabajo extraclase*/
-
-.bck-box.box-11 {
-    border: 3px dotted #48c9d2;
-    border-radius: 15px;
-    padding: 0px 10px;
-    margin-top: 20px;
-}
-
-
-.bck-box.box-11 .bck-content {
-    padding: 10px;
-}
-
-
-.bck-box.box-11 .bck-title {
-    width: fit-content;
-    background-color: #48c9d2;
-    padding: 0px 10px;
-    margin: -17px;
-    color: #fff;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-
-/*Datos Todos vivimos aquí*/
-
-.bck-box.box-12 {
-    border: 3px dotted #83bfe3;
-    border-radius: 15px;
-    padding: 0px 10px;
-}
-
-
-.bck-box.box-12 .bck-title{
-  	display: block;
-    padding: 0px 25px;
-    color: #83bfe3;
-    font-weight: bold;
-    margin-top: -3.5%;
-    background-color: #fff;
-    width: fit-content;
-    margin-top: -2%;
-}
-
-.bck-box.box-12 .bck-title:before {
-    content: " ";
-    left: -28px;
-    position: absolute;
-    background: url(images/todos_vivimos.png);
-    padding: 30px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: -10px;
-}
-
-.bck-box.box-12 .bck-content{
-    padding: 10px;
-}
-
-
-/* caja taller ambiental*/
-
-.bck-box.box-13 {
-	border-radius: 25px;
-    background-color: #fff;
-    border:#517ea9 solid 12px;
-    margin: 10px;
-    box-shadow: 0px 3px 15px hsla(0,0%,0%,.08);
-    position: relative;
-    background-image: -webkit-radial-gradient(#d6d5d6 30%, transparent 20%), -webkit-radial-gradient(#cfcfc3 38%, transparent 24%);
-    background-image: -moz-radial-gradient(#d6d5d6 30%, transparent 20%), -moz-radial-gradient(#cfcfc3 38%, transparent 24%);
-    background-image: radial-gradient(#d6d5d6 30%, transparent 20%), radial-gradient(#cfcfc3 38%, transparent 24%);
-    background-position: 4px 1px, 4px 0px, 50% 0px;
-    background-repeat: repeat-y, repeat-y, repeat;
-    background-size: 30px 30px, 30px 30px, 30px 30px;
-    padding: 10px 10px 10px 50px;
-    box-shadow: 0px 3px 15px hsla(0,0%,0%,0.8);
-    margin: 35px 0px;
-}
-
-
-.bck-box.box-13 .bck-title {
-    margin-left: -45px;
-    background-image: url(images/cuadernocolores.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 50%;
-    margin-top: -46px;
-}
-
-
-/*sabías que*/
-
-.bck-box.box-14 {
-   border: 3px dotted #7BC14D;
-    padding: 8px 14px 0px;
-    border-radius: 13px;
-}
-
-
-.bck-box.box-14 .bck-title{
-  	display: block;
-    padding: 0px 14px;
-    color: #0093c0;
-    font-weight: bold;
-    position: relative;
-    background-color: #fff;
-    width: fit-content;
-    top: -30px;
-}
-
-.bck-box.box-14 .bck-content{
-    margin-top: -40px;
-    padding: 10px;
-    }
-
-
-/*costumbres*/
-
-.bck-box.box-15 {
-    border: #8fb435 5px solid;
-    padding: 5px 25px;
-    border-radius: 15px;
-}
-
-
-.bck-box.box-15 .bck-title{
-    font-weight: bold;
-    color: #8fb435;
-    font-size: 20px;
-    text-shadow: 5px 5px 5px #D9D9D9;
-}
-
-
-/*pistas*/
-.hint.solucion.decoding {
-    color: deeppink;
-    font-weight: 700;
-}
-
-
-/**/
-
-@media screen and (max-width: 1099px) {
-    .body_clase .content-wrapper {
-        max-width: 100%;
-    }
-
-    #actividad .content {
-        border-radius: 0;
-    }
-
-    #actividad .carousel-inner .item-container {
-        margin: 0;
-        width: 100% !important;
-        max-width: none;
-        box-shadow: none;
-    }
-
-    .ipad #actividad .carousel-inner .item-container {
-  		border-right: 1px solid #eee;
-    }
-}
-
-@media screen and (max-width: 992px) {
-	#actividad .class_slide {
-		padding-right: 30px;
-		padding-left: 30px;
-	}
-
-	
-
-	.content_type_clase_eduvision #actividad .content .header .title h3 {
-		padding-left: 20px;
-	}
-	.js-slide-wrapper > .header .single-pagination {
-		left: 10px;
-	}
-	.navigator {
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-	.content_type_clase_eduvision .publish {
-		padding-left: 25px;
-	}
-	.content_type_clase_eduvision .logo-publisher {
-		margin-left: -20px;
-	}
-}
-
-@media screen and (max-width: 767px) {
-    #actividad .carousel-inner .class_slide {
-        padding: 40px 30px 0px;
-    }
-
-    .navigator {
-        padding: 0px 30px;
-    }
-
-    .bck-img.right, img[style~="float:right"] {
-        max-width: 50%
-    }
-
-    .bck-img.left, img[style~="float:left"] {
-        max-width: 50%
-    }
-	.content_type_clase_eduvision .publisher-navbar {
-		top: 88px;
-	}
-
-}
-
-@media screen and (max-width: 579px) {
-	.bck-row .col-xs-1,
-	.bck-row .col-xs-2,
-	.bck-row .col-xs-3,
-	.bck-row .col-xs-4,
-	.bck-row .col-xs-5,
-	.bck-row .col-xs-6,
-	.bck-row .col-xs-7,
-	.bck-row .col-xs-8,
-	.bck-row .col-xs-9,
-	.bck-row .col-xs-10,
-	.bck-row .col-xs-11,
-	.bck-row .col-xs-12 {
-		width: 100%;
-		float: none;
-		padding-bottom: 20px;
-	}
-}
-
-@media screen and (max-width: 480px) {
-
-    .bck-img.right, img[style~="float:right"] {
-        width: 100%;
-    }
-
-    .bck-img.left, img[style~="float:left"] {
-        width: 100%;
-    }
-
-    #actividad .carousel-inner .item-container {
-		padding: 40px 20px 90px;
-	}
-	.content_type_clase_eduvision .publisher-navbar .navbar-content {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-	.content_type_clase_eduvision .publisher-navbar .logo-publisher:before {
-		content: none;
-		display: none;
-
-	}
-	#actividad .carousel-inner .item-container {
-		padding-top: 13px;
-	}
-	
-
-	.content_type_clase_eduvision #actividad .content .header .title h3 {
-		font-size: 4.0rem;
-		padding-right: 20px;
-		margin-bottom: 20px;
-	}
-}
-
-/* Retina images */
-@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-	.content_type_clase_eduvision #actividad .content .header:before {
-		background-image: url(images/trazo-2x.png);
-		background-size: 938px 13px;
-	}
-	.bck-box.box-1:after {
-		background-image: url(images/caja1-esquina-2x.png);
-		background-size: 32px 35px;
-	}
-	.bck-box.box-2:after {
-		background-image: url(images/caja2-esquina-2x.png);
-		background-size: 32px 35px;
-	}
-	.bck-box.box-3:after {
-		background-image: url(images/caja3-flecha-2x.png);
-		background-size: 74px 30px;
-	}
-	.bck-box.box-3:before {
-		background-image: url(images/exclamacion-2x.png);
-		background-size: 60px 54px;
-	}
-}
-
-/*BK-10860*/
-/*
- * Me cargo todos los border que hay por debajo de un ejercicio de cálculo y restauro los necesarios
- *
- */
-div.calculo table.marco,
-div.calculo table.marco * {
-	border:none;
-}
-
-.content hr, .cke_contents hr {
-    border-top: 2px solid #85b426 !important;
-}
-
-.content_type_clase_eduvision .slide_main input {
-    border: 1px solid #ccc !important;
-}
-
-
-/*Background del titulo e hijos en modo de impresion*/
-body.print-mode .title *, body.print-mode .title {
-    background-color: #e94442;
-}
-
+(function (blink) {
+	'use strict';
+
+	var eduvisionStyle = function () {
+			blink.theme.styles.basic.apply(this, arguments);
+		},
+		page = blink.currentPage;
+
+	eduvisionStyle.prototype = {
+		bodyClassName: 'content_type_clase_eduvision',
+		extraPlugins: ['image2'],
+		ckEditorStyles: {
+			name: 'eduvision',
+			styles: [
+
+				{ name: 'Título 1', element: 'h4', attributes: { 'class': 'bck-title1'} },
+				{ name: 'Título 2', element: 'h4', attributes: { 'class': 'bck-title2'} },
+				{ name: 'Título 3', element: 'h4', attributes: { 'class': 'bck-title3'} },
+				{ name: 'Título 4', element: 'h4', attributes: { 'class': 'bck-title4'} },
+				{ name: 'Título 5', element: 'h4', attributes: { 'class': 'bck-title5'} },
+				{ name: 'Título 6', element: 'h4', attributes: { 'class': 'bck-title6'} },
+				{ name: 'Título trabajo cotidiano', element: 'h4', attributes: { 'class': 'bck-title7'} },
+
+
+				{ name: 'Énfasis', element: 'span', attributes: { 'class': 'bck-enfasis' }},
+				{ name: 'Enunciado actividad', element: 'h4', attributes: { 'class': 'bck-title-activity' }},
+
+				{ name: 'Tabla centrada', element: 'table', type: 'bck-stack-class', attributes: { 'class': 'bck-table-center'} },
+				{ name: 'Celda encabezado', element: 'td', attributes: { 'class': 'bck-td' } },
+
+				{ name: 'Lista Ordenada', element: 'ol', attributes: { 'class': 'bck-ol' } },
+				{ name: 'Lista Ordenada 2', element: 'ol', attributes: { 'class': 'bck-ol-2' } },
+				{ name: 'Lista Ordenada 3', element: 'ol', attributes: { 'class': 'bck-ol-3' } },
+				{ name: 'Lista Ordenada 4', element: 'ol', attributes: { 'class': 'bck-ol-4' } },
+				{ name: 'Lista Ordenada 5', element: 'ol', attributes: { 'class': 'bck-ol-5' } },
+				{ name: 'Lista Ordenada 6', element: 'ol', attributes: { 'class': 'bck-ol-6' } },
+				{ name: 'Lista Ordenada 7', element: 'ol', attributes: { 'class': 'bck-ol-7' } },
+				{ name: 'Lista Desordenada', element: 'ul', attributes: { 'class': 'bck-ul'} },
+				{ name: 'Lista Desordenada 2', element: 'ul', attributes: { 'class': 'bck-ul-2'} },
+
+
+				{ name: 'Icono Aplico', element: 'span', attributes: { 'class': 'icon icon-aplico' } },
+				{ name: 'Icono Mapa conceptual', element: 'span', attributes: { 'class': 'icon icon-aprendamosconelmapaconceptual' } },
+				{ name: 'Icono Taller', element: 'span', attributes: { 'class': 'icon icon-taller' } },
+				{ name: 'Icono Evaluacion', element: 'span', attributes: { 'class': 'icon icon-evaluacion' } },
+				{ name: 'Icono Cine Foro', element: 'span', attributes: { 'class': 'icon icon-cineforoicon' } },
+				{ name: 'Icono Trabajo Extra', element: 'span', attributes: { 'class': 'icon trabajo_extra' } },
+
+				{ name: 'Icono Ya lo sé', element: 'span', attributes: { 'class': 'icon icon-yalose' } },
+				{ name: 'Icono Refuerza', element: 'span', attributes: { 'class': 'icon icon-refuerza' } },
+				{ name: 'Icono Evaluación Costa Rica', element: 'span', attributes: { 'class': 'icon icon-evaluacioncostarica' } },
+				{ name: 'Icono Momento 1', element: 'span', attributes: { 'class': 'icon icon-momentouno' } },
+				{ name: 'Icono Momento 2', element: 'span', attributes: { 'class': 'icon icon-momentodos' } },
+				{ name: 'Icono Momento 3', element: 'span', attributes: { 'class': 'icon icon-momentotres' } },
+				{ name: 'Icono Momento 4', element: 'span', attributes: { 'class': 'icon icon-momentocuatro' } },
+				{ name: 'Icono Para aprender y divertirme', element: 'span', attributes: { 'class': 'icon icon-aprenderydivertirme' } },
+				
+				{ name: 'Caja Aplico', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-1' } },
+				{ name: 'Caja Taller ambiental', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-2' } },
+				{ name: 'Caja 3', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-3' } },
+				{ name: 'Caja Materiales', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-4' } },
+				{ name: 'Caja Integración', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-5' } },
+				{ name: 'Caja Diccionario', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-6' } },
+				{ name: 'Caja Imágenes', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-7' } },
+				{ name: 'Caja Aprenda a', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-8' } },
+				{ name: 'Caja Dato', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-9' } },
+				{ name: 'Caja Plantemos', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-10' } },
+				{ name: 'Caja Extraclase', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-11' } },
+				{ name: 'Caja Todos vivimos aquí', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-12' } },
+				{ name: 'Caja Cuaderno', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-13' } },
+				{ name: 'Caja Sabías', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-14' } },
+				{ name: 'Caja Costumbres', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-15' } },
+				{ name: 'Caja Diccionario', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-15' } },
+			]
+		},
+
+		init: function () {
+			var parent = blink.theme.styles.basic.prototype;
+			parent.init.call(this);
+			this.addActivityTitle();
+			this.addPageNumber();
+			this.formatCarouselindicators();
+			this.addSlideNavigators();
+		},
+
+		removeFinalSlide: function () {
+			var parent = blink.theme.styles.basic.prototype;
+			parent.removeFinalSlide.call(this, true);
+		},
+
+		addActivityTitle: function () {
+			if (!blink.courseInfo || !blink.courseInfo.unit) return;
+			$('.libro-left').find('.title').html(function () {
+				return $(this).html() + ' > ' + blink.courseInfo.unit;
+			})
+		},
+
+		configEditor: function (editor) {
+			editor.dtd.$removeEmpty['span'] = false;
+		},
+
+		addPageNumber: function() {
+			$('.js-slider-item').each(function(i,e) {
+				var idPage = $(e).attr('id');
+				var page = parseInt(idPage.replace("slider-item-", ""))+1;
+				$(e).find('.header').prepend('<div class="single-pagination"><div class="page">'+page+'</div></div>');
+			});
+		},
+
+
+		formatCarouselindicators: function () {
+			var $navbarBottom = $('.navbar-bottom'),
+				$carouselIndicators = $('.slider-indicators').find('li');
+			$navbarBottom.find('li').tooltip('destroy');
+
+			var dropDown = '' +
+					'<div class="dropdown">' +
+						'<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">' +
+							'Índice' +
+							'<span class="caret"></span>' +
+						'</button>' +
+						'<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">';
+
+			var navigatorIndex = 0;
+			for (var index = 0; index < window.secuencia.length; index++) {
+				var slide = eval('t'+index+'_slide'),
+					slideTitle = slide.title;
+
+				if (slide.isConcatenate) continue;
+
+				dropDown += '<li role="presentation"><a role="menuitem">' + (navigatorIndex+1) + '. ' + stripHTML(slideTitle) + '</a></li>';
+				$navbarBottom.find('li').eq(navigatorIndex).html('<span title="'+ stripHTML(slideTitle) +'">'+(navigatorIndex+1)+'</span>');
+				navigatorIndex++;
+
+			};
+
+			dropDown += '' +
+						'</ul>' +
+					'</div>';
+
+			$navbarBottom
+				.attr('class', 'publisher-navbar')
+				.wrapInner('<div class="navbar-content"></div>')
+				.find('ol')
+					.before(dropDown)
+					.wrap('<div id="top-navigator"/>')
+					.end()
+				.find('.dropdown').find('li')
+					.on('click', function (event) {
+						$navbarBottom.find('ol').find('li').eq($(this).index()).trigger('click');
+					});
+
+			if (!blink.hasTouch) {
+				$navbarBottom
+					.find('ol').find('span')
+						.tooltip({
+							placement: 'bottom',
+							container: 'body'
+						});
+			}
+		},
+
+		getEditorStyles: function () {
+			return this.ckEditorStyles;
+		}
+	};
+
+	eduvisionStyle.prototype = _.extend({}, new blink.theme.styles.basic(), eduvisionStyle.prototype);
+
+	blink.theme.styles.eduvision = eduvisionStyle;
+
+})( blink );
+
+$(document).ready(function () {
+
+    $('.item').find('.header').find('.title')
+		.filter(function () {
+			return $(this).find('.empty').length;
+		}).hideBlink();
+
+    $('.item').find('.header').find('.title')
+		.filter(function () {
+			return !$(this).find('.empty').length;
+		})
+		.each(function () {
+			var $header = $(this).find('h3');
+			$header.length && $header.html($header.html().replace(' ', ''));
+		});
+
+	// BK-8433 cambiamos el logo de las slides por el del dominio
+	var src_logo = $('.content_type_clase_eduvision').find('.logo_slide').attr('logo_dominio');
+	if (typeof(src_logo) != 'undefined' && src_logo && src_logo != '' && src_logo.indexOf('gif1x1.gif') == -1) {
+		$('.content_type_clase_eduvision').find('.logo-publisher').css('background-image', "url('"+src_logo+"')");
+	}
+
+});
