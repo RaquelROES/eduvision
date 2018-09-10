@@ -1432,21 +1432,25 @@ ol.bck-ol {
 /* caja taller ambiental*/
 
 .bck-box.box-13 {
-    background: #eaf1d6;
-    width: 125.2%;
-    margin-left: -12.5%;
-    padding: 2% 14%;
-    /* margin-top: 50px; */
-    color: #333;
-}
+    background: #fff;
+    border:#517ea9 solid 12px;
+    border-radius: 20px;
+    background-image: url(images/cuadernocolores.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    margin: 10px;
+    background: #f6f6f3;
+    box-shadow: 0px 3px 15px hsla(0,0%,0%,.08);
+    position: relative;
+    background-image: -webkit-radial-gradient(#d6d5d6 30%, transparent 20%), -webkit-radial-gradient(#cfcfc3 38%, transparent 24%);
+    background-image: -moz-radial-gradient(#d6d5d6 30%, transparent 20%), -moz-radial-gradient(#cfcfc3 38%, transparent 24%);
+    background-image: radial-gradient(#d6d5d6 30%, transparent 20%), radial-gradient(#cfcfc3 38%, transparent 24%);
+    background-position: 4px 1px, 4px 0px, 50% 0px;
+    background-repeat: repeat-y, repeat-y, repeat;
+    background-size: 30px 30px, 30px 30px, 30px 30px;
+    padding: 10px 10px 10px 50px;
+    box-shadow: 0px 3px 15px hsla(0,0%,0%,0.8);
 
-	
-.bck-box.box-13 .bck-title {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #cc6204;
-    font-weight: bold;
-    text-align: center;
 }
 
 
