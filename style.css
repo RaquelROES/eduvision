@@ -1087,6 +1087,15 @@ ol.bck-ol {
 }
 
 
+.item-container .icon-aprenderydivertirme:before {
+    height: 100px;
+    width: 454px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/paraaprenderydivertirme.jpg);
+    background-repeat: no-repeat;
+}
+
 	/*cajas*/
 
 	.bck-box {
@@ -1384,7 +1393,7 @@ ol.bck-ol {
 }
 
 
-/*Datos Plantemos*/
+/*Datos Todos vivimos aquí*/
 
 .bck-box.box-12 {
     border: 3px dotted #83bfe3;
