@@ -1527,7 +1527,7 @@ ol.bck-ol {
     border-bottom-right-radius: 10px;
 }
 
-.bck-box.box-16 .bck-title :before {
+.bck-box.box-16 .bck-title:before {
     background-size: contain;
     content: " ";
     padding: 30px;
