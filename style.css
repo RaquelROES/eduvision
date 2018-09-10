@@ -1049,8 +1049,8 @@ ol.bck-ol {
 	}
 
 	.item-container .icon-momentouno:before {
-   		height: 100px;
-    	width: 309px;
+   		height: 70px;
+    	width: 216px;
     	margin-top: 2%;
     	margin-bottom: 3%;
     	background-image: url(images/icono_momento1.png);
@@ -1058,8 +1058,8 @@ ol.bck-ol {
 	}
 	
 .item-container .icon-momentodos:before {
-    height: 100px;
-    width: 581px;
+    height: 70px;
+    width: 407px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/icono_momento2.png);
@@ -1068,8 +1068,8 @@ ol.bck-ol {
 
 	
 .item-container .icon-momentotres:before {
-    height: 100px;
-    width: 495px;
+    height: 70px;
+    width: 347px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/icono_momento3.png);
@@ -1078,8 +1078,8 @@ ol.bck-ol {
 
 
 .item-container .icon-momentocuatro:before {
-    height: 100px;
-    width: 454px;
+    height: 70px;
+    width: 332px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/icono_momento4.png);
