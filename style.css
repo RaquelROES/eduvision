@@ -1486,6 +1486,21 @@ ol.bck-ol {
     }
 
 
+/*costumbres*/
+
+.bck-box.box-15 {
+    border: #8fb435 5px solid;
+    padding: 5px 25px;
+    border-radius: 15px;
+}
+
+
+.bck-box.box-15 .bck-title{
+    font-weight: bold;
+    color: #8fb435;
+    font-size: 20px;
+    text-shadow: 5px 5px 5px #D9D9D9;
+}
 
 
 /*pistas*/
@@ -1666,4 +1681,3 @@ div.calculo table.marco * {
 body.print-mode .title *, body.print-mode .title {
     background-color: #e94442;
 }
-
