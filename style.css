@@ -1432,6 +1432,7 @@ ol.bck-ol {
 /* caja taller ambiental*/
 
 .bck-box.box-13 {
+	border-radius: 25px;
     background-color: #fff;
     border:#517ea9 solid 12px;
     margin: 10px;
@@ -1445,15 +1446,17 @@ ol.bck-ol {
     background-size: 30px 30px, 30px 30px, 30px 30px;
     padding: 10px 10px 10px 50px;
     box-shadow: 0px 3px 15px hsla(0,0%,0%,0.8);
-
+    margin: 35px 0px;
 }
 
 
 .bck-box.box-13 .bck-title {
-    background: #fff;
+    margin-left: -45px;
     background-image: url(images/cuadernocolores.png);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: left;
+    background-size: 50%;
+    margin-top: -46px;
 }
 
 
