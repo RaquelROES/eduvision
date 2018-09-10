@@ -1031,8 +1031,8 @@ ol.bck-ol {
 	}
 
 	.item-container .icon-refuerza:before {
-	    height: 100px;
-   	    width: 578px;
+	    height: 75px;
+   	    width: 434px;
     	margin-top: 2%;
     	margin-bottom: 3%;
 		background-image: url(images/icono_refuerzo.png);
@@ -1450,7 +1450,7 @@ ol.bck-ol {
 }
 
 
-/*sabías qué*/
+/*sabías que*/
 
 .bck-box.box-14 {
    border: 3px dotted #7BC14D;
