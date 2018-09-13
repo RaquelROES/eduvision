@@ -1632,22 +1632,7 @@ ol.bck-ol {
 }
 
 
-.bck-box.box-17 .bck-content {
-    padding: 10px;
-}
-
-
-.bck-box.box-17 .bck-title {
-    width: fit-content;
-    background-color: #0073b8;
-    padding: 0px 10px 0px 40px;
-    margin: -17px;
-    color: #fff;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.bck-box.box-17 .bck-title:before {
+.bck-box.box-17:before {
     background-size: contain;
     content: " ";
     padding: 30px;
