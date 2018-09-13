@@ -1096,6 +1096,86 @@ ol.bck-ol {
     background-repeat: no-repeat;
 }
 
+
+/*iconos Matemáticas*/
+
+
+ .item-container .icon-exploremos:before {
+    background-image: url(images/iconoexploremos.png);
+    height: 80px;
+    width: 260px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-repeat: no-repeat;
+	}
+
+	.item-container .icon-reconozca:before {
+	    height: 75px;
+   	    width: 434px;
+    	margin-top: 2%;
+    	margin-bottom: 3%;
+		background-image: url(images/iconoreconozca.png);
+		background-repeat: no-repeat;
+	}
+
+	.item-container .icon-clave:before {
+	    height: 75px;
+   	    width: 233px;
+    	margin-top: 2%;
+    	margin-bottom: 3%;
+		background-image: url(images/iconolalcave.png);
+		background-repeat: no-repeat;
+	}
+
+	.item-container .icon-argumente:before {
+   		height: 70px;
+    	width: 216px;
+    	margin-top: 2%;
+    	margin-bottom: 3%;
+    	background-image: url(images/iconoargumente.png);
+    	background-repeat: no-repeat;
+	}
+	
+.item-container .icon-interprete:before {
+    height: 70px;
+    width: 407px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/iconointerprete.png);
+    background-repeat: no-repeat;
+}
+
+	
+.item-container .icon-produzca:before {
+    height: 70px;
+    width: 347px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/iconoproduzca.png);
+    background-repeat: no-repeat;
+}
+
+
+.item-container .icon-practiquemos:before {
+    height: 70px;
+    width: 332px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/iconopractiquemos.png);
+    background-repeat: no-repeat;
+}
+
+
+.item-container .icon-loqueselee:before {
+    height: 50px;
+    width: 366px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/iconointerpreteloqueselee.png);
+    background-repeat: no-repeat;
+}
+
+
 	/*cajas*/
 
 	.bck-box {
