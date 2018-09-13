@@ -944,6 +944,11 @@ ol.bck-ol {
 	.bck-td {
 		background: #dcdcdc;
 	}
+
+	.bck-td-2 {
+		border-top: 0px;
+		border-left: 0px;
+	}
     
    /* Icons */
 
