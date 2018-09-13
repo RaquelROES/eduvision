@@ -1108,15 +1108,15 @@ ol.bck-ol {
  .item-container .icon-exploremos:before {
     background-image: url(images/iconoexploremos.png);
     height: 80px;
-    width: 260px;
+    width: 193px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-repeat: no-repeat;
 	}
 
 	.item-container .icon-reconozca:before {
-	    height: 75px;
-   	    width: 434px;
+	    height: 80px;
+   	    width: 193px;
     	margin-top: 2%;
     	margin-bottom: 3%;
 		background-image: url(images/iconoreconozca.png);
@@ -1124,8 +1124,8 @@ ol.bck-ol {
 	}
 
 	.item-container .icon-clave:before {
-	    height: 75px;
-   	    width: 233px;
+	    height: 55px;
+   	    width: 191px;
     	margin-top: 2%;
     	margin-bottom: 3%;
 		background-image: url(images/iconolalcave.png);
