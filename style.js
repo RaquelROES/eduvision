@@ -55,14 +55,14 @@
 				{ name: 'Icono Momento 4', element: 'span', attributes: { 'class': 'icon icon-momentocuatro' } },
 				{ name: 'Icono Para aprender y divertirme', element: 'span', attributes: { 'class': 'icon icon-aprenderydivertirme' } },
 
-				{ name: 'Icono Exploremos', element: 'span', attributes: { 'class': 'icon icon-yalose' } },
-				{ name: 'Icono Reconozca', element: 'span', attributes: { 'class': 'icon icon-refuerza' } },
-				{ name: 'Icono La Clave', element: 'span', attributes: { 'class': 'icon icon-evaluacioncostarica' } },
-				{ name: 'Icono Argumente', element: 'span', attributes: { 'class': 'icon icon-momentouno' } },
-				{ name: 'Icono Interprete', element: 'span', attributes: { 'class': 'icon icon-momentodos' } },
-				{ name: 'Icono Produzca', element: 'span', attributes: { 'class': 'icon icon-momentotres' } },
-				{ name: 'Icono Practiquemos', element: 'span', attributes: { 'class': 'icon icon-momentocuatro' } },
-				{ name: 'Icono Lo que se lee', element: 'span', attributes: { 'class': 'icon icon-aprenderydivertirme' } },
+				{ name: 'Icono Exploremos', element: 'span', attributes: { 'class': 'icon icon-exploremos' } },
+				{ name: 'Icono Reconozca', element: 'span', attributes: { 'class': 'icon icon-reconozca' } },
+				{ name: 'Icono La Clave', element: 'span', attributes: { 'class': 'icon icon-clave' } },
+				{ name: 'Icono Argumente', element: 'span', attributes: { 'class': 'icon icon-argumente' } },
+				{ name: 'Icono Interprete', element: 'span', attributes: { 'class': 'icon icon-interprete' } },
+				{ name: 'Icono Produzca', element: 'span', attributes: { 'class': 'icon icon-produzca' } },
+				{ name: 'Icono Practiquemos', element: 'span', attributes: { 'class': 'icon icon-practiquemos' } },
+				{ name: 'Icono Lo que se lee', element: 'span', attributes: { 'class': 'icon icon- loqueselee' } },
 
 				
 				{ name: 'Caja Aplico', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-1' } },
