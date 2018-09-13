@@ -1631,8 +1631,7 @@ ol.bck-ol {
     margin-top: 20px;
 }
 
-
-.bck-box.box-17:before {
+.bck-box.box-17.center:before{
     background-size: contain;
     content: " ";
     padding: 30px;
