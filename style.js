@@ -62,7 +62,7 @@
 				{ name: 'Icono Interprete', element: 'span', attributes: { 'class': 'icon icon-interprete' } },
 				{ name: 'Icono Produzca', element: 'span', attributes: { 'class': 'icon icon-produzca' } },
 				{ name: 'Icono Practiquemos', element: 'span', attributes: { 'class': 'icon icon-practiquemos' } },
-				{ name: 'Icono Lo que se lee', element: 'span', attributes: { 'class': 'icon icon- loqueselee' } },
+				{ name: 'Icono Lo que se lee', element: 'span', attributes: { 'class': 'icon icon-loqueselee' } },
 
 				
 				{ name: 'Caja Aplico', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-1' } },
