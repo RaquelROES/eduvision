@@ -1220,7 +1220,7 @@ ol.bck-ol {
     background-repeat: no-repeat;
 	}
 
-	.item-container .icon-apliquemos:before {
+  .item-container .icon-apliquemos:before {
 	    height: 50px;
    	    width: 210px;
     	margin-top: 2%;
@@ -1230,8 +1230,8 @@ ol.bck-ol {
 	}
 
 	.item-container .icon-competencias:before {
-	    height: 50px;
-   	    width: 424px;
+	    height: 45px;
+   	    width: 381px;
     	margin-top: 2%;
     	margin-bottom: 3%;
 		background-image: url(images/competenciasicono.png);
@@ -1239,8 +1239,8 @@ ol.bck-ol {
 	}
 
 	.item-container .icon-dominiosdelsaber:before {
-   		height: 50px;
-    	width: 386px;
+   		height: 45px;
+    	width: 348px;
     	margin-top: 2%;
     	margin-bottom: 3%;
     	background-image: url(images/dominiosdelsabericono.png);
@@ -1248,8 +1248,8 @@ ol.bck-ol {
 	}
 	
 .item-container .icon-exploremos:before {
-    height: 60px;
-    width: 252px;
+    height: 55px;
+    width: 231px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/exploremosicono.png);
