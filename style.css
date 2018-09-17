@@ -1748,6 +1748,12 @@ ol.bck-ol {
 .bck-box.box-19 {
     margin-top: 2%;
     position: relative;
+    background: #d2ecee;
+}
+
+.bck-box.box-19 .bck-content{
+    border-bottom: 1px solid #0caeae;
+    border-top: 1px solid #0caeae;
 }
 
 /* caja ortografía*/
@@ -2037,4 +2043,3 @@ div.calculo table.marco * {
 body.print-mode .title *, body.print-mode .title {
     background-color: #e94442;
 }
-
