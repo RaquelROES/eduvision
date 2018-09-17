@@ -20,6 +20,8 @@
 				{ name: 'Título 5', element: 'h4', attributes: { 'class': 'bck-title5'} },
 				{ name: 'Título 6', element: 'h4', attributes: { 'class': 'bck-title6'} },
 				{ name: 'Título trabajo cotidiano', element: 'h4', attributes: { 'class': 'bck-title7'} },
+				{ name: 'Título Analice', element: 'h4', attributes: { 'class': 'bck-title8'} },
+
 
 
 				{ name: 'Énfasis', element: 'span', attributes: { 'class': 'bck-enfasis' }},
@@ -38,7 +40,7 @@
 				{ name: 'Lista Ordenada 7', element: 'ol', attributes: { 'class': 'bck-ol-7' } },
 				{ name: 'Lista Desordenada', element: 'ul', attributes: { 'class': 'bck-ul'} },
 				{ name: 'Lista Desordenada 2', element: 'ul', attributes: { 'class': 'bck-ul-2'} },
-
+				{ name: 'Lista Desordenada 2', element: 'ul', attributes: { 'class': 'bck-ul-3'} },
 
 				{ name: 'Icono Aplico', element: 'span', attributes: { 'class': 'icon icon-aplico' } },
 				{ name: 'Icono Mapa conceptual', element: 'span', attributes: { 'class': 'icon icon-aprendamosconelmapaconceptual' } },
@@ -65,6 +67,14 @@
 				{ name: 'Icono Practiquemos', element: 'span', attributes: { 'class': 'icon icon-practiquemos' } },
 				{ name: 'Icono Lo que se lee', element: 'span', attributes: { 'class': 'icon icon-loqueselee' } },
 
+
+				{ name: 'Icono Antes de leer', element: 'span', attributes: { 'class': 'icon icon-antesdeleer' } },
+				{ name: 'Icono Apliquemos', element: 'span', attributes: { 'class': 'icon icon-apliquemos' } },
+				{ name: 'Icono Competencias', element: 'span', attributes: { 'class': 'icon icon-competencias' } },
+				{ name: 'Icono Dominios del saber', element: 'span', attributes: { 'class': 'icon icon-dominiosdelsaber' } },
+				{ name: 'Icono Exploremos', element: 'span', attributes: { 'class': 'icon icon-exploremos' } },
+				{ name: 'Icono Taller', element: 'span', attributes: { 'class': 'icon icon-taller' } },
+
 				
 				{ name: 'Caja Aplico', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-1' } },
 				{ name: 'Caja Taller ambiental', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-2' } },
@@ -83,6 +93,14 @@
 				{ name: 'Caja Costumbres', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-15' } },
 				{ name: 'Caja Diccionario 2', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-16' } },
 				{ name: 'Caja Recuerde', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-17' } },
+				{ name: 'Caja Exploremos', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-18' } },
+				{ name: 'Caja Textos', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-19' } },
+				{ name: 'Caja Ortografía', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-20' } },
+				{ name: 'Caja Marrón', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-21' } },
+				{ name: 'Caja Actividad', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-22' } },
+				{ name: 'Caja Descuadrada', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-23' } },
+				{ name: 'Caja te cuento', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-24' } },
+				{ name: 'Caja Textos 2', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-25' } },
 			]
 		},
 
