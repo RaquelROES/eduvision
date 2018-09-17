@@ -1001,39 +1001,39 @@ ol.bck-ol {
 
    .item-container .icon-aplico:before {
     background-image: url(images/aplicoloaprendido.png);
-    height: 100px;
-    width: 280px;
+    height: 75px;
+    width: 210px;
     margin-top: 2%;
     margin-bottom: 3%;
 	}
 
 	.item-container .icon-aprendamosconelmapaconceptual:before {
-	    height: 100px;
-   	    width: 501px;
+	    height: 75px;
+   	    width: 376px;
     	margin-top: 2%;
     	margin-bottom: 3%;
 		background-image: url(images/aprendamosconelmapaconceptual.png);
 	}
 
 	.item-container .icon-taller:before {
-	    height: 100px;
-   	    width: 300px;
+	    height: 75px;
+   	    width: 225px;
     	margin-top: 2%;
     	margin-bottom: 3%;
 		background-image: url(images/tallerambiental.png);
 	}
 
 	.item-container .icon-evaluacion:before {
-   		height: 100px;
-    	width: 350px;
+   		height: 75px;
+    	width: 260px;
     	margin-top: 2%;
     	margin-bottom: 3%;
     	background-image: url(images/evaluacion.png);
 	}
 	
 .item-container .icon-cineforoicon:before {
-    height: 100px;
-    width: 282px;
+    height: 75px;
+    width: 212px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/cineforoicon-compressor.png);
@@ -1041,8 +1041,8 @@ ol.bck-ol {
 
 	
 .item-container .trabajo_extra:before {
-    height: 100px;
-    width: 282px;
+    height: 75px;
+    width: 206px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/trabajo_extra.png);
@@ -1062,8 +1062,8 @@ ol.bck-ol {
 	}
 
 	.item-container .icon-refuerza:before {
-	    height: 75px;
-   	    width: 434px;
+	    height: 85px;
+   	    width: 500px;
     	margin-top: 2%;
     	margin-bottom: 3%;
 		background-image: url(images/icono_refuerzo.png);
@@ -1071,8 +1071,8 @@ ol.bck-ol {
 	}
 
 	.item-container .icon-evaluacioncostarica:before {
-	    height: 75px;
-   	    width: 233px;
+	    height: 90px;
+   	    width: 275px;
     	margin-top: 2%;
     	margin-bottom: 3%;
 		background-image: url(images/icono_evaluacion.png);
@@ -1080,8 +1080,8 @@ ol.bck-ol {
 	}
 
 	.item-container .icon-momentouno:before {
-   		height: 70px;
-    	width: 216px;
+   		height: 75px;
+    	width: 230px;
     	margin-top: 2%;
     	margin-bottom: 3%;
     	background-image: url(images/icono_momento1.png);
@@ -1109,8 +1109,8 @@ ol.bck-ol {
 
 
 .item-container .icon-momentocuatro:before {
-    height: 70px;
-    width: 332px;
+    height: 75px;
+    width: 340px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/icono_momento4.png);
@@ -1119,8 +1119,8 @@ ol.bck-ol {
 
 
 .item-container .icon-aprenderydivertirme:before {
-    height: 50px;
-    width: 366px;
+    height: 65px;
+    width: 465px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/paraaprenderydivertirme.jpg);
@@ -1213,16 +1213,16 @@ ol.bck-ol {
 
  .item-container .icon-antesdeleer:before {
     background-image: url(images/antesdeleericono.png);
-    height: 80px;
-    width: 193px;
+    height: 45px;
+    width: 230px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-repeat: no-repeat;
 	}
 
 	.item-container .icon-apliquemos:before {
-	    height: 80px;
-   	    width: 193px;
+	    height: 50px;
+   	    width: 210px;
     	margin-top: 2%;
     	margin-bottom: 3%;
 		background-image: url(images/apliquemosicono.png);
@@ -1230,8 +1230,8 @@ ol.bck-ol {
 	}
 
 	.item-container .icon-competencias:before {
-	    height: 55px;
-   	    width: 191px;
+	    height: 50px;
+   	    width: 424px;
     	margin-top: 2%;
     	margin-bottom: 3%;
 		background-image: url(images/competenciasicono.png);
@@ -1239,8 +1239,8 @@ ol.bck-ol {
 	}
 
 	.item-container .icon-dominiosdelsaber:before {
-   		height: 70px;
-    	width: 183px;
+   		height: 50px;
+    	width: 386px;
     	margin-top: 2%;
     	margin-bottom: 3%;
     	background-image: url(images/dominiosdelsabericono.png);
@@ -1248,8 +1248,8 @@ ol.bck-ol {
 	}
 	
 .item-container .icon-exploremos:before {
-    height: 70px;
-    width: 175px;
+    height: 60px;
+    width: 252px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/exploremosicono.png);
@@ -1257,9 +1257,9 @@ ol.bck-ol {
 }
 
 	
-.item-container .icon-taller:before {
-    height: 70px;
-    width: 173px;
+.item-container .icon-tallerideas:before {
+    height: 80px;
+    width: 255px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/tallerdeideasicono.png);
