@@ -1842,12 +1842,12 @@ ol.bck-ol {
     border-radius: 15px;
     padding: 0px 10px;
     margin-top: 20px;
-    background: #46c3f0;
+    background: #f4e7cf;
 }
 
   .bck-box.box-24 .bck-title {
     width: fit-content;
-    background-color: #f4e7cf;
+    background-color: #46c3f0;
     padding: 0px 10px;
     margin: -17px;
     color: #fff;
