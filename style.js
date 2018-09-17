@@ -22,8 +22,6 @@
 				{ name: 'Título trabajo cotidiano', element: 'h4', attributes: { 'class': 'bck-title7'} },
 				{ name: 'Título Analice', element: 'h4', attributes: { 'class': 'bck-title8'} },
 
-
-
 				{ name: 'Énfasis', element: 'span', attributes: { 'class': 'bck-enfasis' }},
 				{ name: 'Enunciado actividad', element: 'h4', attributes: { 'class': 'bck-title-activity' }},
 
@@ -40,7 +38,7 @@
 				{ name: 'Lista Ordenada 7', element: 'ol', attributes: { 'class': 'bck-ol-7' } },
 				{ name: 'Lista Desordenada', element: 'ul', attributes: { 'class': 'bck-ul'} },
 				{ name: 'Lista Desordenada 2', element: 'ul', attributes: { 'class': 'bck-ul-2'} },
-				{ name: 'Lista Desordenada 2', element: 'ul', attributes: { 'class': 'bck-ul-3'} },
+				{ name: 'Lista Desordenada 3', element: 'ul', attributes: { 'class': 'bck-ul-3'} },
 
 				{ name: 'Icono Aplico', element: 'span', attributes: { 'class': 'icon icon-aplico' } },
 				{ name: 'Icono Mapa conceptual', element: 'span', attributes: { 'class': 'icon icon-aprendamosconelmapaconceptual' } },
