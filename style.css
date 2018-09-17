@@ -1749,6 +1749,7 @@ ol.bck-ol {
     margin-top: 2%;
     position: relative;
     background: #d2ecee;
+    padding: 20px;
 }
 
 .bck-box.box-19 .bck-content{
@@ -1758,8 +1759,8 @@ ol.bck-ol {
 
 /* caja ortografía*/
 
-	.bck-box.box-20 {
-    background: #eaf1d6;
+.bck-box.box-20 {
+    background: #d2ecee;
     width: 125.2%;
     margin-left: -12.5%;
     padding: 2% 14%;
@@ -1767,19 +1768,26 @@ ol.bck-ol {
 }
 
 	
-	.bck-box.box-20 .bck-title {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #cc6204;
-    font-weight: bold;
-    text-align: center;
+.bck-box.box-20 .bck-title {
+    width: fit-content;
+    background-color: #3cc0c5;
+    padding: 0px 10px;
+    margin: -17px;
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
+
+.bck-box.box-20 .bck-title:before {
+	content:"";
+
+	}
 
 /* caja marrón*/
 
 	.bck-box.box-21 {
     background: #f4eede;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 /* caja actividad*/
@@ -1809,8 +1817,6 @@ ol.bck-ol {
     line-height: 1.43em;
     font-size: 1em;
     border: 2px solid #fdcd4c;
-    border-radius: 20px;
-    width: 75%;
     padding-left: 10px;
     z-index: 1;
     transform: rotate(-3deg);
@@ -1822,7 +1828,6 @@ ol.bck-ol {
     line-height: 1.43em;
     font-size: 1em;
     background-color: #fff;
-    border-radius: 20px;
     border: 2px solid #01b4b7;
     width: 99%;
     z-index: 1;
