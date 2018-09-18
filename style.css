@@ -816,10 +816,8 @@ ol.bck-ol {
 #actividad .content .cke_contents .texto_curso .bck-ol-6 li,
 #actividad .content .texto_curso .bck-ol-6 li,
 #actividad .content .workspace ul li .bck-ol-6 li {
-    list-style-type: none;
-    counter-increment: bck-li-counter 1;
     position: relative;
-    padding-left: 0px;
+    padding-left: 32px;
 }
 
 #actividad .content .cke_contents .bck-ol-6 li:before,
@@ -2080,4 +2078,3 @@ div.calculo table.marco * {
 body.print-mode .title *, body.print-mode .title {
     background-color: #e94442;
 }
-
