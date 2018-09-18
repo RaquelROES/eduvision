@@ -1877,6 +1877,17 @@ ol.bck-ol {
 	padding: 30px 10px 0px 10px;
 	}
 
+.bck-box.box-24 .bck-title:before{
+	content: " ";
+    left: -28px;
+    position: absolute;
+    background: url(images/tecuentoicono.png);
+    padding: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -10px;
+	}
+
 /* caja textos 2*/
 
 .bck-box.box-25 {
@@ -2070,4 +2081,3 @@ div.calculo table.marco * {
 body.print-mode .title *, body.print-mode .title {
     background-color: #e94442;
 }
-
