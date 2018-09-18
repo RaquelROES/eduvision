@@ -1661,7 +1661,7 @@ ol.bck-ol {
 
 .bck-box.box-15 {
     border: #8fb435 5px solid;
-    padding: 5px 25px;
+    padding: 20px 25px;
     border-radius: 15px;
 }
 
@@ -1755,11 +1755,12 @@ ol.bck-ol {
 .bck-box.box-19 .bck-content{
     border-bottom: 1px solid #0caeae;
     border-top: 1px solid #0caeae;
+    padding: 15px 0px;
 }
 
 /* caja ortografía*/
 
-.bck-box.box-20 {
+.bck-box.box-20{
     background: #d2ecee;
     width: 125.2%;
     margin-left: -12.5%;
@@ -1768,20 +1769,32 @@ ol.bck-ol {
 }
 
 	
-.bck-box.box-20 .bck-title {
+.bck-box.box-20 .bck-title{
     width: fit-content;
     background-color: #3cc0c5;
-    padding: 0px 10px;
+    padding: 10px 50px 0px 180px;
     margin: -17px;
     color: #fff;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 40px;
+    margin-left: -14.5%;
+    border: 1px dashed #fff;
+    font-weight: 800;
 }
 
-.bck-box.box-20 .bck-title:before {
-	content:"";
-
+.bck-box.box-20 .bck-title:before{
+	content: " ";
+    left: -28px;
+    position: absolute;
+    background: url(images/mejoresuortografia.png);
+    padding: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -10px;
 	}
+
+.bck-box.box-20 .bck-content{
+    padding: 30px 0px 10px 0px;
+}
 
 /* caja marrón*/
 
