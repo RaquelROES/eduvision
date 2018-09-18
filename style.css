@@ -1786,10 +1786,10 @@ ol.bck-ol {
     left: -28px;
     position: absolute;
     background: url(images/mejoresuortografia.png);
-    padding: 30px;
+    padding: 72px 55px;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: -10px;
+    margin-top: -30px;
 	}
 
 .bck-box.box-20 .bck-content{
@@ -1866,26 +1866,25 @@ ol.bck-ol {
   .bck-box.box-24 .bck-title {
     width: fit-content;
     background-color: #46c3f0;
-    padding: 10px 15px;
-    margin: -20px;
+    padding: 10px 15px 10px 140px;
     color: #fff;
     border-bottom-right-radius: 25px;
     border: 1px dashed;
 }
 
 .bck-box.box-24 .bck-content{
-	padding: 30px 10px 0px 10px;
+	padding: 20px;
 	}
 
 .bck-box.box-24 .bck-title:before{
 	content: " ";
-    left: -28px;
+    left: 0px;
     position: absolute;
     background: url(images/tecuentoicono.png);
-    padding: 30px;
+    padding: 33px 55px;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: -10px;
+    margin-top: -30px;
 	}
 
 /* caja textos 2*/
