@@ -2,6 +2,14 @@
 
 /* General */
 
+
+	@font-face {
+	  font-family: Arial Black;
+	  src: url(fonts/AvantGarde_Bk_BT_Book.ttf);
+	  font-weight: 100;
+	}
+
+
 @import url(https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,400italic);
 
