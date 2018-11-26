@@ -632,9 +632,8 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 }
 
  .bck-title7 {
-    font-weight: bold;
     background: #a6ce39;
-    font-size: 30px;
+    font-size: 25px;
     text-align: left;
     color: #fff;
     padding-left: 40px;
@@ -642,6 +641,8 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     width: fit-content;
+    font-family: 'Conv_BerlinSansFBDemi-Bold';
+    padding: 4px 50px;
 }
 
 .bck-title7:before {
@@ -1704,14 +1705,15 @@ ol.bck-ol {
 
 
 .bck-box.box-16 .bck-content {
-    padding: 10px;
+    padding: 50px 10px 10px;
 }
 
 
 .bck-box.box-16 .bck-title {
+	font-family: 'Conv_BerlinSansFBDemi-Bold';
     width: fit-content;
     background-color: #0073b8;
-    padding: 0px 10px 0px 40px;
+    padding: 5px 30px 5px 40px;
     margin: -17px;
     color: #fff;
     border-top-right-radius: 10px;
