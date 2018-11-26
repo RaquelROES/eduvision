@@ -99,6 +99,7 @@
 				{ name: 'Caja Descuadrada', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-23' } },
 				{ name: 'Caja te cuento', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-24' } },
 				{ name: 'Caja Textos 2', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-25' } },
+				{ name: 'Caja Valores', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-26' } },
 			]
 		},
 
