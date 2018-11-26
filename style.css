@@ -2,11 +2,15 @@
 
 /* General */
 
-
-	@font-face {
-	  font-family: AvantGarde_Bk_BT;
-	  src: url('fonts/AvantGarde_Bk_BT_Book.ttf');
+@font-face {
+	  font-family: 'Avenir', sans serif;
+	  src: url('fonts/Avenir.ttc');
 	}
+
+.body_clase .content-wrapper {
+		font-family: 'Avenir', sans serif;
+	}
+
 
 
 @import url(https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700);
