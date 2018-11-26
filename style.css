@@ -619,6 +619,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 
 
  	.bck-title5 {
+    font-family: 'Conv_BerlinSansFBDemi-Bold';
     font-weight: bold;
     color: #febd0e;
     font-size: 30px;
@@ -1690,8 +1691,8 @@ ol.bck-ol {
 .bck-box.box-15 .bck-title{
     font-weight: bold;
     color: #8fb435;
+    font-family: 'Conv_BerlinSansFBDemi-Bold';
     font-size: 20px;
-    text-shadow: 5px 5px 5px #D9D9D9;
 }
 
 /*Trabajo mi diccionario*/
