@@ -1,3 +1,5 @@
+/* General */
+
 
 @font-face {
 	font-family: 'Conv_AvantGarde_Bk_BT_Book';
@@ -7,7 +9,15 @@
 	font-style: normal;
 }
 
-/* General */
+@font-face {
+	font-family: 'Conv_BerlinSansFBDemi-Bold';
+	src: url('fonts/BerlinSansFBDemi-Bold.eot');
+	src: local('☺'), url('fonts/BerlinSansFBDemi-Bold.woff') format('woff'), url('fonts/BerlinSansFBDemi-Bold.ttf') format('truetype'), url('fonts/BerlinSansFBDemi-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 
 @import url(https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,400italic);
@@ -598,12 +608,14 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     color: #54828b;
 	}
 
- 	.bck-title4 {
+ .bck-title4 {
     font-weight: bold;
     color: #8fb435;
     font-size: 30px;
-    text-shadow: 5px 5px 5px #D9D9D9;
+    font-family: 'Conv_BerlinSansFBDemi-Bold';
 }
+
+
 
 
  	.bck-title5 {
