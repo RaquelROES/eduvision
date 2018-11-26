@@ -1,4 +1,11 @@
-# eduvision 
+
+@font-face {
+	font-family: 'Conv_AvantGarde_Bk_BT_Book';
+	src: url('fonts/AvantGarde_Bk_BT_Book.eot');
+	src: local('☺'), url('fonts/AvantGarde_Bk_BT_Book.woff') format('woff'), url('fonts/AvantGarde_Bk_BT_Book.ttf') format('truetype'), url('fonts/AvantGarde_Bk_BT_Book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 /* General */
 
@@ -11,10 +18,12 @@
 		font-weight: 300;
 		padding-bottom: 0;
 	}
+
 	.body_clase.edit .content-wrapper {
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
+
 	body.is_app .content-wrapper,
 	body.app:not(.offline-pc) .content-wrapper,
 	body.user_demo .content-wrapper {
@@ -36,6 +45,7 @@
 	}
 
 	#actividad .carousel-inner .item-container {
+		font-family: 'Conv_AvantGarde_Bk_BT_Book';
 		background-image: none;
    	 	margin: 20px auto 30px;
     	padding: 0px;
