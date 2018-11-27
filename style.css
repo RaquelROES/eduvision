@@ -18,6 +18,14 @@
 }
 
 
+@font-face {
+	font-family: 'Conv_candyrandy';
+	src: url('fonts/candyrandy.eot');
+	src: local('☺'), url('fonts/candyrandy.woff') format('woff'), url('fonts/candyrandy.ttf') format('truetype'), url('fonts/candyrandy.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 
 @import url(https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,400italic);
@@ -1928,31 +1936,34 @@ ol.bck-ol {
     padding: 0px 10px;
 }
 
-  .bck-box.box-26 .bck-title {
+.bck-box.box-26 .bck-title {
+	font-family: 'Conv_candyrandy';
     display: block;
-    padding: 0px 25px;
-    color: #8fb435;
+    padding: 0px 0px;
+    color: #0081b5;
     font-weight: bold;
     margin-top: -3.5%;
     background-color: #fff;
     width: fit-content;
-    margin-top: -2%;
+    margin-top: -20px;
+    margin-left: -20px;
 }
 
 .bck-box.box-26 .bck-content{
 	padding: 10px;
 	}
 
-.bck-box.box-26 .bck-title:before{
-	content: " ";
-    left: -10px;
+
+.bck-box.box-26 .bck-title:before {
+    content: " ";
+    left: -6px;
     position: absolute;
     background: url(images/27112018valores-compressor.png);
     padding: 30px;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: -10px;
-	}
+    margin-top: 30px;
+}
 
 
 /*pistas*/
