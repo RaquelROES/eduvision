@@ -1923,33 +1923,35 @@ ol.bck-ol {
 /* caja valores*/
 
 .bck-box.box-26 {
+    border: 3px dotted #8fb435;
     border-radius: 15px;
-    margin-top: 20px;
-    background: #f4e7cf;
+    padding: 0px 10px;
 }
 
   .bck-box.box-26 .bck-title {
+    display: block;
+    padding: 0px 25px;
+    color: #8fb435;
+    font-weight: bold;
+    margin-top: -3.5%;
+    background-color: #fff;
     width: fit-content;
-    background-color: #46c3f0;
-    padding: 10px 15px 10px 140px;
-    color: #fff;
-    border-bottom-right-radius: 25px;
-    border: 1px dashed;
+    margin-top: -2%;
 }
 
 .bck-box.box-26 .bck-content{
-	padding: 20px;
+	padding: 10px;
 	}
 
 .bck-box.box-26 .bck-title:before{
 	content: " ";
-    left: 0px;
+    left: -10px;
     position: absolute;
-    background: url(images/tecuentoicono.png);
-    padding: 33px 55px;
+    background: url(images/plantemosicon.png);
+    padding: 30px;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: -30px;
+    margin-top: -10px;
 	}
 
 
