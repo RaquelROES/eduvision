@@ -652,6 +652,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     width: fit-content;
     font-family: 'Conv_BerlinSansFBDemi-Bold';
     padding: 4px 50px;
+    margin-bottom: 30px;
 }
 
 .bck-title7:before {
