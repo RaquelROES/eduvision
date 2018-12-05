@@ -599,11 +599,12 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 	}
 
 	.bck-title1 {
-    color: #194985;
-    font-size: 3rem;
-    margin: 0px;
-    padding: 0px;
-    margin-bottom: 7px;
+		font-family: 'Conv_BerlinSansFBDemi-Bold';
+        color: #194985;
+        font-size: 3rem;
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 7px;
 }
 
 	.bck-title2 {
