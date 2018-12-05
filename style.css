@@ -146,7 +146,7 @@
 	}
 	.content_type_clase_eduvision #actividad .texto_curso,
 	.content_type_clase_eduvision #actividad .slide_content_type_1 .pregunta .texto_curso {
-		font-size: 1.6rem;
+		font-size: 21px;
 	}
 
 	.texto_curso p:last-of-type {
@@ -602,7 +602,6 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 	.bck-title1 {
 		font-family: 'Conv_BerlinSansFBDemi-Bold';
         color: #194985;
-        font-size: 3rem;
         margin: 0px;
         padding: 0px;
         margin-bottom: 7px;
