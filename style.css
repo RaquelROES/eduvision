@@ -63,6 +63,7 @@
 	}
 
 	#actividad .carousel-inner .item-container {
+		font-size: 21px;
 		font-family: 'Conv_AvantGarde_Bk_BT_Book';
 		background-image: none;
    	 	margin: 20px auto 30px;
@@ -605,6 +606,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
         margin: 0px;
         padding: 0px;
         margin-bottom: 7px;
+        font-size: 27px;
 }
 
 	.bck-title2 {
