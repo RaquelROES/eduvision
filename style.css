@@ -609,20 +609,21 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 }
 
 	.bck-title2 {
+		 font-size: 25px;
 		font-family: 'Conv_BerlinSansFBDemi-Bold';
 		border-bottom: 2px dotted;
 	}
 
 
 	.bck-title3 {
-    font-size: 2.5rem;
+    font-size: 25px;
     color: #54828b;
 	}
 
  .bck-title4 {
     font-weight: bold;
     color: #8fb435;
-    font-size: 30px;
+     font-size: 25px;
     font-family: 'Conv_BerlinSansFBDemi-Bold';
 }
 
@@ -633,14 +634,14 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     font-family: 'Conv_BerlinSansFBDemi-Bold';
     font-weight: bold;
     color: #febd0e;
-    font-size: 30px;
+     font-size: 25px;
 }
 
 
  .bck-title6 {
     font-weight: bold;
     color: #008fbe;
-    font-size: 30px;
+     font-size: 25px;
 }
 
  .bck-title7 {
