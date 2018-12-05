@@ -749,7 +749,7 @@ ol.bck-ol {
 #actividad .content .workspace ul li .bck-ol li:before {
 	content: counter(bck-li-counter, lower-alpha)'.';
     position: absolute;
-    color: #7BC14D;
+    color: #94c04e;
 }
 
 /*lista ordenada 2*/
@@ -1365,7 +1365,7 @@ ol.bck-ol {
 /*caja materiales*/
 
 .bck-box.box-4 {
-   border: 3px dotted #7BC14D;
+   border: 3px dotted #94c04e;
     padding: 8px 14px 0px;
     border-radius: 13px;
 }
@@ -1374,7 +1374,7 @@ ol.bck-ol {
 .bck-box.box-4 .bck-title{
   	display: block;
     padding: 0px 14px;
-    color: #7BC14D;
+    color: #94c04e;
     font-weight: bold;
     position: relative;
     background-color: #fff;
