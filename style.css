@@ -2224,3 +2224,8 @@ body.print-mode .title *, body.print-mode .title {
     background-color: #e94442;
 }
 
+/*text area*/
+.html-book .js-rich-group {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    }
