@@ -597,7 +597,13 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 		font-family: unset;
 		font-weight: bold;
 	 	position: relative;
+	 	font-family: 'Conv_BerlinSansFBDemi-Bold';
 	}
+
+	.bck-title-activity {
+		font-size: 24px;
+	}
+
 
 	.bck-title1 {
 		font-family: 'Conv_BerlinSansFBDemi-Bold';
