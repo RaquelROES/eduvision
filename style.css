@@ -2230,3 +2230,9 @@ body.print-mode .title *, body.print-mode .title {
     margin-top: 15px;
     margin-bottom: 15px;
     }
+
+
+    #actividad .workspace label {
+    font-size: 18px;
+    font-weight: normal;
+}
