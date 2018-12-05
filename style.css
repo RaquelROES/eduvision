@@ -2232,7 +2232,15 @@ body.print-mode .title *, body.print-mode .title {
     }
 
 
+/*actividad tipo test*/
     #actividad .workspace label {
     font-size: 18px;
     font-weight: normal;
+}
+
+#actividad .workspace {
+    margin-left: 26px;
+    clear: both;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
 }
