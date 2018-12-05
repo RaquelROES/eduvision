@@ -608,6 +608,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 }
 
 	.bck-title2 {
+		font-family: 'Conv_BerlinSansFBDemi-Bold';
 		border-bottom: 2px dotted;
 	}
 
