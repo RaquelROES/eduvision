@@ -601,7 +601,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 
 	.bck-title1 {
 		font-family: 'Conv_BerlinSansFBDemi-Bold';
-        color: #194985;
+        color: #2b5c9e;
         margin: 0px;
         padding: 0px;
         margin-bottom: 7px;
@@ -918,7 +918,7 @@ ol.bck-ol {
 	content: "";
     height: 5px;
     width: 5px;
-    background: #97b833;
+    background: #94c04e;
     margin-top: 10px;
     border: none;
 }
