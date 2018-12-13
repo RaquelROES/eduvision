@@ -51,6 +51,7 @@
 				{ name: 'Icono Refuerza', element: 'span', attributes: { 'class': 'icon icon-refuerza' } },
 				{ name: 'Icono Evaluación Costa Rica', element: 'span', attributes: { 'class': 'icon icon-evaluacioncostarica' } },
 				{ name: 'Icono Momento 1', element: 'span', attributes: { 'class': 'icon icon-momentouno' } },
+				{ name: 'Icono Momento 1 antes de leer', element: 'span', attributes: { 'class': 'icon icon-momentounoantes' } },
 				{ name: 'Icono Momento 2', element: 'span', attributes: { 'class': 'icon icon-momentodos' } },
 				{ name: 'Icono Momento 3', element: 'span', attributes: { 'class': 'icon icon-momentotres' } },
 				{ name: 'Icono Momento 4', element: 'span', attributes: { 'class': 'icon icon-momentocuatro' } },
