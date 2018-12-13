@@ -1129,6 +1129,7 @@ ol.bck-ol {
     	background-repeat: no-repeat;
 	}
 /*momento 1 antes de leer*/
+
 .item-container .icon-momentounoantes:before {
    	height: 75px;
     	width: 344px;
@@ -1137,9 +1138,9 @@ ol.bck-ol {
     	background-image: url(images/icono_momento1_antesdeleer.png);
     	background-repeat: no-repeat;
 	}
-	icon icon-momentounoantes
 
 /*momento2*/
+
 .item-container .icon-momentodos:before {
     height: 70px;
     width: 407px;
