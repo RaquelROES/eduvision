@@ -1119,16 +1119,27 @@ ol.bck-ol {
 		background-image: url(images/icono_evaluacion.png);
 		background-repeat: no-repeat;
 	}
-
-	.item-container .icon-momentouno:before {
-   		height: 75px;
+/*momento 1*/
+.item-container .icon-momentouno:before {
+   	height: 75px;
     	width: 230px;
     	margin-top: 2%;
     	margin-bottom: 3%;
     	background-image: url(images/icono_momento1.png);
     	background-repeat: no-repeat;
 	}
-	
+/*momento 1 antes de leer*/
+.item-container .icon-momentounoantes:before {
+   	height: 75px;
+    	width: 230px;
+    	margin-top: 2%;
+    	margin-bottom: 3%;
+    	background-image: url(images/icono_momento1_antesdeleer.png);
+    	background-repeat: no-repeat;
+	}
+	icon icon-momentounoantes
+
+/*momento2*/
 .item-container .icon-momentodos:before {
     height: 70px;
     width: 407px;
@@ -1138,6 +1149,7 @@ ol.bck-ol {
     background-repeat: no-repeat;
 }
 
+/*momento3*/
 	
 .item-container .icon-momentotres:before {
     height: 70px;
@@ -1148,6 +1160,8 @@ ol.bck-ol {
     background-repeat: no-repeat;
 }
 
+
+/*momento4*/
 
 .item-container .icon-momentocuatro:before {
     height: 75px;
