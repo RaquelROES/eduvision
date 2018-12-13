@@ -1739,7 +1739,7 @@ ol.bck-ol {
 
 
 .bck-box.box-16 .bck-content {
-    padding: 50px 10px 10px;
+    padding: 20px 10px 10px;
 }
 
 
@@ -2266,4 +2266,3 @@ body.print-mode .title *, body.print-mode .title {
     font-size: 1.8rem;
     line-height: 2.1rem;
 }
-
