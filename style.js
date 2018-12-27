@@ -9,6 +9,8 @@
 	eduvisionStyle.prototype = {
 		bodyClassName: 'content_type_clase_eduvision',
 		extraPlugins: ['image2'],
+		toolbar: { name: 'editorial', items: ['Blink_popover'] },
+		extraPlugins: ['blink_popover'],
 		ckEditorStyles: {
 			name: 'eduvision',
 			styles: [
