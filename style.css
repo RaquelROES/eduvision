@@ -1132,12 +1132,12 @@ ol.bck-ol {
 /*momento 1 antes de leer*/
 
 .item-container .icon-momentounoantes:before {
-   	height: 75px;
-    	width: 344px;
-    	margin-top: 2%;
-    	margin-bottom: 3%;
-    	background-image: url(images/icono_momento1_antesdeleer.png);
-    	background-repeat: no-repeat;
+   	height: 55px;
+    width: 250px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/icono_momento1_antesdeleer.png);
+    background-repeat: no-repeat;
 	}
 
 /*momento2*/
