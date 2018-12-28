@@ -2076,6 +2076,36 @@ ol.bck-ol {
 }
 
 
+/*filpblox*/
+/*pruebas*/
+
+body:not(.edit) .front .bck-flipbox-title, body:not(.edit) .front .bck-flipbox-section {
+    color: #8fb435;
+}
+
+
+body:not(.edit) .bck-flipbox-face.front, body:not(.edit) .bck-flipbox-face.back {
+    border-color: #8fb435;
+}
+
+body:not(.edit) .bck-flipbox-section {
+    text-align: left;
+}
+
+.bck-flipbox {
+    font-size: 20px;
+}
+
+body:not(.edit) .bck-flipbox-face.back {
+    background-color: #8fb435;
+}
+
+body:not(.edit) .bck-flipbox-title, body:not(.edit) .bck-flipbox-section {
+    padding: 20px;
+}
+
+
+
 /**/
 
 @media screen and (max-width: 1099px) {
