@@ -109,25 +109,14 @@
 		},
 
 		init: function () {
-			var parent = blink.theme.styles.basic.prototype,
-				that = this;
-			that.activityDropdown();
-			parent.init.call(that);
-			that.addActivityTitle();
-			if(window.esWeb) return;
-			that.fillSlidesTitle();
-			that.getActualUnitActivities();
-			blink.events.on("course_loaded", function(){
-				that.formatCarouselindicators();
-				that.enableSliders();
-			});
-			that.animateNavbarOnScroll();
-			that.initDropdown();
+			var parent = blink.theme.styles.basic.prototype;
+			parent.init.call(this);
+			this.addActivityTitle();
+			this.addPageNumber();
+			this.formatCarouselindicators();
+			this.addSlideNavigators();
 			parent.initInfoPopover();
-			that.addSlideNavigators();
 		},
-
-		
 
 		removeFinalSlide: function () {
 			var parent = blink.theme.styles.basic.prototype;
