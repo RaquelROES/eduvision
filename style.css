@@ -2077,7 +2077,6 @@ ol.bck-ol {
 
 
 /*filpblox*/
-/*pruebas*/
 
 body:not(.edit) .front .bck-flipbox-title, body:not(.edit) .front .bck-flipbox-section {
     color: #8fb435;
@@ -2104,6 +2103,84 @@ body:not(.edit) .bck-flipbox-title, body:not(.edit) .bck-flipbox-section {
     padding: 20px;
 }
 
+
+/*diccionario*/
+
+.fa-info:before {
+    background-size: contain;
+    content: " ";
+    padding: 30px;
+    left: -20px;
+    margin-top: -10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-image: url(images/diccionario.png);
+}
+
+.info-template .info-title.shown {
+    font-size: 16px;
+}
+
+.info-template .info-title {
+    color: #0073b8;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Conv_BerlinSansFBDemi-Bold';
+}
+
+.info-template {
+    width: 115px;
+}
+
+.info-template.shown {
+    border: 1px dotted #009bdb;
+}
+
+
+.popover-template {
+    background: #ffffffe6;
+}
+
+.popover-container {
+    border-radius: 15px;
+    padding: 10px 25px 10px 35px;
+    margin-top: 30px;
+}
+
+.info-popover .popover-title, .popover-template .popover-title {
+    font-family: 'Conv_BerlinSansFBDemi-Bold';
+    width: fit-content;
+    background-color: #0073b8;
+    padding: 0px 30px 0px 55px;
+    margin: -17px;
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+      font-size: 25px;
+}
+
+.info-popover .popover-title:before, .popover-template .popover-title:before {
+    background-size: contain;
+    content: " ";
+    padding: 30px;
+    left: -10px;
+    margin-top: -20px;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-image: url(images/diccionario.png);
+}
+
+.popover-template .popover-content {
+    padding: 20px 30px 10px;
+    border-radius: 15px;
+    border: 3px dotted #009bdb;
+   font-family: 'Conv_AvantGarde_Bk_BT_Book';
+    font-size: 19px;
+}
+
+.close-popover {
+    color: #999;
+}
 
 
 /**/
