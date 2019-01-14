@@ -68,11 +68,13 @@
 				{ name: 'Icono Practiquemos', element: 'span', attributes: { 'class': 'icon icon-practiquemos' } },
 				{ name: 'Icono Lo que se lee', element: 'span', attributes: { 'class': 'icon icon-loqueselee' } },
 
+
 				{ name: 'Icono Antes de leer', element: 'span', attributes: { 'class': 'icon icon-antesdeleer' } },
 				{ name: 'Icono Apliquemos', element: 'span', attributes: { 'class': 'icon icon-apliquemos' } },
 				{ name: 'Icono Apliquemos2', element: 'span', attributes: { 'class': 'icon icon-apliquemos2' } },
 				{ name: 'Icono Apliquemos3', element: 'span', attributes: { 'class': 'icon icon-apliquemos3' } },
 				{ name: 'Icono Competencias', element: 'span', attributes: { 'class': 'icon icon-competencias' } },
+				{ name: 'Icono Competencias', element: 'span', attributes: { 'class': 'icon icon-competencias3' } },
 				{ name: 'Icono Dominios del saber', element: 'span', attributes: { 'class': 'icon icon-dominiosdelsaber' } },
 				{ name: 'Icono Exploremos Español', element: 'span', attributes: { 'class': 'icon icon-exploremos2' } },
 				{ name: 'Icono Taller de ideas', element: 'span', attributes: { 'class': 'icon icon-tallerideas' } },
