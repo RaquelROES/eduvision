@@ -1358,7 +1358,113 @@ ol.bck-ol {
         background-repeat: no-repeat;
     }
 
+.item-container .icon-leo:before {
+    height: 80px;
+    width: 255px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/leoyaprendo_taller2.png);
+    background-repeat: no-repeat;
+}
 
+.item-container .icon-maratondeescritura_taller2:before {
+    height: 80px;
+    width: 255px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/maratondeescritura_taller2.png);
+    background-repeat: no-repeat;
+}
+
+.item-container .icon-maratondeescritura_taller3:before {
+    height: 80px;
+    width: 255px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/maratondeescritura_taller3.png);
+    background-repeat: no-repeat;
+}
+
+.item-container .icon-micarteldevocabulario_taller1:before {
+    height: 80px;
+    width: 255px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/micarteldevocabulario_taller1.png);
+    background-repeat: no-repeat;
+}
+
+.item-container .icon-mismanosvanalgym_taller1:before {
+    height: 80px;
+    width: 255px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/mismanosvanalgym_taller1.png);
+    background-repeat: no-repeat;
+}
+
+.item-container .icon-nuevassilabasnuevaspalabras_taller2:before {
+    height: 80px;
+    width: 255px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/nuevassilabasnuevaspalabras_taller2.png);
+    background-repeat: no-repeat;
+}
+
+.item-container .icon-nuevassilabasnuevaspalabras_taller3:before {
+    height: 80px;
+    width: 255px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/nuevassilabasnuevaspalabras_taller3.png);
+    background-repeat: no-repeat;
+}
+
+.item-container .icon-vamosaconversar_taller3:before {
+    height: 80px;
+    width: 255px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/vamosaconversar_taller3.png);
+    background-repeat: no-repeat;
+}
+
+.item-container .icon-vamosaescribir_taller3:before {
+    height: 80px;
+    width: 255px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/vamosaconversar_taller3.png);
+    background-repeat: no-repeat;
+}
+
+.item-container .icon-vamosaleer_taller2:before {
+    height: 80px;
+    width: 255px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/vamosaleer_taller2.png);
+    background-repeat: no-repeat;
+}
+
+.item-container .icon-vamosaleer_taller3:before {
+    height: 80px;
+    width: 255px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/vamosaleer_taller2.png);
+    background-repeat: no-repeat;
+}
+
+.item-container .icon-vamosconversar_taller1:before {
+    height: 80px;
+    width: 255px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/vamosconversar_taller1.png);
+    background-repeat: no-repeat;
+}
 
 
 .item-container .icon-exploremos2:before {
