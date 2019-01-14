@@ -1349,6 +1349,18 @@ ol.bck-ol {
         background-repeat: no-repeat;
     }
     
+ .item-container .icon-juegos:before {
+        height: 45px;
+        width: 348px;
+        margin-top: 2%;
+        margin-bottom: 3%;
+        background-image: url(images/Juegosdellenguaje_taller2.png);
+        background-repeat: no-repeat;
+    }
+
+
+
+
 .item-container .icon-exploremos2:before {
     height: 55px;
     width: 231px;
