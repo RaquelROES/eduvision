@@ -1312,6 +1312,16 @@ ol.bck-ol {
         background-repeat: no-repeat;
     }
 
+
+     .item-container .icon-competencias3:before {
+        height: 45px;
+        width: 381px;
+        margin-top: 2%;
+        margin-bottom: 3%;
+        background-image: url(images/competencias_taller3.png);
+        background-repeat: no-repeat;
+    }
+
     .item-container .icon-dominiosdelsaber:before {
         height: 45px;
         width: 348px;
