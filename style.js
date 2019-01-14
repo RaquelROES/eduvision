@@ -78,6 +78,7 @@
 				{ name: 'Icono Dominios del saber', element: 'span', attributes: { 'class': 'icon icon-dominiosdelsaber' } },
 				{ name: 'Icono Dominios del saber2', element: 'span', attributes: { 'class': 'icon icon-dominiosdelsaber2' } },
 				{ name: 'Icono Dominios del saber3', element: 'span', attributes: { 'class': 'icon icon-dominiosdelsaber3' } },
+				{ name: 'Icono Juegos del lenguaje', element: 'span', attributes: { 'class': 'icon icon-juegos' } },
 				{ name: 'Icono Exploremos Español', element: 'span', attributes: { 'class': 'icon icon-exploremos2' } },
 				{ name: 'Icono Taller de ideas', element: 'span', attributes: { 'class': 'icon icon-tallerideas' } },
 
