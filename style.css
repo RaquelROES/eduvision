@@ -1421,6 +1421,15 @@ ol.bck-ol {
     background-repeat: no-repeat;
 }
 
+.item-container .icon-vamosaconversar_taller1:before {
+    height: 80px;
+    width: 255px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-image: url(images/vamosconversar_taller1.png);
+    background-repeat: no-repeat;
+}
+
 .item-container .icon-vamosaconversar_taller3:before {
     height: 80px;
     width: 255px;
@@ -1435,7 +1444,7 @@ ol.bck-ol {
     width: 255px;
     margin-top: 2%;
     margin-bottom: 3%;
-    background-image: url(images/vamosaconversar_taller3.png);
+    background-image: url(images/vamosaescribir_taller3.png);
     background-repeat: no-repeat;
 }
 
@@ -1453,19 +1462,9 @@ ol.bck-ol {
     width: 255px;
     margin-top: 2%;
     margin-bottom: 3%;
-    background-image: url(images/vamosaleer_taller2.png);
+    background-image: url(images/vamosaleer_taller3.png);
     background-repeat: no-repeat;
 }
-
-.item-container .icon-vamosconversar_taller1:before {
-    height: 80px;
-    width: 255px;
-    margin-top: 2%;
-    margin-bottom: 3%;
-    background-image: url(images/vamosconversar_taller1.png);
-    background-repeat: no-repeat;
-}
-
 
 .item-container .icon-exploremos2:before {
     height: 55px;
@@ -2537,4 +2536,3 @@ body.print-mode .title *, body.print-mode .title {
     font-size: 1.8rem;
     line-height: 2.1rem;
 }
-
