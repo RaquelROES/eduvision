@@ -74,23 +74,24 @@
 				{ name: 'Icono Apliquemos2', element: 'span', attributes: { 'class': 'icon icon-apliquemos2' } },
 				{ name: 'Icono Apliquemos3', element: 'span', attributes: { 'class': 'icon icon-apliquemos3' } },
 				{ name: 'Icono Competencias', element: 'span', attributes: { 'class': 'icon icon-competencias' } },
-				{ name: 'Icono Competencias', element: 'span', attributes: { 'class': 'icon icon-competencias3' } },
+				{ name: 'Icono Competencias3', element: 'span', attributes: { 'class': 'icon icon-competencias3' } },
 				{ name: 'Icono Dominios del saber', element: 'span', attributes: { 'class': 'icon icon-dominiosdelsaber' } },
 				{ name: 'Icono Dominios del saber2', element: 'span', attributes: { 'class': 'icon icon-dominiosdelsaber2' } },
 				{ name: 'Icono Dominios del saber3', element: 'span', attributes: { 'class': 'icon icon-dominiosdelsaber3' } },
 				{ name: 'Icono Exploremos Español', element: 'span', attributes: { 'class': 'icon icon-exploremos2' } },
 				{ name: 'Icono Juegos del lenguaje', element: 'span', attributes: { 'class': 'icon icon-juegos' } },
 				{ name: 'Icono Leo', element: 'span', attributes: { 'class': 'icon icon-leo' } },
-				{ name: 'Icono Maratondeescritura taller 2', element: 'span', attributes: { 'class': 'icon icon-maratondeescritura_taller2' } },
-				{ name: 'Icono Maratondeescritura taller3', element: 'span', attributes: { 'class': 'icon icon-maratondeescritura_taller3' } },
-				{ name: 'Icono Micarteldevocabulario taller1', element: 'span', attributes: { 'class': 'icon icon-micarteldevocabulario_taller1' } },
-				{ name: 'Icono Mismanosvanalgym_taller1', element: 'span', attributes: { 'class': 'icon icon-mismanosvanalgym_taller1' } },
+				{ name: 'Icono Maraton de escritura taller 2', element: 'span', attributes: { 'class': 'icon icon-maratondeescritura_taller2' } },
+				{ name: 'Icono Maraton de escritura taller3', element: 'span', attributes: { 'class': 'icon icon-maratondeescritura_taller3' } },
+				{ name: 'Icono Mi cartel de vocabulario taller1', element: 'span', attributes: { 'class': 'icon icon-micarteldevocabulario_taller1' } },
+				{ name: 'Icono Mis manos van al gym_taller1', element: 'span', attributes: { 'class': 'icon icon-mismanosvanalgym_taller1' } },
 				{ name: 'Icono Nuevas silabas nuevas palabras_taller2', element: 'span', attributes: { 'class': 'icon icon-nuevassilabasnuevaspalabras_taller2' } },
 				{ name: 'Icono Nuevas silabas nuevas palabras_talle3', element: 'span', attributes: { 'class': 'icon icon-nuevassilabasnuevaspalabras_taller3' } },
-				{ name: 'Icono Vamosaconversar_taller3', element: 'span', attributes: { 'class': 'icon icon-vamosaconversar_taller3' } },
-				{ name: 'Icono Vamosaescribir_taller3', element: 'span', attributes: { 'class': 'icon-vamosaescribir_taller3' } },
+				{ name: 'Icono Vamos a conversar_taller1', element: 'span', attributes: { 'class': 'icon icon-vamosaconversar_taller1' } },
+				{ name: 'Icono Vamos a conversar_taller3', element: 'span', attributes: { 'class': 'icon icon-vamosaconversar_taller3' } },
+				{ name: 'Icono Vamos a escribir_taller3', element: 'span', attributes: { 'class': 'icon-vamosaescribir_taller3' } },
 				{ name: 'Icono Vamos a leer_taller2', element: 'span', attributes: { 'class': 'icon icon-vamosaleer_taller2' } },
-				{ name: 'Icono Vamos conversar_taller1', element: 'span', attributes: { 'class': 'icon icon-vamosconversar_taller1' } },
+				{ name: 'Icono Vamos a leer_taller3', element: 'span', attributes: { 'class': 'icon icon-vamosaleer_taller3' } },
 				{ name: 'Icono Exploremos2', element: 'span', attributes: { 'class': 'icon icon-exploremos2' } },
 				{ name: 'Icono Taller de ideas', element: 'span', attributes: { 'class': 'icon icon-tallerideas' } },
 
@@ -247,4 +248,3 @@ $(document).ready(function () {
 	}
 
 });
-
