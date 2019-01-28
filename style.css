@@ -1147,7 +1147,7 @@ ol.bck-ol {
     width: 407px;
     margin-top: 2%;
     margin-bottom: 3%;
-    background-image: url(images/momento2eya.png);
+    background-image: url(images/icono_momento2.png);
     background-repeat: no-repeat;
 }
 
@@ -1155,10 +1155,10 @@ ol.bck-ol {
 
 .item-container .icon-momentodoseya:before {
     height: 70px;
-    width: 407px;
+    width: 320px;
     margin-top: 2%;
     margin-bottom: 3%;
-    background-image: url(images/icono_momento2.png);
+    background-image: url(images/momento2eya.png);
     background-repeat: no-repeat;
 }
 
