@@ -55,6 +55,7 @@
 				{ name: 'Icono Momento 1', element: 'span', attributes: { 'class': 'icon icon-momentouno' } },
 				{ name: 'Icono Momento 1 antes de leer', element: 'span', attributes: { 'class': 'icon icon-momentounoantes' } },
 				{ name: 'Icono Momento 2', element: 'span', attributes: { 'class': 'icon icon-momentodos' } },
+				{ name: 'Icono Momento 2 EyA', element: 'span', attributes: { 'class': 'icon icon-momentodoseya' } },
 				{ name: 'Icono Momento 3', element: 'span', attributes: { 'class': 'icon icon-momentotres' } },
 				{ name: 'Icono Momento 4', element: 'span', attributes: { 'class': 'icon icon-momentocuatro' } },
 				{ name: 'Icono Para aprender y divertirme', element: 'span', attributes: { 'class': 'icon icon-aprenderydivertirme' } },
