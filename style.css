@@ -2254,7 +2254,10 @@ ol.bck-ol {
 /*filpblox*/
 
 body:not(.edit) .front .bck-flipbox-title, body:not(.edit) .front .bck-flipbox-section {
+    font-weight: bold;
     color: #8fb435;
+    font-size: 25px;
+    font-family: 'Conv_BerlinSansFBDemi-Bold';
 }
 
 
