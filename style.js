@@ -245,7 +245,7 @@
 	    	for (var i in that.subunits) {
 	    		if (that.subunits[i].id && that.subunits[i].id == idclase) {
                         	$(document).append('<span class="slide-counter" data-subunit-index="' + i +
-                            		'" data-subunit-pags="' + parseInt(that.subunits[i].pags) + '">');
+                            		'" data-subunit-pags="' + parseInt(that.subunits[i].pags) + '" style="visibility: hidden;">');
 			}
                 }
             }).done(function(){
