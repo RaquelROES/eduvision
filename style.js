@@ -329,8 +329,8 @@
                         if (!$(this).hasClass('disabled')) {
                             if(activeSlide == 0) {
                                 redireccionar('/coursePlayer/clases2.php?editar=0&idcurso=' +
-                                    idcurso + '&idclase=' + that.subunits[subunit_index - 1].id + '&modo=0&popup=1&numSec=' +
-                                    that.subunits[subunit_index - 1].numSlides + slideNavParams, false, undefined);
+                                    idcurso + '&idclase=' + that.subunits[subunit_index - 1].id + '&modo=0&numSec=' +
+                                    that.subunits[subunit_index - 1].pags + slideNavParams, false, undefined);
                             } else {
                                 blink.activity.showPrevSection();
                         }
@@ -342,7 +342,7 @@
                             if(!isNaN(subunit_index) && activeSlide == parseInt(that.subunits[subunit_index].pags) - 1) {
                                 if (!that.subunits[subunit_index + 1].ocultar)
                                 redireccionar('/coursePlayer/clases2.php?editar=0&idcurso=' +
-                                    idcurso + '&idclase=' + that.subunits[subunit_index + 1].id + '&modo=0' + ((typeof window.esPopup !== "undefined" && window.esPopup)?"&popup=1":"") + slideNavParams,
+                                    idcurso + '&idclase=' + that.subunits[subunit_index + 1].id + '&modo=0&numSec=1'+slideNavParams,
                                     false, undefined);
                             } else {
                                 blink.activity.showNextSection();
