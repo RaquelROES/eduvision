@@ -133,7 +133,10 @@
 			parent.init.call(this);
 			this.addActivityTitle();
 			this.addPageNumber();
-			this.formatCarouselindicators();
+			blink.events.on("course_loaded", function(){
+                       that.formatCarouselindicators();
+                       that.enableSliders();
+          	  });
 			this.addSlideNavigators();
 			parent.initInfoPopover();
 		},
