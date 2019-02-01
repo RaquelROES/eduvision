@@ -134,15 +134,15 @@
 			this.addActivityTitle();
 			this.addPageNumber();
 			blink.events.on("course_loaded", function(){
-                       		this.enableSliders();
-          	  	});
+           		this.enableSliders();
+      	  	});
+			this.formatCarouselindicators();
 			this.addSlideNavigators();
 			this.parent.initInfoPopover();
 		},
 
 		removeFinalSlide: function () {
-			var parent = blink.theme.styles.basic.prototype;
-			parent.removeFinalSlide.call(this, true);
+			this.parent.removeFinalSlide.call(this.parent, this, true);
 		},
 
 		addActivityTitle: function () {
@@ -164,6 +164,58 @@
 			});
 		},
 
+
+		formatCarouselindicators: function () {
+			var $navbarBottom = $('.navbar-bottom'),
+				$carouselIndicators = $('.slider-indicators').find('li');
+			$navbarBottom.find('li').tooltip('destroy');
+
+			var dropDown = '' +
+					'<div class="dropdown">' +
+						'<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">' +
+							'Índice' +
+							'<span class="caret"></span>' +
+						'</button>' +
+						'<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">';
+
+			var navigatorIndex = 0;
+			for (var index = 0; index < window.secuencia.length; index++) {
+				var slide = eval('t'+index+'_slide'),
+					slideTitle = slide.title;
+
+				if (slide.isConcatenate) continue;
+
+				dropDown += '<li role="presentation"><a role="menuitem">' + (navigatorIndex+1) + '. ' + stripHTML(slideTitle) + '</a></li>';
+				$navbarBottom.find('li').eq(navigatorIndex).html('<span title="'+ stripHTML(slideTitle) +'">'+(navigatorIndex+1)+'</span>');
+				navigatorIndex++;
+
+			};
+
+			dropDown += '' +
+						'</ul>' +
+					'</div>';
+
+			$navbarBottom
+				.attr('class', 'publisher-navbar')
+				.wrapInner('<div class="navbar-content"></div>')
+				.find('ol')
+					.before(dropDown)
+					.wrap('<div id="top-navigator"/>')
+					.end()
+				.find('.dropdown').find('li')
+					.on('click', function (event) {
+						$navbarBottom.find('ol').find('li').eq($(this).index()).trigger('click');
+					});
+
+			if (!blink.hasTouch) {
+				$navbarBottom
+					.find('ol').find('span')
+						.tooltip({
+							placement: 'bottom',
+							container: 'body'
+						});
+			}
+		},
 
 		/**
          * @summary Gets the activity type subunits of the actual unit.
@@ -214,237 +266,7 @@
             return actualSlide;
         },
 		
-	formatCarouselindicators: function () {
-            var $navbarBottom = $('.navbar-bottom'),
-                $carouselIndicators = $('.slider-indicators').find('li'),
-                that = this,
-                firstSlide = eval('t0_slide'),
-                subunits = that.subunits,
-                totalSlides = 0,
-                subunit_index,
-                subunit_pags,
-                navigatorIndex = 0;
-
-            var idgrupo = window.idgrupo,
-                idalumno = window.idalumno,
-                slideNavParams = '';
-
-            if (idgrupo) slideNavParams += '&idgrupo=' + idgrupo;
-            if (idalumno) slideNavParams += '&idalumno=' + idalumno;
-
-            for (var index = 0; index < window.secuencia.length; index++) {
-                var slide = eval('t'+index+'_slide'),
-                    slideTitle = slide.title.replace(/<span class="index">[\d]+<\/span>/g, ''),
-                    textIndice = stripHTML(slideTitle);
-
-                if (slide.isConcatenate) continue;
-
-                navigatorIndex++;
-            };
-
-            for (var unit = 0; unit < subunits.length; unit++) {
-                if (subunits[unit].titulosSlides) {
-                    var slideTitNum = subunits[unit].titulosSlides.length;
-                    var currElem;
-
-                    for (var sli = 0; sli < slideTitNum; sli++ ) {
-                        var tituloSlide = subunits[unit].titulosSlides[sli] || subunits[unit].type;
-                        subunit_slide_titles.push(tituloSlide);
-                    }
-                }
-            }
-
-            var curso = blink.getCourse(idcurso);
-            curso.done(function () {
-                var units = curso.responseJSON.units,
-                    number = 0,
-                    navbarContent = '',
-                    activityList= '',
-                    actualActivity = '',
-                    nextActivity = '',
-                    previousActivity = '',
-                    tempActivity = '';
-
-                // Sacamos las variables a insertar en el navbar-content
-                for (var i in units) {
-                    // Si es el tema actual añadimos las actividades al dropdown
-                    if (units[i].id == blink.courseInfo.IDUnit) {
-                        number = units[i].number;
-                        if (units[i].subunits.length) { //Si el tema tiene actividades
-                            for (var j = 0; j < units[i].subunits.length; j++) {
-                                if(nextActivity === '' && actualActivity !== '' && units[i].subunits[j]) {
-                                    nextActivity = units[i].subunits[j];
-                                }
-                                if (idclase == units[i].subunits[j].id) {
-                                    actualActivity = units[i].subunits[j].title;
-                                    previousActivity = tempActivity;
-                                }
-                                tempActivity = units[i].subunits[j];
-                                //BK-16866 No listamos las actividades que no estan visibles en el TOC o que sean solo visibles para profesor
-                                if (!tempActivity.ocultar && !tempActivity.onlyVisibleTeachers) {
-                                    activityList += '' +
-                                        '<li role="presentation" class="lista-actividades' +
-                                            (idclase == units[i].subunits[j].id ? ' disabled' : '') +
-                                            '" data-url="' + units[i].subunits[j].url + slideNavParams + '&popup=1">' +
-                                            '<a role="menuitem">' + units[i].subunits[j].title + '</a>' +
-                                        '</li>';
-                                }
-                            }
-                        }
-                    }
-                }
-
-                if(nextActivity !== '' || previousActivity !== '') {
-                    that.createListenerForSwipeBetweenActivities(nextActivity, previousActivity);
-                }
-
-                navbarContent += '' +
-                    '<h2>' + blink.courseInfo.unit + '</h2>' +
-                    '<div class="activityDropdown">' +
-                        '<button id="tLabel" type="button" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">' +
-                            actualActivity + '<span class="caret"></span>' +
-                        '</button>' +
-                        '<ul class="dropdown-menu" role="menu" aria-labelledby="tLabel">' +
-                            activityList +
-                        '</ul>' +
-                    '</div>' +
-                    '<div class="dropdown">' +
-                        '<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">' +
-                            '<span class="sectionTitle"></span>' +
-                            '<span class="caret"></span>' +
-                        '</button>' +
-                        '<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">';
-
-                // Añadimos el dropdown de las slides de la actividad en la que estamos
-                for (var index = 0; index < window.secuencia.length; index++) {
-                    var slide = eval('t'+index+'_slide'),
-                        slideTitle = slide.title;
-
-                    if (!slide.isConcatenate) {
-                        navbarContent += '' +
-                            '<li role="presentation">' +
-                                '<a role="menuitem">' + slideTitle + '</a>' +
-                            '</li>';
-
-                    }
-                };
-
-                navbarContent += '' +
-                        '</ul>' +
-                    '</div>';
-
-                $navbarBottom.append(navbarContent);
-            });
-
-            $navbarBottom
-                .attr('class', 'superior-navbar')
-                .wrapInner('<div class="navbar-content"></div>')
-                .find('ol')
-                    .wrap('<div id="top-navigator"/>')
-                    .end()
-                .append('<a href="#" id="goTo-indice">' + textweb("activity_back_to_toc") + '</a>')
-                .append('<div class="logo_editorial logo_slide"></div>');
-
-
-            if (firstSlide.seccion) {
-                $navbarBottom.addClass('first-is-section');
-            }
-
-            $('.lista-actividades').click(function() {
-                redireccionar($(this).data('url'));
-            });
-
-            $('.superior-navbar .dropdown li').click(function (event) {
-                $('#top-navigator li').eq($(this).index()).trigger('click');
-            });
-
-            $('#goTo-indice').click(function(event) {
-                event.stopPropagation();
-                return showCursoCommit();
-            });
-
-            if (subunits.length !== 0) {
-                for (var i in subunits) {
-                    if (subunits[i].pags) {
-                        var subunitSlides = parseInt(subunits[i].pags);
-                        totalSlides += subunitSlides;
-                    }
-                    if (subunits[i].id && subunits[i].id == idclase) {
-                        subunit_index = i;
-                        subunit_pags = parseInt(subunits[i].pags);
-                    }
-
-                }
-
-                that.totalSlides = totalSlides;
-
-                $('#top-navigator').append('<span class="left slider-navigator">' +
-                        '<span class="fa fa-chevron-left"></span>' +
-                    '</span>' +
-                    '<span class="slide-counter" data-subunit-index="' + subunit_index +
-                        '" data-subunit-pags="' + subunit_pags + '">' +
-                        that.getActualSlideNumber(subunits) + ' / ' + totalSlides +
-                    '</span>' +
-                    '<span class="right slider-navigator">' +
-                        '<span class="fa fa-chevron-right"></span>' +
-                    '</span>');
-
-                blink.events.on('section:shown', function() {
-                    $('.slide-counter').html(that.getActualSlideNumber(subunits) +
-                        ' / ' + totalSlides);
-                });
-            } else {
-                $('#top-navigator').append('<span class="left slider-navigator">' +
-                        '<span class="fa fa-chevron-left"></span>' +
-                    '</span>' +
-                    '<span class="slide-counter">' + (window.activeSlide + 1) +
-                        ' / ' + window.secuencia.length +
-                    '</span>' +
-                    '<span class="right slider-navigator">' +
-                        '<span class="fa fa-chevron-right"></span>' +
-                    '</span>');
-
-                blink.events.on('section:shown', function() {
-                    $('.slide-counter').html((window.activeSlide + 1) +
-                        ' / ' + window.secuencia.length);
-                    $('.bck-dropdown-2').hideBlink();
-                });
-            }
-
-            var $navbarBottom2 = $('#dLabel'),
-                sectionTitle = eval('t' + blink.activity.getFirstSlideIndex(window.activeSlide) + '_slide').title,
-                actualDropdownLi = $('.dropdown').find('li')[blink.activity.getFirstSlideIndex(window.activeSlide)];
-
-            $navbarBottom2.find('.sectionTitle').text(sectionTitle);
-            $(actualDropdownLi).addClass('disabled');
-
-            blink.events.on('section:shown', function() {
-                var $navbarBottom2 = $('#dLabel'),
-                    sectionTitle = eval('t' + blink.activity.getFirstSlideIndex(window.activeSlide) + '_slide').title,
-                actualDropdownLi = $('.dropdown').find('li')[blink.activity.getFirstSlideIndex(window.activeSlide)];
-
-                $navbarBottom2.find('.sectionTitle').text(sectionTitle);
-                $('.dropdown li').removeClass('disabled');
-                $(actualDropdownLi).addClass('disabled');
-            });
-
-            blink.events.trigger(true, 'style:endFormatCarousel');
-        },
-		createListenerForSwipeBetweenActivities: function(nextActivity, previousActivity) {
-            var that = this;
-
-            if(nextActivity !== '' && typeof nextActivity.url !== 'undefined') {
-                document.addEventListener('swipe:last:nextActivity', function(e) {
-                    redireccionar(nextActivity.url);
-                }, false);
-            }
-
-            if(previousActivity !== '' && typeof previousActivity.url !== 'undefined') {
-                document.addEventListener('swipe:first:previousActivity', function(e) {
-                    redireccionar(previousActivity.url);
-                }, false);
-            }
-        },
+	
 		
 		  /**
          * @summary Enables all slider controls and disables when appropiate
@@ -557,7 +379,7 @@ $(document).ready(function () {
 		})
 		.each(function () {
 			var $header = $(this).find('h3');
-			$header.length && $header.html($header.html().replace(' ', ''));
+			$header.length && $header.html($header.html().replace(' ', ''));
 		});
 
 	// BK-8433 cambiamos el logo de las slides por el del dominio
