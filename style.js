@@ -130,12 +130,13 @@
 		},
 
 		init: function () {
+			var that = this;
 			this.parent.init.call(this);
 			this.addActivityTitle();
 			this.addPageNumber();
 			this.getActualUnitActivities();
 			blink.events.on("course_loaded", function(){
-           			this.enableSliders();
+           			that.enableSliders();
       	  		});
 			this.formatCarouselindicators();
 			this.addSlideNavigators();
