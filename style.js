@@ -7,6 +7,7 @@
 		page = blink.currentPage;
 
 	eduvisionStyle.prototype = {
+		parent: blink.theme.styles.basic.prototype,
 		bodyClassName: 'content_type_clase_eduvision',
 		extraPlugins: ['image2'],
 		toolbar: { name: 'editorial', items: ['Blink_popover'] },
@@ -125,18 +126,17 @@
 				{ name: 'Caja Valores', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-26' } },
 				{ name: 'Caja Valores 2', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-27' } },
 				{ name: 'Caja Valores 3', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-28' } },
-			]
+			],stylesToRemove: ["Caja 1" ,"Caja 2"]
 		},
 
 		init: function () {
-			var parent = blink.theme.styles.basic.prototype;
-			parent.init.call(this);
+			this.parent.init.call(this);
 			this.addActivityTitle();
 			this.addPageNumber();
 			blink.events.on("course_loaded", function(){
-                       that.formatCarouselindicators();
-                       that.enableSliders();
-          	  });
+                       		this.formatCarouselindicators();
+                       		this.enableSliders();
+          	  	});
 			this.addSlideNavigators();
 			parent.initInfoPopover();
 		},
@@ -218,9 +218,377 @@
 			}
 		},
 
-		getEditorStyles: function () {
-			return this.ckEditorStyles;
-		}
+		/**
+         * @summary Gets the activity type subunits of the actual unit.
+         * @return {Object} Object of the actual unit filtering the not activity type subunits
+         */
+        getActualUnitActivities: function () {
+            var curso = blink.getCourse(idcurso),
+                that = this,
+                units,
+                unitSubunits,
+                unitActivities;
+
+            curso.done(function () {
+                units = curso.responseJSON.units;
+                $.each(units, function () {
+                    if (this.id && this.id == blink.courseInfo.IDUnit) {
+                        unitSubunits = this.subunits.concat(this.resources);
+                    }
+                });
+                unitActivities = _.filter(unitSubunits, function(subunit) {
+                    //BK-16866 Quitamos las actividades ocultas y las solo visibles para profesor para que no se pueda navegar a ellas.
+                    return subunit.type == 'actividad' && (!subunit.ocultar && !subunit.onlyVisibleTeachers);
+                });
+                that.subunits = unitActivities;
+            }).done(function(){
+                blink.events.trigger('course_loaded');
+            });
+        },
+	/**
+         * @summary Getting active slide position in relation with the total of the
+         * unit slides.
+         * @param {Array} $subunits Array of activity type objects
+		  * @return {int} Slide position
+         */
+        getActualSlideNumber: function (subunits) {
+            var actualSlideIndex = $('.swipeview-active').attr('data-page-index'),
+                actualSlide = 1;
+
+            for (var i in subunits) {
+                if (subunits[i].id && parseInt(subunits[i].id) != idclase) {
+                    actualSlide += parseInt(subunits[i].pags);
+                } else {
+                    actualSlide += parseInt(actualSlideIndex);
+                    break;
+                }
+            }
+
+            return actualSlide;
+        },
+		
+	formatCarouselindicators: function () {
+            var $navbarBottom = $('.navbar-bottom'),
+                $carouselIndicators = $('.slider-indicators').find('li'),
+                that = this,
+                firstSlide = eval('t0_slide'),
+                subunits = that.subunits,
+                totalSlides = 0,
+                subunit_index,
+                subunit_pags,
+                navigatorIndex = 0;
+
+            var idgrupo = window.idgrupo,
+                idalumno = window.idalumno,
+                slideNavParams = '';
+
+            if (idgrupo) slideNavParams += '&idgrupo=' + idgrupo;
+            if (idalumno) slideNavParams += '&idalumno=' + idalumno;
+
+            for (var index = 0; index < window.secuencia.length; index++) {
+                var slide = eval('t'+index+'_slide'),
+                    slideTitle = slide.title.replace(/<span class="index">[\d]+<\/span>/g, ''),
+                    textIndice = stripHTML(slideTitle);
+
+                if (slide.isConcatenate) continue;
+
+                navigatorIndex++;
+            };
+
+            for (var unit = 0; unit < subunits.length; unit++) {
+                if (subunits[unit].titulosSlides) {
+                    var slideTitNum = subunits[unit].titulosSlides.length;
+                    var currElem;
+
+                    for (var sli = 0; sli < slideTitNum; sli++ ) {
+                        var tituloSlide = subunits[unit].titulosSlides[sli] || subunits[unit].type;
+                        subunit_slide_titles.push(tituloSlide);
+                    }
+                }
+            }
+
+            var curso = blink.getCourse(idcurso);
+            curso.done(function () {
+                var units = curso.responseJSON.units,
+                    number = 0,
+                    navbarContent = '',
+                    activityList= '',
+                    actualActivity = '',
+                    nextActivity = '',
+                    previousActivity = '',
+                    tempActivity = '';
+
+                // Sacamos las variables a insertar en el navbar-content
+                for (var i in units) {
+                    // Si es el tema actual añadimos las actividades al dropdown
+                    if (units[i].id == blink.courseInfo.IDUnit) {
+                        number = units[i].number;
+                        if (units[i].subunits.length) { //Si el tema tiene actividades
+                            for (var j = 0; j < units[i].subunits.length; j++) {
+                                if(nextActivity === '' && actualActivity !== '' && units[i].subunits[j]) {
+                                    nextActivity = units[i].subunits[j];
+                                }
+                                if (idclase == units[i].subunits[j].id) {
+                                    actualActivity = units[i].subunits[j].title;
+                                    previousActivity = tempActivity;
+                                }
+                                tempActivity = units[i].subunits[j];
+                                //BK-16866 No listamos las actividades que no estan visibles en el TOC o que sean solo visibles para profesor
+                                if (!tempActivity.ocultar && !tempActivity.onlyVisibleTeachers) {
+                                    activityList += '' +
+                                        '<li role="presentation" class="lista-actividades' +
+                                            (idclase == units[i].subunits[j].id ? ' disabled' : '') +
+                                            '" data-url="' + units[i].subunits[j].url + slideNavParams + '&popup=1">' +
+                                            '<a role="menuitem">' + units[i].subunits[j].title + '</a>' +
+                                        '</li>';
+                                }
+                            }
+                        }
+                    }
+                }
+
+                if(nextActivity !== '' || previousActivity !== '') {
+                    that.createListenerForSwipeBetweenActivities(nextActivity, previousActivity);
+                }
+
+                navbarContent += '' +
+                    '<h2>' + blink.courseInfo.unit + '</h2>' +
+                    '<div class="activityDropdown">' +
+                        '<button id="tLabel" type="button" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">' +
+                            actualActivity + '<span class="caret"></span>' +
+                        '</button>' +
+                        '<ul class="dropdown-menu" role="menu" aria-labelledby="tLabel">' +
+                            activityList +
+                        '</ul>' +
+                    '</div>' +
+                    '<div class="dropdown">' +
+                        '<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">' +
+                            '<span class="sectionTitle"></span>' +
+                            '<span class="caret"></span>' +
+                        '</button>' +
+                        '<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">';
+
+                // Añadimos el dropdown de las slides de la actividad en la que estamos
+                for (var index = 0; index < window.secuencia.length; index++) {
+                    var slide = eval('t'+index+'_slide'),
+                        slideTitle = slide.title;
+
+                    if (!slide.isConcatenate) {
+                        navbarContent += '' +
+                            '<li role="presentation">' +
+                                '<a role="menuitem">' + slideTitle + '</a>' +
+                            '</li>';
+
+                    }
+                };
+
+                navbarContent += '' +
+                        '</ul>' +
+                    '</div>';
+
+                $navbarBottom.append(navbarContent);
+            });
+
+            $navbarBottom
+                .attr('class', 'superior-navbar')
+                .wrapInner('<div class="navbar-content"></div>')
+                .find('ol')
+                    .wrap('<div id="top-navigator"/>')
+                    .end()
+                .append('<a href="#" id="goTo-indice">' + textweb("activity_back_to_toc") + '</a>')
+                .append('<div class="logo_editorial logo_slide"></div>');
+
+
+            if (firstSlide.seccion) {
+                $navbarBottom.addClass('first-is-section');
+            }
+
+            $('.lista-actividades').click(function() {
+                redireccionar($(this).data('url'));
+            });
+
+            $('.superior-navbar .dropdown li').click(function (event) {
+                $('#top-navigator li').eq($(this).index()).trigger('click');
+            });
+
+            $('#goTo-indice').click(function(event) {
+                event.stopPropagation();
+                return showCursoCommit();
+            });
+
+            if (subunits.length !== 0) {
+                for (var i in subunits) {
+                    if (subunits[i].pags) {
+                        var subunitSlides = parseInt(subunits[i].pags);
+                        totalSlides += subunitSlides;
+                    }
+                    if (subunits[i].id && subunits[i].id == idclase) {
+                        subunit_index = i;
+                        subunit_pags = parseInt(subunits[i].pags);
+                    }
+
+                }
+
+                that.totalSlides = totalSlides;
+
+                $('#top-navigator').append('<span class="left slider-navigator">' +
+                        '<span class="fa fa-chevron-left"></span>' +
+                    '</span>' +
+                    '<span class="slide-counter" data-subunit-index="' + subunit_index +
+                        '" data-subunit-pags="' + subunit_pags + '">' +
+                        that.getActualSlideNumber(subunits) + ' / ' + totalSlides +
+                    '</span>' +
+                    '<span class="right slider-navigator">' +
+                        '<span class="fa fa-chevron-right"></span>' +
+                    '</span>');
+
+                blink.events.on('section:shown', function() {
+                    $('.slide-counter').html(that.getActualSlideNumber(subunits) +
+                        ' / ' + totalSlides);
+                });
+            } else {
+                $('#top-navigator').append('<span class="left slider-navigator">' +
+                        '<span class="fa fa-chevron-left"></span>' +
+                    '</span>' +
+                    '<span class="slide-counter">' + (window.activeSlide + 1) +
+                        ' / ' + window.secuencia.length +
+                    '</span>' +
+                    '<span class="right slider-navigator">' +
+                        '<span class="fa fa-chevron-right"></span>' +
+                    '</span>');
+
+                blink.events.on('section:shown', function() {
+                    $('.slide-counter').html((window.activeSlide + 1) +
+                        ' / ' + window.secuencia.length);
+                    $('.bck-dropdown-2').hideBlink();
+                });
+            }
+
+            var $navbarBottom2 = $('#dLabel'),
+                sectionTitle = eval('t' + blink.activity.getFirstSlideIndex(window.activeSlide) + '_slide').title,
+                actualDropdownLi = $('.dropdown').find('li')[blink.activity.getFirstSlideIndex(window.activeSlide)];
+
+            $navbarBottom2.find('.sectionTitle').text(sectionTitle);
+            $(actualDropdownLi).addClass('disabled');
+
+            blink.events.on('section:shown', function() {
+                var $navbarBottom2 = $('#dLabel'),
+                    sectionTitle = eval('t' + blink.activity.getFirstSlideIndex(window.activeSlide) + '_slide').title,
+                actualDropdownLi = $('.dropdown').find('li')[blink.activity.getFirstSlideIndex(window.activeSlide)];
+
+                $navbarBottom2.find('.sectionTitle').text(sectionTitle);
+                $('.dropdown li').removeClass('disabled');
+                $(actualDropdownLi).addClass('disabled');
+            });
+
+            blink.events.trigger(true, 'style:endFormatCarousel');
+        },
+		createListenerForSwipeBetweenActivities: function(nextActivity, previousActivity) {
+            var that = this;
+
+            if(nextActivity !== '' && typeof nextActivity.url !== 'undefined') {
+                document.addEventListener('swipe:last:nextActivity', function(e) {
+                    redireccionar(nextActivity.url);
+                }, false);
+            }
+
+            if(previousActivity !== '' && typeof previousActivity.url !== 'undefined') {
+                document.addEventListener('swipe:first:previousActivity', function(e) {
+                    redireccionar(previousActivity.url);
+                }, false);
+            }
+        },
+		
+		  /**
+         * @summary Enables all slider controls and disables when appropiate
+         */
+        enableSliders: function () {
+            //BK-15715 Traemos subunit_index para saber si la actividad esta oculta. Si subunit_index es NaN, la actividad es oculta y no tiene que navegar entre actividades, solo entre las slides de la actividad
+            var subunit_index = parseInt($('.slide-counter').attr('data-subunit-index'));
+            // Removes disabled class to all navigation buttons and applies
+            // just if its first or last slide of all activities
+            $('.slider-control, .slider-navigator').removeClass('disabled');
+
+            // Navigation change depending on whether the slides are accessed from
+            // a book or from a homework link or similar
+            // BK-15715 Comprobamos a mayores que subunit_index no sea NaN para habilitar la navegacion entre actividades.
+            if (this.subunits.length !== 0 && !isNaN(subunit_index)) {
+                if (this.getActualSlideNumber(this.subunits) == 1) {
+                    $('.slider-control.left, .slider-navigator.left').addClass('disabled');
+                }
+                if (this.getActualSlideNumber(this.subunits) == this.totalSlides) {
+                    $('.slider-control.right, .slider-navigator.right').addClass('disabled');
+                }
+            } else {
+                if (window.activeSlide == 0) {
+                    $('.slider-control.left, .slider-navigator.left').addClass('disabled');
+                }
+                if (window.activeSlide + 1 == window.secuencia.length) {
+                    $('.slider-control.right, .slider-navigator.right').addClass('disabled');
+                }
+            }
+        },
+		
+	addSlideNavigators: function () {
+            var idgrupo = window.idgrupo,
+                idalumno = window.idalumno,
+                slideNavParams = '';
+
+            if (idgrupo) slideNavParams += '&idgrupo=' + idgrupo;
+            if (idalumno) slideNavParams += '&idalumno=' + idalumno;
+
+            blink.events.on("course_loaded", function(){
+                var that = blink.activity.currentStyle,
+                    subunit_index = parseInt($('.slide-counter').attr('data-subunit-index'));
+
+                $('.slider-control').off('click');
+
+                // Navigation change depending on whether the slides are accessed from
+                // a book or from a homework link or similar
+                if (that.subunits.length !== 0) {
+                    // Slider controls must allow navigation among all the activity subunits
+                    // in the current unit.
+                    $('.left.slider-control, .left.slider-navigator').click(function () {
+                        if (!$(this).hasClass('disabled')) {
+                            if(activeSlide == 0) {
+                                redireccionar('/coursePlayer/clases2.php?editar=0&idcurso=' +
+                                    idcurso + '&idclase=' + that.subunits[subunit_index - 1].id + '&modo=0&popup=1&numSec=' +
+                                    that.subunits[subunit_index - 1].numSlides + slideNavParams, false, undefined);
+                            } else {
+                                blink.activity.showPrevSection();
+                        }
+                        }
+                    });
+                    $('.right.slider-control, .right.slider-navigator').click(function () {
+                        if (!$(this).hasClass('disabled')) {
+                            //BK-15715 Añadimos la condicion que subunit_index no sea NaN para que se active la navegacion entre slides
+                            if(!isNaN(subunit_index) && activeSlide == parseInt(that.subunits[subunit_index].pags) - 1) {
+                                if (!that.subunits[subunit_index + 1].ocultar)
+                                redireccionar('/coursePlayer/clases2.php?editar=0&idcurso=' +
+                                    idcurso + '&idclase=' + that.subunits[subunit_index + 1].id + '&modo=0' + ((typeof window.esPopup !== "undefined" && window.esPopup)?"&popup=1":"") + slideNavParams,
+                                    false, undefined);
+                            } else {
+                                blink.activity.showNextSection();
+                            }
+                        }
+                    });
+                } else {
+                    $('.left.slider-control, .left.slider-navigator').click(function () {
+                        blink.activity.showPrevSection();
+                    });
+                    $('.right.slider-control, .right.slider-navigator').click(function () {
+                        blink.activity.showNextSection();
+                    });
+                }
+
+                $(document).ready(function() {
+                    blink.events.on('showSlide:after', function() {
+                        that.enableSliders();
+                    });
+		});
+            });
+        },
+		
 	};
 
 	eduvisionStyle.prototype = _.extend({}, new blink.theme.styles.basic(), eduvisionStyle.prototype);
