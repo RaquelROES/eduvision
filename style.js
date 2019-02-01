@@ -142,7 +142,7 @@
 		},
 
 		removeFinalSlide: function () {
-			this.parent.removeFinalSlide.call(this.parent, this, true);
+			this.parent.removeFinalSlide.call(this, true);
 		},
 
 		addActivityTitle: function () {
