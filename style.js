@@ -242,6 +242,12 @@
                     return subunit.type == 'actividad' && (!subunit.ocultar && !subunit.onlyVisibleTeachers);
                 });
                 that.subunits = unitActivities;
+	    	for (var i in that.subunits) {
+	    		if (that.subunits[i].id && that.subunits[i].id == idclase) {
+                        	$(document).append('<span class="slide-counter" data-subunit-index="' + i +
+                            		'" data-subunit-pags="' + parseInt(that.subunits[i].pags) + '">');
+			}
+                }
             }).done(function(){
                 blink.events.trigger('course_loaded');
             });
