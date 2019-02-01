@@ -134,11 +134,10 @@
 			this.addActivityTitle();
 			this.addPageNumber();
 			blink.events.on("course_loaded", function(){
-                       		this.formatCarouselindicators();
                        		this.enableSliders();
           	  	});
 			this.addSlideNavigators();
-			parent.initInfoPopover();
+			this.parent.initInfoPopover();
 		},
 
 		removeFinalSlide: function () {
@@ -165,58 +164,6 @@
 			});
 		},
 
-
-		formatCarouselindicators: function () {
-			var $navbarBottom = $('.navbar-bottom'),
-				$carouselIndicators = $('.slider-indicators').find('li');
-			$navbarBottom.find('li').tooltip('destroy');
-
-			var dropDown = '' +
-					'<div class="dropdown">' +
-						'<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">' +
-							'Índice' +
-							'<span class="caret"></span>' +
-						'</button>' +
-						'<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">';
-
-			var navigatorIndex = 0;
-			for (var index = 0; index < window.secuencia.length; index++) {
-				var slide = eval('t'+index+'_slide'),
-					slideTitle = slide.title;
-
-				if (slide.isConcatenate) continue;
-
-				dropDown += '<li role="presentation"><a role="menuitem">' + (navigatorIndex+1) + '. ' + stripHTML(slideTitle) + '</a></li>';
-				$navbarBottom.find('li').eq(navigatorIndex).html('<span title="'+ stripHTML(slideTitle) +'">'+(navigatorIndex+1)+'</span>');
-				navigatorIndex++;
-
-			};
-
-			dropDown += '' +
-						'</ul>' +
-					'</div>';
-
-			$navbarBottom
-				.attr('class', 'publisher-navbar')
-				.wrapInner('<div class="navbar-content"></div>')
-				.find('ol')
-					.before(dropDown)
-					.wrap('<div id="top-navigator"/>')
-					.end()
-				.find('.dropdown').find('li')
-					.on('click', function (event) {
-						$navbarBottom.find('ol').find('li').eq($(this).index()).trigger('click');
-					});
-
-			if (!blink.hasTouch) {
-				$navbarBottom
-					.find('ol').find('span')
-						.tooltip({
-							placement: 'bottom',
-							container: 'body'
-						});
-			}
-		},
 
 		/**
          * @summary Gets the activity type subunits of the actual unit.
