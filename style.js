@@ -10,6 +10,8 @@
 		parent: blink.theme.styles.basic.prototype,
 		bodyClassName: 'content_type_clase_eduvision',
 		extraPlugins: ['image2'],
+		toolbar: { name: 'editorial', items: ['Blink_popover'] },
+		extraPlugins: ['blink_popover'],
 		ckEditorStyles: {
 			name: 'eduvision',
 			styles: [
@@ -127,7 +129,20 @@
 			],stylesToRemove: ["Caja 1" ,"Caja 2"]
 		},
 
-		
+		init: function () {
+			var that = this;
+			this.parent.init.call(this);
+			this.addActivityTitle();
+			this.addPageNumber();
+			this.getActualUnitActivities();
+			blink.events.on("course_loaded", function(){
+           			that.enableSliders();
+      	  		});
+			this.formatCarouselindicators();
+			this.addSlideNavigators();
+			this.parent.initInfoPopover();
+		},
+
 		removeFinalSlide: function () {
 			this.parent.removeFinalSlide.call(this, true);
 		},
