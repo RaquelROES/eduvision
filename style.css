@@ -448,6 +448,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     margin-right: 60px;
     float: left;
     background-size: contain;
+    display: inline-block;
 }
 
     .content_type_clase_eduvision .slider-indicators {
