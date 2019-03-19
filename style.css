@@ -440,11 +440,11 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     .content_type_clase_eduvision .logo-publisher {
      content: " ";
     background-image: url(images/eduvison-logo.png) !important;
-    height: 50px;
+    height: 56px;
     background-repeat: no-repeat;
-    width: 102px;
+    width: 56px;
     margin-left: -100px;
-    margin-top: 4px;
+    margin-top: 0px;
     margin-right: 60px;
     float: left;
     background-size: contain;
