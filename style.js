@@ -126,6 +126,7 @@
 				{ name: 'Caja Valores', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-26' } },
 				{ name: 'Caja Valores 2', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-27' } },
 				{ name: 'Caja Valores 3', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-28' } },
+				{ name: 'Caja Sabías que', type: 'widget', widget: 'blink_box', attributes: { 'class': 'box-29' } }
 			],stylesToRemove: ["Caja 1" ,"Caja 2"]
 		},
 
