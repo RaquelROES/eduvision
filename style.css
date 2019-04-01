@@ -997,7 +997,7 @@ ol.bck-ol {
 
     .content figure figcaption,
     .cke_contents figure figcaption {
-        text-align: left;
+        text-align: center;
         margin-top: 10px;
     }
 
