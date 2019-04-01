@@ -283,10 +283,10 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
         vertical-align: top;
     }
 
-    .main-navigator {
-        padding: 30px 0px 50px;
-        width: 100%;
-    }
+   .main-navigator {
+    padding: 30px 0px 50px;
+    width: 100%;
+}
 
     .navigator .left, .navigator .right {
         width: 50%;
@@ -702,6 +702,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     strong {
         color: inherit !important;
         font-weight: bold;
+	font-family: 'Conv_AvantGarde_Bk_BT_Demi';
     }
 
     .bck-tooltip, .bck-underline {
