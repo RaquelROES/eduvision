@@ -1,11 +1,11 @@
 /* General */
 
 @font-face {
-	font-family: 'Conv_AvantGarde_Bk_BT_Demi';
-	src: url('fonts/AvantGarde_Bk_BT_Demi.eot');
-	src: local('☺'), url('fonts/AvantGarde_Bk_BT_Demi.woff') format('woff'), url('fonts/AvantGarde_Bk_BT_Demi.ttf') format('truetype'), url('fonts/AvantGarde_Bk_BT_Demi.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Conv_AvantGarde_Bk_BT_Demi';
+    src: url('fonts/AvantGarde_Bk_BT_Demi.eot');
+    src: local('☺'), url('fonts/AvantGarde_Bk_BT_Demi.woff') format('woff'), url('fonts/AvantGarde_Bk_BT_Demi.ttf') format('truetype'), url('fonts/AvantGarde_Bk_BT_Demi.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
@@ -28,11 +28,11 @@
 }
 
 @font-face {
-	font-family: 'Conv_AvantGarde_Bk_BT_Demi';
-	src: url('fonts/AvantGarde_Bk_BT_Demi.eot');
-	src: local('☺'), url('fonts/AvantGarde_Bk_BT_Demi.woff') format('woff'), url('fonts/AvantGarde_Bk_BT_Demi.ttf') format('truetype'), url('fonts/AvantGarde_Bk_BT_Demi.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Conv_AvantGarde_Bk_BT_Demi';
+    src: url('fonts/AvantGarde_Bk_BT_Demi.eot');
+    src: local('☺'), url('fonts/AvantGarde_Bk_BT_Demi.woff') format('woff'), url('fonts/AvantGarde_Bk_BT_Demi.ttf') format('truetype'), url('fonts/AvantGarde_Bk_BT_Demi.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -206,6 +206,7 @@
         cursor: not-allowed;
         background-color: #eee;
         opacity: 1;
+        margin-bottom: 5px;
     }
 
     .content_type_clase_eduvision .slide_main input.respuesta_ok {
@@ -296,6 +297,10 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     .navigator .right {
         text-align: right;
     }
+
+.navigator .slider-control.left {
+    padding-left: 46px;
+}
 
     .navigator .slider-control.left,
     .navigator .slider-control.right {
@@ -438,8 +443,8 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     }
 
     .content_type_clase_eduvision .logo-publisher {
-    	background-image: url(images/eduvisonlogo.png) !important;
-	content: " ";
+        background-image: url(images/eduvisonlogo.png) !important;
+    content: " ";
     height: 40px;
     background-repeat: no-repeat;
     width: 230px;
@@ -449,7 +454,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     float: left;
     background-size: contain;
     display: inline-block;
-	}
+    }
 
     .content_type_clase_eduvision .slider-indicators {
         padding: 0;
@@ -702,7 +707,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     strong {
         color: inherit !important;
         font-weight: bold;
-	font-family: 'Conv_AvantGarde_Bk_BT_Demi';
+    font-family: 'Conv_AvantGarde_Bk_BT_Demi';
     }
 
     .bck-tooltip, .bck-underline {
@@ -2577,4 +2582,15 @@ body.print-mode .title *, body.print-mode .title {
     clear: both;
     font-size: 1.8rem;
     line-height: 2.1rem;
+}
+
+
+/*respuestas tipo test*/
+#actividad .workspace.test .respuestas {
+    margin-top: 20px;
+    margin-bottom: 1em;
+}
+
+#actividad .workspace.test .respuestas li {
+    width: 30%;
 }
