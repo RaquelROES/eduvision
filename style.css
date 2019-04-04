@@ -1715,12 +1715,13 @@ ol.bck-ol {
 
 .bck-box.box-8 .bck-title:before {
     content: " ";
-    left: -15px;
+    left: -17px;
     position: absolute;
     background: url(images/Aprenda_icon.png);
     padding: 35px;
     background-size: contain;
     background-repeat: no-repeat;
+    margin-top: -10px;
 }
 
 
