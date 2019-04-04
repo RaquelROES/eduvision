@@ -42,6 +42,7 @@
 				{ name: 'Lista Desordenada', element: 'ul', attributes: { 'class': 'bck-ul'} },
 				{ name: 'Lista Desordenada 2', element: 'ul', attributes: { 'class': 'bck-ul-2'} },
 				{ name: 'Lista Desordenada 3', element: 'ul', attributes: { 'class': 'bck-ul-3'} },
+				{ name: 'Lista Desordenada 4', element: 'ul', attributes: { 'class': 'bck-ul-4'} },
 
 				{ name: 'Icono Aplico', element: 'span', attributes: { 'class': 'icon icon-aplico' } },
 				{ name: 'Icono Mapa conceptual', element: 'span', attributes: { 'class': 'icon icon-aprendamosconelmapaconceptual' } },
