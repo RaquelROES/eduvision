@@ -2383,7 +2383,8 @@ body:not(.edit) .bck-flipbox-title, body:not(.edit) .bck-flipbox-section {
     color: #fff;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-      font-size: 25px;
+    font-size: 25px;
+    z-index: 9;
 }
 
 .info-popover .popover-title:before, .popover-template .popover-title:before {
