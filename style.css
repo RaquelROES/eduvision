@@ -1645,10 +1645,11 @@ ol.bck-ol {
 
 
 .bck-box.box-5 .bck-title{
+    font-family: 'MarkerFelt';
     display: block;
     padding: 0px 40px;
     color: #612b80;
-    font-weight: bold;
+    font-weight: normal;
     margin-top: -3.5%;
     background-color: #fff;
     width: fit-content;
@@ -1725,10 +1726,11 @@ ol.bck-ol {
     display: block;
     padding: 0px 15px 0px 50px;
     color: #1c4985;
-    font-weight: bold;
+    font-weight: normal;
     margin-top: -3.5%;
     background-color: #fff;
     width: fit-content;
+    font-family: 'MarkerFelt';
 }
 
 .bck-box.box-8 .bck-title:before {
@@ -1758,10 +1760,11 @@ ol.bck-ol {
 
 
 .bck-box.box-9 .bck-title{
+    font-family: 'MarkerFelt';
     display: block;
     padding: 0px 25px;
     color: #00a29a;
-    font-weight: bold;
+    font-weight: normal;
     margin-top: -3.5%;
     background-color: #fff;
     width: fit-content;
