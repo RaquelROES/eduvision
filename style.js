@@ -10,7 +10,7 @@
 		parent: blink.theme.styles.basic.prototype,
 		bodyClassName: 'content_type_clase_eduvision',
 		extraPlugins: ['image2'],
-		toolbar: { name: 'editorial', items: ['Blink_popover'] },
+		toolbar: { name: 'editorial' },
 		extraPlugins: ['blink_popover'],
 		ckEditorStyles: {
 			name: 'eduvision',
