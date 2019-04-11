@@ -460,10 +460,10 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
         padding-right: 50px;
     }
 
-  .content_type_clase_eduvision .logo-publisher {
-    background-image: url(images/Eduvision-logo-grupo-horizontal.png) !important;
+.content_type_clase_eduvision .logo-publisher {
+    background-image: url(images/Eduvision2.png) !important;
     content: " ";
-    height: 50px;
+    height: 55px;
     background-repeat: no-repeat;
     width: 200px;
     margin-left: -100px;
@@ -473,7 +473,6 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     background-size: contain;
     display: inline-block;
 }
-
     .content_type_clase_eduvision .slider-indicators {
         padding: 0;
         display: inline-block;
