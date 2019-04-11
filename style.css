@@ -2635,3 +2635,31 @@ body.print-mode .title *, body.print-mode .title {
     width: 30%;
 }
 
+/*archivos adjuntos*/
+.bck-file-label {
+    background: transparent;
+}
+
+.bck-file-label:hover {
+    color: #28afc8;
+}
+
+.bck-file-attach:hover {
+    color: #28afc8;
+}
+
+.bck-file-label:before {
+	padding: 10px
+	background:#000;
+}
+
+.bck-file-attach span {
+    max-width: 100%;
+    overflow: hidden;
+    background-image: url(/images/sapiensicon.png);
+    background-position: left;
+    background-size: 80px;
+    background-repeat: no-repeat;
+    padding-left: 80px;
+    padding-bottom: 35px;
+}
