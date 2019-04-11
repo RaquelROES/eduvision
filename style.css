@@ -2657,8 +2657,8 @@ body.print-mode .title *, body.print-mode .title {
     overflow: hidden;
     background-image: url(images/sapiensicon.png);
     background-position: left;
-    background-size: 80px;
+    background-size: 95px;
     background-repeat: no-repeat;
-    padding-left: 80px;
-    padding-bottom: 35px;
+    padding-left: 95px;
+    padding-bottom: 50px;
 }
