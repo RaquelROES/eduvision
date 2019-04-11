@@ -2656,7 +2656,7 @@ body.print-mode .title *, body.print-mode .title {
 .bck-file-attach span {
     max-width: 100%;
     overflow: hidden;
-    background-image: url(/images/sapiensicon.png);
+    background-image: url(images/sapiensicon.png);
     background-position: left;
     background-size: 80px;
     background-repeat: no-repeat;
