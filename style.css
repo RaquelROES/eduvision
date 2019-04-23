@@ -463,9 +463,9 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 .content_type_clase_eduvision .logo-publisher {
     background-image: url(images/Eduvisionlogoar.png) !important;
     content: " ";
-    height: 55px;
+    height: 60px;
     background-repeat: no-repeat;
-    width: 200px;
+    width: 220px;
     margin-left: -100px;
     margin-top: 2px;
     margin-right: 10px;
