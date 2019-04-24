@@ -615,10 +615,6 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     border-radius: 0
 }
 
-#actividad .bck-file-attach img {
-    display: none;
-}
-
 
 /* CKEDITOR */
 
