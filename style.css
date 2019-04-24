@@ -616,6 +616,12 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 }
 
 
+#actividad .content img {
+    display: none;
+}
+
+
+
 /* CKEDITOR */
 
     .bck-title1,
@@ -2657,4 +2663,10 @@ body.print-mode .title *, body.print-mode .title {
     background-repeat: no-repeat;
     padding-left: 95px;
     padding-bottom: 50px;
+}
+
+.uploaded-file-editor .bck-file-attach span {
+    background-image: none;
+    padding-left: 0;
+    padding-bottom: 0;
 }
