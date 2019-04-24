@@ -2660,4 +2660,12 @@ body.print-mode .title *, body.print-mode .title {
     padding-bottom: 50px;
 }
 
+.uploaded-file-editor .bck-file-attach span {
+    background-image: none;
+    padding-left: 0;
+    padding-bottom: 0;
+}
 
+.bck-file-attach img{
+  display:none; 
+}
