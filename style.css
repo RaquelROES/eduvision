@@ -616,11 +616,6 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
 }
 
 
-#actividad .content img {
-    display: none;
-}
-
-
 
 /* CKEDITOR */
 
