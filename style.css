@@ -938,7 +938,7 @@ ol.bck-ol {
         position: relative;
         padding-left: 18px;
         margin-bottom: 20px;
-        font-size: 19px;
+        font-size: 21px;
     }
 
     .texto_curso ul li:before,
@@ -2791,8 +2791,4 @@ body.print-mode .title *, body.print-mode .title {
 
 .bck-file-attach img{
   display:none; 
-}
-
-.texto_curso ul li, .workspace ul li ul li, .cke_contents ul li {
-    font-size: 21px;
 }
