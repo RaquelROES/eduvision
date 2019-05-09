@@ -2439,6 +2439,7 @@ body:not(.edit) .bck-flipbox-title, body:not(.edit) .bck-flipbox-section {
 }
 
 .bck-dropdown-titulo {
+    line-height: 25px;	
     display: inline-block;
     vertical-align: middle;
     font-size: 25px;
@@ -2480,6 +2481,7 @@ body:not(.edit) .bck-flipbox-title, body:not(.edit) .bck-flipbox-section {
 }
 
 .periododos .bck-dropdown-titulo {
+	line-height: 25px;
     display: inline-block;
     vertical-align: middle;
     font-size: 25px;
@@ -2522,6 +2524,7 @@ body:not(.edit) .bck-flipbox-title, body:not(.edit) .bck-flipbox-section {
 
 
 .periodotres .bck-dropdown-titulo {
+	line-height: 25px;
     display: inline-block;
     vertical-align: middle;
     font-size: 25px;
