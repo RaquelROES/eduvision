@@ -2792,3 +2792,7 @@ body.print-mode .title *, body.print-mode .title {
 .bck-file-attach img{
   display:none; 
 }
+
+.texto_curso ul li, .workspace ul li ul li, .cke_contents ul li {
+    font-size: 21px;
+}
