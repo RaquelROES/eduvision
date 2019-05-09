@@ -2471,10 +2471,12 @@ body:not(.edit) .bck-flipbox-title, body:not(.edit) .bck-flipbox-section {
 
 .periododos .bck-dropdown-titulo:after {
     content: "";
-    padding: 15px 18px;
-    background: url(images/lapizazulsaberperiodo2-min.jpg);
+    padding: 30px 18px;
+    background: url(images/lapizazulsaberperiodo3-min.jpg);
     background-size: cover;
     margin-left: 30px;
+    margin-top: -30px;
+    position: absolute;
 }
 
 .periododos .bck-dropdown-titulo {
@@ -2482,12 +2484,12 @@ body:not(.edit) .bck-flipbox-title, body:not(.edit) .bck-flipbox-section {
     vertical-align: middle;
     font-size: 25px;
     font-family: 'Conv_BerlinSansFBDemi-Bold';
-    color: #7FD200;
+    color: #29B1E0;
     padding-left: 0px;
 }
 
 .periododos .bck-dropdown-icon>.fa {
-    color: #7FD200;
+    color: #29B1E0;
     border: 0px;
 }
 
@@ -2498,7 +2500,7 @@ body:not(.edit) .bck-flipbox-title, body:not(.edit) .bck-flipbox-section {
     max-height: 100%;
     padding: 10px;
     background-color: #fff;
-    border: 4px solid #9BD114;
+    border: 4px solid #29B1E0;
     border-radius: 20px;
 }
 
