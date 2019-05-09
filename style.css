@@ -2508,7 +2508,7 @@ body:not(.edit) .bck-flipbox-title, body:not(.edit) .bck-flipbox-section {
 
 /*desplegable sabías qué periodo tres*/
 
-.periododos .bck-dropdown-titulo:after {
+.periodotres .bck-dropdown-titulo:after {
     content: "";
     padding: 15px 18px;
     background: url(images/lapizazulsaberperiodo3-min.jpg);
@@ -2516,7 +2516,7 @@ body:not(.edit) .bck-flipbox-title, body:not(.edit) .bck-flipbox-section {
     margin-left: 30px;
 }
 
-.periododos .bck-dropdown-titulo {
+.periodotres .bck-dropdown-titulo {
     display: inline-block;
     vertical-align: middle;
     font-size: 25px;
@@ -2525,13 +2525,13 @@ body:not(.edit) .bck-flipbox-title, body:not(.edit) .bck-flipbox-section {
     padding-left: 0px;
 }
 
-.periododos .bck-dropdown-icon>.fa {
+.periodotres .bck-dropdown-icon>.fa {
     color: #7FD200;
     border: 0px;
 }
 
 
-.periododos .bck-dropdown-content {
+..periodotres .bck-dropdown-content {
     overflow-y: auto;
     display: none;
     max-height: 100%;
@@ -2541,7 +2541,7 @@ body:not(.edit) .bck-flipbox-title, body:not(.edit) .bck-flipbox-section {
     border-radius: 20px;
 }
 
-.periododos .bck-dropdown-button {
+.periodotres .bck-dropdown-button {
     padding: 10px 0px;
 }
 
