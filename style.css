@@ -2510,10 +2510,10 @@ body:not(.edit) .bck-flipbox-title, body:not(.edit) .bck-flipbox-section {
 
 /*desplegable sabías qué periodo tres*/
 
-.periododos .bck-dropdown-titulo:after {
+.periodotres .bck-dropdown-titulo:after {
     content: "";
     padding: 30px 18px;
-    background: url("images/lapizazulsaberperiodo3-min.jpg");
+    background: url(images/lapizazulsaberperiodo3-min.jpg);
     background-size: cover;
     margin-left: 30px;
     margin-top: -30px;
