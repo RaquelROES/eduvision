@@ -2428,6 +2428,85 @@ body:not(.edit) .bck-flipbox-title, body:not(.edit) .bck-flipbox-section {
 }
 
 
+/*desplegable sabías qué*/
+
+.bck-dropdown-titulo:after {
+    content: "";
+    padding: 15px 18px;
+    background: url(images/Lapiz-sabias-que.png);
+    background-size: cover;
+    margin-left: 10px;
+}
+
+.bck-dropdown-titulo {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 25px;
+    font-family: 'Conv_BerlinSansFBDemi-Bold';
+    color: #7FD200;
+    padding-left: 0px;
+}
+
+.bck-dropdown-icon>.fa {
+    color: #7FD200;
+    border: 0px;
+}
+
+
+.bck-dropdown-content {
+    overflow-y: auto;
+    display: none;
+    max-height: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: 4px solid #9BD114;
+    border-radius: 20px;
+}
+
+.bck-dropdown-button {
+    padding: 10px 0px;
+}
+
+/*desplegable sabías qué periodo dos*/
+
+.periododos .bck-dropdown-titulo:after {
+    content: "";
+    padding: 15px 18px;
+    background: url(images/lapizazulsaberperiodo2-min.jpg);
+    background-size: cover;
+    margin-left: 30px;
+}
+
+.periododos .bck-dropdown-titulo {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 25px;
+    font-family: 'Conv_BerlinSansFBDemi-Bold';
+    color: #7FD200;
+    padding-left: 0px;
+}
+
+.periododos .bck-dropdown-icon>.fa {
+    color: #7FD200;
+    border: 0px;
+}
+
+
+.periododos .bck-dropdown-content {
+    overflow-y: auto;
+    display: none;
+    max-height: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: 4px solid #9BD114;
+    border-radius: 20px;
+}
+
+.periododos .bck-dropdown-button {
+    padding: 10px 0px;
+}
+
+
 /**/
 
 @media screen and (max-width: 1099px) {
