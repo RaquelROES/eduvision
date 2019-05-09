@@ -2472,7 +2472,7 @@ body:not(.edit) .bck-flipbox-title, body:not(.edit) .bck-flipbox-section {
 .periododos .bck-dropdown-titulo:after {
     content: "";
     padding: 15px 18px;
-    background: url(images/lapizazulsaberperiodo2-min.jpg);
+    background: url(images/images/lapizazulsaberperiodo2-min.jpg);
     background-size: cover;
     margin-left: 30px;
 }
