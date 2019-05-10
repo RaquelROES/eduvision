@@ -1,6 +1,14 @@
 /* General */
 
 @font-face {
+	font-family: 'Conv_berlin-sans-fb';
+	src: url('fonts/berlin-sans-fb.eot');
+	src: local('☺'), url('fonts/berlin-sans-fb.woff') format('woff'), url('fonts/berlin-sans-fb.ttf') format('truetype'), url('fonts/berlin-sans-fb.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
     font-family: 'MarkerFelt';
     src: url('fonts/MarkerFelt-Wide-02.eot');
     src: local('☺'), url('fonts/MarkerFelt-Wide-02.woff') format('woff'), url('fonts/MarkerFelt-Wide-02.ttf') format('truetype'), url('fonts/MarkerFelt-Wide-02.svg') format('svg');
