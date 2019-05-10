@@ -1793,6 +1793,7 @@ ol.bck-ol {
 
 
 .bck-box.box-10 .bck-title{
+    font-family: 'MarkerFelt';
     display: block;
     padding: 0px 25px;
     color: #a3bf4f;
@@ -1801,6 +1802,7 @@ ol.bck-ol {
     background-color: #fff;
     width: fit-content;
     margin-top: -2%;
+    
 }
 
 .bck-box.box-10 .bck-title:before {
