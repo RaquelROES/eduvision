@@ -2749,7 +2749,7 @@ body.print-mode .title *, body.print-mode .title {
     font-weight: normal;
 }
 
-#actividad .workspace {
+#actividad .workspace .test {
     margin-left: 26px;
     clear: both;
     font-size: 1.8rem;
