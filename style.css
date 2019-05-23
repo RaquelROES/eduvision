@@ -763,7 +763,7 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
     .cke_contents ol li:before {
         content: counter(bck-li-counter)'. ';
         position: absolute;
-        margin-left: -30px;
+        margin-left: -35px;
         font-weight: bold;
         text-align: right;
         color: #5bbfda;
