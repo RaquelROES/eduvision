@@ -938,6 +938,28 @@ ol.bck-ol {
     margin-top: -2px;
 }
 
+
+/*lista 8*/
+
+#actividad .content .cke_contents .texto_curso .bck-ol-8 li
+#actividad .content .texto_curso .bck-ol-8 li,
+#actividad .content .workspace ul li .bck-ol-8 li {
+    list-style-type: none;
+    counter-increment: bck-li-counter 1;
+    position: relative;
+    padding-left: 0px;
+}
+
+#actividad .content .cke_contents .bck-ol-8 li:before,
+#actividad .content .texto_curso .bck-ol-8 li:before,
+#actividad .content .workspace ul li .bck-ol-8 li:before {
+    content: counter(bck-li-counter, lower-alpha)')';
+    position: absolute;
+    color: #00a9a5;
+}
+
+
+
 /*lista desordenada*/
 
     .texto_curso ul li,
