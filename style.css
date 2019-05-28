@@ -2779,6 +2779,10 @@ body.print-mode .title *, body.print-mode .title {
     line-height: 2.1rem;
 }
 
+/*actividades tipo señalar respuesta desplegalble*/
+#actividad .workspace.chooseblanks select {
+    margin-bottom: 15px;
+}
 
 /*respuestas tipo test*/
 #actividad .workspace.test .respuestas {
