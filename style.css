@@ -1827,7 +1827,7 @@ ol.bck-ol {
     display: block;
     padding: 0px 25px;
     color: #a3bf4f;
-    font-weight: bold;
+    font-weight: 100;
     margin-top: -3.5%;
     background-color: #fff;
     width: fit-content;
