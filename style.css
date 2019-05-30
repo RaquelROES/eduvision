@@ -1418,6 +1418,15 @@ ol.bck-ol {
         background-repeat: no-repeat;
     }
 
+.item-container .icon-competencias2:before {
+       height: 45px;
+        width: 360px;
+        margin-top: 2%;
+        margin-bottom: 3%;
+        background-image: url(images/competencias1.2.png.png);
+        background-repeat: no-repeat;
+    }
+
 
      .item-container .icon-competencias3:before {
         height: 45px;
