@@ -1367,8 +1367,8 @@ ol.bck-ol {
   .item-container .icon-apliquemos:before {
         height: 50px;
         width: 210px;
-        margin-top: 2%;
-        margin-bottom: 3%;
+         margin-top: 10px;
+        margin-bottom: 10px;
         background-image: url(images/apliquemosicono.png);
         background-repeat: no-repeat;
     }
@@ -1376,8 +1376,8 @@ ol.bck-ol {
      .item-container .icon-apliquemos1:before {
         height: 50px;
         width: 210px;
-        margin-top: 2%;
-        margin-bottom: 3%;
+        margin-top: 10px;
+        margin-bottom: 10px;
         background-image: url(images/apliquemos1.1.png);
         background-repeat: no-repeat;
     }
@@ -1385,8 +1385,8 @@ ol.bck-ol {
  .item-container .icon-apliquemos2:before {
         height: 50px;
         width: 210px;
-        margin-top: 2%;
-        margin-bottom: 3%;
+        margin-top: 10px;
+        margin-bottom: 10px;
         background-image: url(images/Aplicar_taller2.png);
         background-repeat: no-repeat;
     }
@@ -1394,8 +1394,8 @@ ol.bck-ol {
  .item-container .icon-apliquemos3:before {
         height: 50px;
         width: 210px;
-        margin-top: 2%;
-        margin-bottom: 3%;
+        margin-top: 10px;
+        margin-bottom: 10px;
         background-image: url(images/Aplicar_taller3.png);
         background-repeat: no-repeat;
     }
