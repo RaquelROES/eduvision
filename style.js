@@ -75,6 +75,7 @@
 
 				{ name: 'Icono Antes de leer', element: 'span', attributes: { 'class': 'icon icon-antesdeleer' } },
 				{ name: 'Icono Apliquemos', element: 'span', attributes: { 'class': 'icon icon-apliquemos' } },
+				{ name: 'Icono Apliquemos1.1', element: 'span', attributes: { 'class': 'icon icon-apliquemos1' } },
 				{ name: 'Icono Apliquemos2', element: 'span', attributes: { 'class': 'icon icon-apliquemos2' } },
 				{ name: 'Icono Apliquemos3', element: 'span', attributes: { 'class': 'icon icon-apliquemos3' } },
 				{ name: 'Icono Competencias1', element: 'span', attributes: { 'class': 'icon icon-competencias1' } },
