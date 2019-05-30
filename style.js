@@ -77,6 +77,7 @@
 				{ name: 'Icono Apliquemos', element: 'span', attributes: { 'class': 'icon icon-apliquemos' } },
 				{ name: 'Icono Apliquemos2', element: 'span', attributes: { 'class': 'icon icon-apliquemos2' } },
 				{ name: 'Icono Apliquemos3', element: 'span', attributes: { 'class': 'icon icon-apliquemos3' } },
+				{ name: 'Icono Competencias1', element: 'span', attributes: { 'class': 'icon icon-competencias1' } },
 				{ name: 'Icono Competencias', element: 'span', attributes: { 'class': 'icon icon-competencias' } },
 				{ name: 'Icono Competencias3', element: 'span', attributes: { 'class': 'icon icon-competencias3' } },
 				{ name: 'Icono Dominios del saber', element: 'span', attributes: { 'class': 'icon icon-dominiosdelsaber' } },
