@@ -1392,11 +1392,20 @@ ol.bck-ol {
     }
 
     .item-container .icon-competencias:before {
-        height: 45px;
-        width: 381px;
+        width: 360px;
+        height: 42px;
         margin-top: 2%;
         margin-bottom: 3%;
         background-image: url(images/competenciasicono.png);
+        background-repeat: no-repeat;
+    }
+
+    .item-container .icon-competencias1:before {
+       height: 45px;
+        width: 360px;
+        margin-top: 2%;
+        margin-bottom: 3%;
+        background-image: url(images/competencias_taller1.png);
         background-repeat: no-repeat;
     }
 
