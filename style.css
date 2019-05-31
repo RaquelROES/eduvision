@@ -2369,6 +2369,33 @@ ol.bck-ol {
     }
 
 
+/*logros*/
+.popover-content strong{
+    font-family: 'Conv_AvantGarde_Bk_BT_Demi';
+}
+
+.info-popover .popover-title, .popover-template .popover-title .popover-title-text {
+    padding-top: 7px;
+}
+
+.popover-title {
+    letter-spacing: 1.2px;
+    padding: 8px 14px;
+    font-family: 'Conv_AvantGarde_Bk_BT_Book';
+    font-size: 18px;
+    background-color: #5a9ad7;
+    border-bottom: 1px solid #7a909e;
+    border-radius: 15px 15px 0 0;
+    color: #fff;
+}
+.popover {
+    padding: 0px;
+    background-color: #fff;
+    border-radius: 15px 15px 6px 6px;
+    border: 1px solid #7a909e;
+}
+
+
 /*pistas*/
 .hint.solucion.decoding {
     color: deeppink;
