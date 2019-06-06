@@ -1365,8 +1365,8 @@ ol.bck-ol {
     }
 
   .item-container .icon-apliquemos:before {
-        height: 50px;
-        width: 210px;
+        height: 45px;
+        width: 180px;
          margin-top: 10px;
         margin-bottom: 10px;
         background-image: url(images/apliquemosicono.png);
@@ -1374,8 +1374,8 @@ ol.bck-ol {
     }
 
      .item-container .icon-apliquemos1:before {
-        height: 50px;
-        width: 210px;
+        height: 45px;
+        width: 180px;
         margin-top: 10px;
         margin-bottom: 10px;
         background-image: url(images/apliquemos1.1.png);
