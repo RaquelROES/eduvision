@@ -737,6 +737,10 @@ body:not(.isTablet) #indice .units ul li:hover:not(.disabled){
          color: #274389;
 }
 
+  .bck-tooltip {
+        font-family: Conv_AvantGarde_Bk_BT_Demi;
+}
+
     .content hr,
     .cke_contents hr {
         border: 0;
