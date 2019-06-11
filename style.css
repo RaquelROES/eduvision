@@ -1469,7 +1469,7 @@ ol.bck-ol {
     }
     
  .item-container .icon-juegos:before {
-        height: 44px;
+        height: 43px;
          width: 360px;
         margin-top: 2%;
         margin-bottom: 3%;
@@ -1487,8 +1487,8 @@ ol.bck-ol {
 }
 
 .item-container .icon-maratondeescritura_taller2:before {
-    height: 50px;
-    width: 385px;
+    height: 43px;
+    width: 355px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/maratondeescritura_taller2.png);
@@ -1496,8 +1496,8 @@ ol.bck-ol {
 }
 
 .item-container .icon-maratondeescritura_taller3:before {
-    height: 50px;
-    width: 385px;
+    height: 43px;
+    width: 355px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/maratondeescritura_taller3.png);
@@ -1505,8 +1505,8 @@ ol.bck-ol {
 }
 
 .item-container .icon-micarteldevocabulario_taller1:before {
-    height: 50px;
-    width: 445px;
+    height: 44px;
+    width: 413px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/micarteldevocabulario_taller1.png);
@@ -1514,8 +1514,8 @@ ol.bck-ol {
 }
 
 .item-container .icon-mismanosvanalgym_taller1:before {
-    height: 50px;
-    width: 460px;
+    height: 46px;
+    width: 447px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/mismanosvanalgym_taller1.png);
@@ -1523,8 +1523,8 @@ ol.bck-ol {
 }
 
 .item-container .icon-nuevassilabasnuevaspalabras_taller2:before {
-    height: 50px;
-    width: 590px;
+    height: 43px;
+    width: 526px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/nuevassilabasnuevaspalabras_taller2.png);
@@ -1532,8 +1532,8 @@ ol.bck-ol {
 }
 
 .item-container .icon-nuevassilabasnuevaspalabras_taller3:before {
-    height: 50px;
-    width: 590px;
+    height: 44px;
+    width: 526px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/nuevassilabasnuevaspalabras_taller3.png);
@@ -1541,8 +1541,8 @@ ol.bck-ol {
 }
 
 .item-container .icon-vamosaconversar_taller1:before {
-    height: 80px;
-    width: 380px;
+    height: 68px;
+    width: 345px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/vamosaconversar_taller1.png);
@@ -1550,8 +1550,8 @@ ol.bck-ol {
 }
 
 .item-container .icon-vamosaconversar_taller2:before {
-    height: 80px;
-    width: 380px;
+    height: 68px;
+    width: 345px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/vamosaconversar_taller2.png);
@@ -1559,8 +1559,8 @@ ol.bck-ol {
 }
 
 .item-container .icon-vamosaconversar_taller3:before {
-    height: 80px;
-    width: 380px;
+    height: 68px;
+    width: 345px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/vamosaconversar_taller3.png);
