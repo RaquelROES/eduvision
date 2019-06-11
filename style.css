@@ -1124,15 +1124,15 @@ ol.bck-ol {
 
    .item-container .icon-aplico:before {
     background-image: url(images/aplicoloaprendido.png);
-    height: 75px;
+    height: 71px;
     width: 210px;
     margin-top: 2%;
     margin-bottom: 3%;
     }
 
     .item-container .icon-aprendamosconelmapaconceptual:before {
-        height: 75px;
-        width: 376px;
+        height: 70px;
+        width: 370px;
         margin-top: 2%;
         margin-bottom: 3%;
         background-image: url(images/aprendamosconelmapaconceptual.png);
@@ -1147,7 +1147,7 @@ ol.bck-ol {
     }
 
     .item-container .icon-evaluacion:before {
-        height: 75px;
+        height: 71px;
         width: 260px;
         margin-top: 2%;
         margin-bottom: 3%;
@@ -1164,7 +1164,7 @@ ol.bck-ol {
 
     
 .item-container .trabajo_extra:before {
-    height: 75px;
+    height: 73px;
     width: 206px;
     margin-top: 2%;
     margin-bottom: 3%;
@@ -1362,15 +1362,15 @@ ol.bck-ol {
  .item-container .icon-antesdeleer:before {
     background-image: url(images/antesdeleericono.png);
     height: 40px;
-    width: 225px;
+    width: 205px;
     margin-top: 10px;
     margin-bottom: 10px;
     background-repeat: no-repeat;
     }
 
   .item-container .icon-apliquemos:before {
-        height: 45px;
-        width: 190px;
+        height: 44px;
+         width: 185px;
          margin-top: 10px;
         margin-bottom: 10px;
         background-image: url(images/apliquemosicono.png);
@@ -1387,8 +1387,8 @@ ol.bck-ol {
     }
 
  .item-container .icon-apliquemos2:before {
-        height: 50px;
-        width: 210px;
+        height: 47px;
+        width: 207px;
         margin-top: 10px;
         margin-bottom: 10px;
         background-image: url(images/Aplicar_taller2.png);
@@ -1396,8 +1396,8 @@ ol.bck-ol {
     }
 
  .item-container .icon-apliquemos3:before {
-        height: 50px;
-        width: 210px;
+        height: 47px;
+        width: 207px;
         margin-top: 10px;
         margin-bottom: 10px;
         background-image: url(images/Aplicar_taller3.png);
@@ -1405,8 +1405,8 @@ ol.bck-ol {
     }
 
     .item-container .icon-competencias:before {
-        width: 360px;
-        height: 42px;
+        width: 341px;
+        height: 40px;
         margin-top: 2%;
         margin-bottom: 3%;
         background-image: url(images/competenciasicono.png);
@@ -1433,8 +1433,8 @@ ol.bck-ol {
 
 
      .item-container .icon-competencias3:before {
-        height: 45px;
-        width: 360px;
+        width: 363px;
+        height: 43px;
         margin-top: 2%;
         margin-bottom: 3%;
         background-image: url(images/competencias_taller3.png);
