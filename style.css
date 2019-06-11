@@ -1442,8 +1442,8 @@ ol.bck-ol {
     }
 
     .item-container .icon-dominiosdelsaber:before {
-        height: 45px;
-        width: 348px;
+        height: 37px;
+        width: 288px;
         margin-top: 2%;
         margin-bottom: 3%;
         background-image: url(images/dominiosdelsabericono.png);
@@ -1451,8 +1451,8 @@ ol.bck-ol {
     }
 
     .item-container .icon-dominiosdelsaber2:before {
-        height: 45px;
-        width: 348px;
+        height: 39px;
+        width: 334px;
         margin-top: 2%;
         margin-bottom: 3%;
         background-image: url(images/dominiosdelsaber_taller2.png);
@@ -1460,8 +1460,8 @@ ol.bck-ol {
     }
 
     .item-container .icon-dominiosdelsaber3:before {
-        height: 45px;
-        width: 335px;
+        height: 39px;
+        width: 334px;;
         margin-top: 2%;
         margin-bottom: 3%;
         background-image: url(images/dominiosdelsaber_taller3.png);
