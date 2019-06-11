@@ -1469,8 +1469,8 @@ ol.bck-ol {
     }
     
  .item-container .icon-juegos:before {
-        height: 45px;
-        width: 330px;
+        height: 44px;
+         width: 360px;
         margin-top: 2%;
         margin-bottom: 3%;
         background-image: url(images/Juegosdellenguaje_taller2.png);
@@ -1478,8 +1478,8 @@ ol.bck-ol {
     }
 
 .item-container .icon-leo:before {
-    height: 50px;
-    width: 245px;
+    height: 47px;
+    width: 248px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/leoyaprendo_taller2.png);
@@ -1588,8 +1588,8 @@ ol.bck-ol {
 }
 
 .item-container .icon-exploremos2:before {
-    height: 55px;
-    width: 231px;
+    height: 46px;
+    width: 218px;
     margin-top: 2%;
     margin-bottom: 3%;
     background-image: url(images/exploremosicono.png);
