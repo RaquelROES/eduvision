@@ -1360,6 +1360,7 @@ ol.bck-ol {
 /*iconos español*/
 
  .item-container .icon-antesdeleer:before {
+    margin-left: -25px;
     background-image: url(images/antesdeleericono.png);
     height: 40px;
     width: 205px;
@@ -1369,6 +1370,7 @@ ol.bck-ol {
     }
 
   .item-container .icon-apliquemos:before {
+       margin-left: -25px;
         height: 44px;
          width: 185px;
          margin-top: 10px;
@@ -1378,6 +1380,7 @@ ol.bck-ol {
     }
 
      .item-container .icon-apliquemos1:before {
+         margin-left: -25px;
         height: 45px;
         width: 180px;
         margin-top: 10px;
@@ -1387,6 +1390,7 @@ ol.bck-ol {
     }
 
  .item-container .icon-apliquemos2:before {
+     margin-left: -25px;
         height: 47px;
         width: 207px;
         margin-top: 10px;
@@ -1396,6 +1400,7 @@ ol.bck-ol {
     }
 
  .item-container .icon-apliquemos3:before {
+     margin-left: -25px;
         height: 47px;
         width: 207px;
         margin-top: 10px;
@@ -1405,6 +1410,7 @@ ol.bck-ol {
     }
 
     .item-container .icon-competencias:before {
+        margin-left: -25px;
         width: 341px;
         height: 40px;
         margin-top: 2%;
@@ -1414,6 +1420,7 @@ ol.bck-ol {
     }
 
     .item-container .icon-competencias1:before {
+        margin-left: -25px;
        height: 45px;
         width: 360px;
         margin-top: 2%;
@@ -1423,6 +1430,7 @@ ol.bck-ol {
     }
 
 .item-container .icon-competencias2:before {
+    margin-left: -25px;
        height: 45px;
         width: 360px;
         margin-top: 2%;
@@ -1433,6 +1441,7 @@ ol.bck-ol {
 
 
      .item-container .icon-competencias3:before {
+         margin-left: -25px;
         width: 363px;
         height: 43px;
         margin-top: 2%;
@@ -1442,6 +1451,7 @@ ol.bck-ol {
     }
 
     .item-container .icon-dominiosdelsaber:before {
+        margin-left: -25px;
         height: 37px;
         width: 288px;
         margin-top: 2%;
@@ -1451,6 +1461,7 @@ ol.bck-ol {
     }
 
     .item-container .icon-dominiosdelsaber2:before {
+        margin-left: -25px;
         height: 39px;
         width: 334px;
         margin-top: 2%;
@@ -1460,6 +1471,7 @@ ol.bck-ol {
     }
 
     .item-container .icon-dominiosdelsaber3:before {
+        margin-left: -25px;
         height: 39px;
         width: 334px;;
         margin-top: 2%;
@@ -1469,6 +1481,7 @@ ol.bck-ol {
     }
     
  .item-container .icon-juegos:before {
+     margin-left: -25px;
         height: 43px;
          width: 360px;
         margin-top: 2%;
@@ -1478,6 +1491,7 @@ ol.bck-ol {
     }
 
 .item-container .icon-leo:before {
+    margin-left: -25px;
     height: 47px;
     width: 248px;
     margin-top: 2%;
@@ -1487,6 +1501,7 @@ ol.bck-ol {
 }
 
 .item-container .icon-maratondeescritura_taller2:before {
+    margin-left: -25px;
     height: 43px;
     width: 355px;
     margin-top: 2%;
@@ -1496,6 +1511,7 @@ ol.bck-ol {
 }
 
 .item-container .icon-maratondeescritura_taller3:before {
+    margin-left: -25px;
     height: 43px;
     width: 355px;
     margin-top: 2%;
@@ -1505,6 +1521,7 @@ ol.bck-ol {
 }
 
 .item-container .icon-micarteldevocabulario_taller1:before {
+    margin-left: -25px;
     height: 44px;
     width: 413px;
     margin-top: 2%;
@@ -1514,6 +1531,7 @@ ol.bck-ol {
 }
 
 .item-container .icon-mismanosvanalgym_taller1:before {
+    margin-left: -25px;
     height: 46px;
     width: 447px;
     margin-top: 2%;
@@ -1523,6 +1541,7 @@ ol.bck-ol {
 }
 
 .item-container .icon-nuevassilabasnuevaspalabras_taller2:before {
+    margin-left: -25px;
     height: 43px;
     width: 526px;
     margin-top: 2%;
@@ -1532,6 +1551,7 @@ ol.bck-ol {
 }
 
 .item-container .icon-nuevassilabasnuevaspalabras_taller3:before {
+    margin-left: -25px;
     height: 44px;
     width: 526px;
     margin-top: 2%;
@@ -1541,6 +1561,7 @@ ol.bck-ol {
 }
 
 .item-container .icon-vamosaconversar_taller1:before {
+    margin-left: -25px;
     height: 68px;
     width: 345px;
     margin-top: 2%;
@@ -1550,6 +1571,7 @@ ol.bck-ol {
 }
 
 .item-container .icon-vamosaconversar_taller2:before {
+    margin-left: -25px;
     height: 68px;
     width: 345px;
     margin-top: 2%;
@@ -1559,6 +1581,7 @@ ol.bck-ol {
 }
 
 .item-container .icon-vamosaconversar_taller3:before {
+    margin-left: -25px;
     height: 68px;
     width: 345px;
     margin-top: 2%;
@@ -1569,6 +1592,7 @@ ol.bck-ol {
 
 
 .item-container .icon-vamosaescribir_taller3:before {
+    margin-left: -25px;
     height: 80px;
     width: 500px;
     margin-top: 2%;
@@ -1579,6 +1603,7 @@ ol.bck-ol {
 
 
 .item-container .icon-vamosaleer_taller3:before {
+    margin-left: -25px;
     height: 53px;
     width: 269px;
     margin-top: 2%;
@@ -1588,6 +1613,7 @@ ol.bck-ol {
 }
 
 .item-container .icon-exploremos2:before {
+    margin-left: -25px;
     height: 46px;
     width: 218px;
     margin-top: 2%;
@@ -1598,6 +1624,7 @@ ol.bck-ol {
 
     
 .item-container .icon-tallerideas:before {
+    margin-left: -25px;
     height:75px;
     width: 255px;
     margin-top: 2%;
