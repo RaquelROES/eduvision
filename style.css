@@ -204,6 +204,9 @@
         padding-bottom: 100px;
     }
 
+.slide.crosswords-puzzle table.puzzle td input {
+    margin-bottom: 0px;
+}
     .content_type_clase_eduvision .slide_main input {
         margin-bottom: 15px;
         color: #555;
