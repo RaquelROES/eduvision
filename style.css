@@ -2904,11 +2904,11 @@ body.print-mode .title *, body.print-mode .title {
 .bck-file-attach span {
     max-width: 100%;
     overflow: hidden;
-    background-image: url(images/sapiensicon.png);
+    background-image: url(images/eduimpresion.png);
     background-position: left;
-    background-size: 95px;
+    background-size: 75px;
     background-repeat: no-repeat;
-    padding-left: 95px;
+    padding-left: 85px;
     padding-bottom: 50px;
     font-family: Conv_AvantGarde_Bk_BT_Demi;
 }
