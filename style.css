@@ -1,3 +1,4 @@
+
 /* General */
 
 @font-face {
@@ -1103,7 +1104,7 @@ ol.bck-ol {
         border-left: 0px;
     }
     
-   /* Icons */
+  /*-----------------------------------------ICONOS-------------------------------------------------------------------*/
 
     #actividad .player.audio {
         background: url(images/Icon_audio.png) center center / cover;
@@ -1123,8 +1124,17 @@ ol.bck-ol {
         width: 54px;
         margin-top: -16px;
     }
+
+   /*--------------------SAPIENS---------------------*/
+
+    .item-container .icon-sapiens:before {
+    background-image: url(images/sapiensicon.png);
+    height: 117px;
+    width: 120px;
+    }
+
    
-   /*dominio de ciencias*/
+   /*--------------------dominio de ciencias------------------------*/
 
    .item-container .icon-aplico:before {
     background-image: url(images/aplicoloaprendido.png);
@@ -1174,6 +1184,11 @@ ol.bck-ol {
     margin-bottom: 3%;
     background-image: url(images/trabajo_extra.png);
 }
+
+
+
+
+
 
 
 /*viajemos por Costa Rica*/
