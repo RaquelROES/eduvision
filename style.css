@@ -1963,16 +1963,15 @@ ol.bck-ol {
     padding: 0px 10px;
 }
 
-
 .bck-box.box-12 .bck-title{
     display: block;
     padding: 0px 25px;
     color: #83bfe3;
-    font-weight: bold;
-    margin-top: -3.5%;
+    font-weight: 500;
     background-color: #fff;
     width: fit-content;
-    margin-top: -2%;
+    margin-top: -25px;
+    font-family: 'MarkerFelt';
 }
 
 .bck-box.box-12 .bck-title:before {
