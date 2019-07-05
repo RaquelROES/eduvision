@@ -969,18 +969,18 @@ ol.bck-ol {
 
 /*lista 9*/
 
-#actividad .content .cke_contents .texto_curso .bck-ol-8 li
-#actividad .content .texto_curso .bck-ol-8 li,
-#actividad .content .workspace ul li .bck-ol-8 li {
+#actividad .content .cke_contents .texto_curso .bck-ol-9 li
+#actividad .content .texto_curso .bck-ol-9 li,
+#actividad .content .workspace ul li .bck-ol-9 li {
     list-style-type: none;
     counter-increment: bck-li-counter 1;
     position: relative;
     padding-left: 0px;
 }
 
-#actividad .content .cke_contents .bck-ol-8 li:before,
-#actividad .content .texto_curso .bck-ol-8 li:before,
-#actividad .content .workspace ul li .bck-ol-8 li:before {
+#actividad .content .cke_contents .bck-ol-9 li:before,
+#actividad .content .texto_curso .bck-ol-9 li:before,
+#actividad .content .workspace ul li .bck-ol-9 li:before {
     content: counter(bck-li-counter, lower-alpha)'.';
     position: absolute;
     color: #664EA0;
