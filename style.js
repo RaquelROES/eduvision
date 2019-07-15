@@ -314,19 +314,81 @@
             }
         },
 		
-	addSlideNavigators: function () {
+addSlideNavigators: function () {
             var idgrupo = window.idgrupo,
                 idalumno = window.idalumno,
-                slideNavParams = '';
+                slideNavParams = '',
+                strPopup = (typeof window.esPopup !== "undefined" && window.esPopup) ? '&popup=1' : '';
 
             if (idgrupo) slideNavParams += '&idgrupo=' + idgrupo;
             if (idalumno) slideNavParams += '&idalumno=' + idalumno;
 
+            var self = this.slidesTitle;
+
             blink.events.on("course_loaded", function(){
                 var that = blink.activity.currentStyle,
-                    subunit_index = parseInt($('.slide-counter').attr('data-subunit-index'));
+                    subunit_index = parseInt(that.subunit_index);
 
                 $('.slider-control').off('click');
+
+                var $navigator = $('<div class="navigator"><div class="main-navigator"><div class="left"></div><div class="right"></div></div></div>'),
+                    $leftControl = $('.left.slider-control').clone(),
+                    $rightControl = $('.right.slider-control').clone();
+
+
+                var esdeber = blink.activity.esdeber;
+
+                $leftControl.add($rightControl).find('span').remove();
+
+                var slideIndex = 0; // se utiliza como indice para saltarnos los concatenados en el each
+                var slidesNav = $('.item-container');
+                // Filtramos para que solo coja las slides que no son final slide para iterar sobre ellas
+                slidesNav = slidesNav.filter(function (element) {
+                    if ($(slidesNav[element]).find('#final').length > 0) {
+                        return false;
+                    }
+                    return true;
+                });
+
+                slidesNav.each(function (index, element) {
+                    var $itemNavigator = $navigator.clone(),
+                        $left, $right, hasLeft = false;
+
+                    var prevSlide,
+                        prevIndex = slideIndex - 1;
+                    // si  hay una slide anterior se recorre hacia atras hasta que no haya concatenados
+                    // si estoy en la slide 0 no se pinta
+                    while (prevIndex >= 0) {
+                        prevSlide = window['t' + prevIndex + '_slide'];
+                        if (!esdeber && prevSlide.isConcatenate) {
+                            prevIndex--;
+                        } else {
+                            $left = $leftControl.clone();
+                            $left.append('<span class="title">' + self['t' + prevIndex + '_slide'] + '</span>');
+                            $itemNavigator.find('.left').append($left);
+                            hasLeft = true;
+                            break;
+                        }
+                    }
+
+                    slideIndex++;
+                    var nextSlide;
+                    // si  hay una slide siguiente se recorre hacia adelante hasta que no haya concatenados
+                    // si estoy en la slide ultima no se pinta boton next
+                    while (slideIndex < window.secuencia.length) {
+                        nextSlide = window['t' + slideIndex + '_slide'];
+                        if (!esdeber && nextSlide.isConcatenate) {
+                            slideIndex++;
+                        } else {
+                            $right = $rightControl.clone();
+                            $right.prepend('<span class="title">' + self['t' + slideIndex + '_slide'] + '</span>');
+                            $itemNavigator.find('.right').append($right);
+                            hasLeft && $right.parent('.right').addClass('separator');
+                            break;
+                        }
+                    }
+                    $(element).append($itemNavigator);
+                });
 
                 // Navigation change depending on whether the slides are accessed from
                 // a book or from a homework link or similar
@@ -337,8 +399,8 @@
                         if (!$(this).hasClass('disabled')) {
                             if(activeSlide == 0) {
                                 redireccionar('/coursePlayer/clases2.php?editar=0&idcurso=' +
-                                    idcurso + '&idclase=' + that.subunits[subunit_index - 1].id + '&modo=0&numSec=' +
-                                    that.subunits[subunit_index - 1].pags + slideNavParams, false, undefined);
+                                    idcurso + '&idclase=' + that.subunits[subunit_index - 1].id + '&modo=0'+strPopup+'&numSec=' +
+                                    that.subunits[subunit_index - 1].numSlides + slideNavParams, false, undefined);
                             } else {
                                 blink.activity.showPrevSection();
                         }
@@ -346,11 +408,9 @@
                     });
                     $('.right.slider-control, .right.slider-navigator').click(function () {
                         if (!$(this).hasClass('disabled')) {
-                            //BK-15715 Añadimos la condicion que subunit_index no sea NaN para que se active la navegacion entre slides
-                            if(!isNaN(subunit_index) && activeSlide == parseInt(that.subunits[subunit_index].pags) - 1) {
-                                if (!that.subunits[subunit_index + 1].ocultar)
+                            if(activeSlide == parseInt(that.subunits[subunit_index].pags) - 1) {
                                 redireccionar('/coursePlayer/clases2.php?editar=0&idcurso=' +
-                                    idcurso + '&idclase=' + that.subunits[subunit_index + 1].id + '&modo=0&numSec=1'+slideNavParams,
+                                    idcurso + '&idclase=' + that.subunits[subunit_index + 1].id + '&modo=0' + strPopup + slideNavParams,
                                     false, undefined);
                             } else {
                                 blink.activity.showNextSection();
@@ -370,11 +430,10 @@
                     blink.events.on('showSlide:after', function() {
                         that.enableSliders();
                     });
-		});
+                });
             });
+
         },
-		
-	};
 
 	eduvisionStyle.prototype = _.extend({}, new blink.theme.styles.basic(), eduvisionStyle.prototype);
 
