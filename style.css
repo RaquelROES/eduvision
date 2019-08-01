@@ -1072,6 +1072,23 @@ ol.bck-ol {
 }
 
 
+#actividad .content .texto_curso  ul.bck-ul-5 li,
+#actividad .content .workspace ul li ul.bck-ul-5 li {
+    list-style: none;
+}
+
+#actividad .content .cke_contents .bck-ul-5 li:before,
+#actividad .content .texto_curso .bck-ul-5 li:before,
+#actividad .content .workspace ul li .bck-ul-5 li:before {
+    content: "";
+    height: 6px;
+    width: 6px;
+    background: #FEF9F4;
+    margin-top: 10px;
+    border: none;
+}
+
+
 
 /*fin desordenada*/ 
 
