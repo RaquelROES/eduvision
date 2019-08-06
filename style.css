@@ -2602,7 +2602,7 @@ body:not(.edit) .bck-flipbox-title, body:not(.edit) .bck-flipbox-section {
 .bck-dropdown-titulo:after {
     content: "";
     padding: 15px 18px;
-    background: url(images/Lapiz-sabias-que.png);
+    background: url(images/Lapiz-sabias-quen.png);
     background-size: cover;
     margin-left: 10px;
 }
